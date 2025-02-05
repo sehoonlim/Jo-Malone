@@ -1,0 +1,481 @@
+*:not(.wrap){
+    box-sizing: border-box;
+  }
+  
+  footer img{
+    box-sizing: unset;
+  }
+  
+  body {
+    width: 100%;
+
+  }
+
+  #subNav>div {
+    width: 100%;
+    height: 50px;
+    /* margin: 0 auto; */
+    border-bottom: 1px solid #ccc;
+
+  }
+
+  #customer {
+    height: 500px;
+  }
+
+  main {
+    width: calc(100% - 220px);
+    padding-left: 50px;
+  }
+
+  button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .productMid {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #ccc;
+
+  }
+
+
+  main>div:nth-child(1) {
+    width: 100%;
+    height: 100px;
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+    line-height: 100px;
+    font-family: "Nanum Myeongjo", serif;
+  }
+
+
+  .productMid>div {
+    margin-left: 50px;
+    width: 200px;
+    height: 100px;
+    margin-top: 5%;
+  }
+
+  .headerFont {
+    font-family: "Nanum Myeongjo", serif;
+  }
+
+  button {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 0.5;
+  }
+
+  .productMid img {
+    width: 100%;
+    height: 200px;
+    margin-top: 3%;
+  }
+
+
+  /* 구글폰트 css */
+
+  * {
+    font-family: "Noto Sans KR", sans-serif;
+    ;
+  }
+
+  .nanum-myeongjo-regular {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .noto-sans-kr {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+
+  .events p {
+    margin: 0px;
+  }
+
+  .strongHeader {
+    margin: 16px 0px;
+  }
+
+  #customer>p:nth-child(1) {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+
+  #customer p {
+
+    font-size: 14px;
+    font-family: "Noto Sans KR", sans-serif;
+
+  }
+
+  #customer p {
+    margin: 8px 0px;
+
+  }
+
+  #customer {
+    border: 1px solid #ccc;
+  }
+
+  #customer a {
+    color: black;
+    text-decoration: underline;
+
+  }
+
+  .a1 {
+    color: black;
+    text-decoration: underline;
+  }
+
+  .productMid img {
+    width: 100px;
+    height: 100px;
+  }
+
+      /* 관심상품목록 스타일*/
+      *{
+          margin: 0;
+          padding: 0;
+      }
+
+      #total{
+        width: 100%;
+      }
+      
+      content{
+          width: 60%;
+          height: 1100px;
+          /*background-color: aquamarine;*/
+          margin-top: 50px;
+          margin-left: 8%;
+      }
+
+      .wishHeader{
+          width: 100%;
+          height: 60px;
+          /*background-color: #ff0;*/
+          font-family: 'NanumMyeongjo';
+          font-size: 1.5rem;
+          line-height: 60px;
+      }
+
+      .wishSection{
+          width: 100%;
+          /*background-color: #0f0;*/
+      }
+
+      .wishProduct{
+          width: 100%;
+          height: 200px;
+          /*background-color: #f0a;*/
+          display: flex;
+          border-top: 1px solid #ccc;
+      }
+
+      .productImg{
+          width: 100px;
+          margin: auto;
+          
+      }
+
+      .productName{
+          width: 330px;
+      }
+
+      .productName > div{
+        margin-top: 60px;
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      .price{
+          width: 120px;
+          line-height: 150px;
+          text-align: center;
+      }
+
+      .add > button{
+          width: 150px;
+          height: 40px;
+          background-color: #000;
+          color: #fff;
+          margin-top: 60px;
+          font-size: 15px;
+      }
+
+      .add > button > a {
+        color: #fff;
+      }
+
+      .add > a{
+        font-size: 14px;
+        text-decoration: underline;
+      }
+
+      .moveBasket > a{
+        color: #000;
+      }
+
+      /* 태블릿 (800px 이하) */
+  @media screen and (max-width: 800px) {
+
+    body {
+      height: auto;
+    }
+
+    #total {
+      height: 1000px;
+      /* 높이 자동 조절 */
+      display: block;
+      width: 100%;
+    }
+
+    #subNav {
+      width: 100%;
+    }
+
+    #subNav a {
+      line-height: 25px;
+    }
+
+    #subNav>div {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+    }
+
+    aside {
+      height: 500px;
+      width: 100%;
+    }
+
+    #customer {
+      display: none;
+    }
+
+    #totNav {
+      width: 100%;
+    }
+
+    main {
+      width: calc(100% - 50px);
+      padding: 0px;
+    }
+
+    form {
+      width: 100%;
+      /* 폼 너비를 100%로 */
+      height: auto;
+      /* 높이 자동 조절 */
+    }
+
+    #mainTit {
+      width: 100%;
+      /* 타이틀 너비를 100%로 */
+      font-size: 20px;/
+    }
+
+    .btn-open-modal {
+      width: 100%;
+      height: 40px;
+    }
+
+    #inforInput {
+      width: 100%;
+    }
+
+    #inforInput>div:nth-child(1) input {
+      width: 100%;
+    }
+
+    #callNum {
+      display: block;
+      width: 100%;
+      height: 350px;
+    }
+
+    #callNum input,
+    #callNum select {
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    #checkNumPlz,
+    #checkNumInput {
+      margin-left: 0px;
+    }
+
+    #birth>div:nth-child(3) {
+      width: 100%;
+    }
+
+    .selectN {
+      width: 100%;
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+
+    footer {
+      margin-top: 1000px;
+    }
+
+    #connect {
+      width: 100%;
+    }
+
+    #connect>div {
+      width: 100%;
+    }
+
+    .wrap {
+      width: 100%;
+    }
+
+    .sectionBox {
+      display: block;
+      width: 100%;
+    }
+
+    section {
+      width: 100%;
+    }
+
+    .sectionHeader {
+      border: none;
+    }
+
+    #orderTop {
+      width: 100%;
+      display: block;
+      height: 800px;
+      border: none;
+    }
+
+    #orderTop>div {
+
+      width: 100%;
+
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+
+    #orderMid {
+      display: block;
+    }
+
+
+    .product {
+      width: 100%;
+      height: 1200px;
+    }
+
+    .productTop {
+      display: none;
+
+    }
+
+
+
+    .productMid>div:nth-child(1) {
+      width: 100%;
+      border-bottom: 1PX solid #CCC;
+    }
+
+
+    .productMid>div:nth-child(2),
+    .productMid>div:nth-child(3),
+    .productMid>div:nth-child(4),
+    .productMid>div:nth-child(5) {
+      width: 100%;
+      height: 30px;
+
+    }
+
+    .productMid {
+      display: block;
+      height: 400px;
+      margin: 0px;
+      width: 100%;
+
+    }
+
+    .reorderBtn {
+      width: 80%;
+      margin-left: 0px;
+    }
+
+    .productMid>div {
+      margin-left: 50px;
+      width: 200px;
+      height: 100px;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    main>div:nth-child(1) {
+      width: 100%;
+    }
+
+    .footerSite {
+      height: auto;
+      display: block;
+    }
+
+
+  }
+
+  @media screen and (max-width: 500px) {
+      .productImg{
+          width: 80%;
+      }
+
+      .productName{
+          width: 100%;
+      }
+
+      .productName > div{
+        margin-top: 60px;
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      .price{
+          width: 100%;
+          line-height: 150px;
+          text-align: center;
+      }
+
+      .eng{
+          display: none;
+      }
+      
+      .add > button{
+          width: 110px;
+          height: 40px;
+          background-color: #000;
+          color: #fff;
+          margin-top: 60px;
+          font-size: 15px;
+      }
+  }

@@ -1,0 +1,253 @@
+@import url(reset.css);
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body{
+  background-color: #fcf9ee;
+}
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* header */
+header{
+  width: 100%;
+  height: 55px;
+  border-bottom: 1px solid #aaa;
+}
+header button{
+  float: left;
+  line-height: 60px;
+  margin-left: 1%;
+}
+header > div{
+  width: 100%;
+  height: 55px;
+  margin: 0px auto;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+}
+.logo img{
+  width: 150px;
+  height: 55px;
+}
+.block{
+  width: 100%;
+  height: 100px;
+}
+/* section */
+section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap{
+  width: 100%;
+  height: 700px;
+  margin: 0px auto;
+}
+.wrap > div{
+  width: 560px;
+  height: 90%;
+  border: 1px solid #ddd;
+  margin: 0px auto;
+}
+.topBtn{
+  width: 560px;
+  height: 70px;
+}
+.topBtn button{
+  width: 280px;
+  height: 70px;
+  border-bottom: 1px solid #ddd;
+  float: left;
+}
+.topBtn button:first-of-type{
+  border-bottom: 1px solid #1c1c1c;
+}
+.topBtn a{
+  font-size: 12px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+}
+.topBtn button:last-of-type a{
+  color: #aaa;
+}
+.bottomCnt{
+  width: 360px;
+  height: 440px;
+  margin: 0px auto;
+}
+.bottomCnt > div:nth-of-type(1){
+  width: 360px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  padding-top: 50px;
+}
+.kakao,
+.naver{
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+}
+.kakao{
+  background-color: #FFE809;
+  margin-right: 10px;
+}
+.naver{
+  background-color: #17CE5F;
+}
+.kakao img{
+  position: relative;
+  top: 5px;
+}
+.bottomCnt > div:nth-of-type(2){
+  padding: 20px 0px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  position: relative;
+  font-weight: bold;
+  font-size: 14px;
+}
+.bottomCnt > div:nth-of-type(2)::before,
+.bottomCnt > div:nth-of-type(2)::after {
+  content: '';
+  display: inline-block;
+  width: 30%;
+  height: 1px;
+  background-color: #aaa;
+  vertical-align: middle;
+}
+.bottomCnt > div:nth-of-type(2)::before {
+  margin-right: 5%;
+}
+.bottomCnt > div:nth-of-type(2)::after {
+  margin-left: 5%;
+}
+.bottomCnt input[type='text']{
+  width: 350px;
+  height: 50px;
+}
+.bottomCnt input[type='password']{
+  width: 350px;
+  height: 50px;
+}
+.bottomCnt input:first-of-type{
+  margin-bottom: 24px;
+}
+.bottomCnt input:last-of-type{
+  position: relative;
+}
+.pwIcon{
+  position: relative;
+  top: -40px;
+  left: 320px;
+  width: 24px;
+  height: 24px;
+}
+.notCrossed{
+  display: none;
+}
+form a{
+  text-decoration: underline;
+  font-size: 12px;
+}
+form button{
+  width: 360px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 20px;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+/* footer */
+footer{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #aaa;
+  font-size: 14px;
+}
+footer div{
+  margin: 0px 20px;
+}
+footer div a{
+  padding: 0px 10px;
+}
+
+/* 반응형 */
+
+@media screen and (max-width: 800px) {
+  .wrapper{
+    box-sizing: border-box;
+  }
+  .block{
+    display: none;
+  }
+  .wrap {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .wrap > div {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+  }
+  form{
+    width: 100%;
+  }
+  .topBtn{
+    width: 100%;
+  }
+  .topBtn button{
+    width: 50%;
+  }
+  .bottomCnt{
+    width: 100%;
+  }
+  .bottomCnt > div:nth-of-type(1){
+    width: 100%;
+    text-align: center;
+  }
+  .bottomCnt input[type='text'],
+  .bottomCnt input[type='password']{
+    width: 100%;
+  }
+  .pwIcon{
+    position: absolute;
+    left: 90%;
+    top: 380px;
+  }
+  form button{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px){
+  footer{
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+  footer div{
+    margin: 10px 25px;
+  }
+  footer div a, 
+  footer div p{
+    display: block;
+    padding: 5px 0;
+  }
+}

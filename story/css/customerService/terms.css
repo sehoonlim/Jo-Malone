@@ -1,0 +1,158 @@
+@import url(../../../cccc/customerNav.css);
+@import "../../../pay/CSS/basketMenu.css";
+@import "../../../pay/CSS/wishMenu.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+footer img{
+    box-sizing: unset;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    overflow-x: hidden;
+}
+.sidemenu{
+    margin-top: 80px;
+    width: 220px;
+  }
+  .sidemenu #service{
+    display: block;
+    width: 100%;
+  }
+.wrapper{
+    width: 100%;
+    /* height: 6000px; */
+    background-color: #fcf9ee;
+    display: flex;
+}
+
+.legal {
+    width: 70%;
+    height: auto;
+    margin-top: 100px;
+    
+}
+aside{
+    width: 300px;
+    height: auto;
+}
+#hh{
+    font-size: 24px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    font-family: 'NanumMyeongjo';
+}
+.legal p{
+    font-size: 14px;
+}
+.le1{
+    margin-bottom: 30px;
+}
+
+.pHtext{
+    font-weight: bold;
+    margin-top: 30px;
+}
+.legal p{
+    line-height: 25px;
+
+}
+.acs a{
+    text-decoration: underline;
+}
+main,main p,.legal{
+    width: 820px;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper{
+        flex-direction: column;
+    }
+    #hh{
+        margin-top: 0;
+    }
+    .legal,main,main p{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        height: auto;
+    }
+}
+/* 태블릿 이하에서 특정 항목 숨기기 */
+@media screen and (max-width: 800px) {
+    /* 태블릿 이하에서 aside의 특정 항목 숨김 */
+    aside div#leftNav div:nth-child(1),
+    aside div#leftNav div:nth-child(2),
+    aside div#leftNav div:nth-child(3),
+    aside div#leftNav div:nth-child(4),
+    aside div#leftNav div:nth-child(5),
+    aside div#leftNav div:nth-child(6),
+    aside div#leftNav div:nth-child(7),
+    aside div#leftNav div:nth-child(8) {
+        display: flex;
+    }
+
+    /* 반응형 레이아웃 조정 */
+    .wrapper {
+        flex-direction: column; 
+
+    }
+
+    aside {
+        width: 100%; /* 태블릿에서 aside가 전체 너비 차지 */
+        order: 2; /* aside가 아래로 이동 */
+    }
+
+    main {
+        width: 100%; /* main도 전체 너비 차지 */
+        order: 1; /* main이 위로 이동 */
+        padding: 15px; /* padding을 줄여 여백 확보 */
+    }
+
+    article {
+        width: 100%; /* article도 100%로 설정 */
+        padding: 15px; /* 패딩 조정 */
+        word-wrap: break-word; /* 내용이 길어도 자동으로 줄바꿈 */
+         word-break: break-all;
+    }
+    .sidemenu{
+        margin-top: 60px;
+        width: 100%;
+      }
+}
+
+
+/* 모바일 이하에서 aside 숨기기 */
+@media screen and (max-width: 480px) {
+    aside {
+        display: none; /* 모바일에서 aside 숨김 */
+    }
+
+    main {
+        width: 100%; /* main은 전체 너비 차지 */
+        padding: 10px; /* 모바일에서는 padding을 더 줄여 공간 확보 */
+    }
+
+    article {
+        width: 100%; /* 모바일에서 article도 100%로 설정 */
+        padding: 10px;
+        word-wrap: break-word; /* 긴 단어도 줄바꿈 */
+        word-break: break-all;
+    }
+
+    .legal p {
+        font-size: 12px; /* 모바일에서 글자 크기 줄임 */
+        line-height: 20px;
+    }
+
+    #hh {
+        font-size: 20px; /* 타이틀 크기 조정 */
+    }
+}

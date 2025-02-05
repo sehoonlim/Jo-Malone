@@ -1,0 +1,871 @@
+*{
+  box-sizing: border-box;
+}
+footer img{
+  box-sizing: unset;
+}
+footer{
+  display: flex;
+}
+body{
+  overflow-x: hidden;
+}
+#big {
+  width: 100%;;
+  max-width: 1280px;
+  height: 100%;
+  background-color: #fcf9ee;
+  margin: 0 auto;
+}
+.center{
+
+  width: 100%;
+  max-width: 1280px; /* 기본 최대 너비 */
+  margin: 0 auto;
+  background-color: #fcf9ee;
+  padding: 0 20px; /* 반응형을 위한 좌우 여백 추가 */
+  
+}
+  
+.center img:not(header img, nav img, footer img) {
+  width: 100%;
+  height: auto; /* 비율 유지 */
+}
+
+/* footer{
+  margin: 0 auto;
+  width: 2000px;
+ 
+} */
+
+#imgBox {
+  /* width: 100%;
+  height: auto;
+  margin: 0 auto; */
+  font-size: 28px;
+}
+
+#img1 {
+  max-width: 500px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#asideBox {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  /* width: 350px;
+  height: 500px; */
+  font-size: 20px;
+  flex-direction: column; /* 설명 안의 요소들을 세로로 배치 */
+  justify-content: flex-start;
+}
+
+#top1 {
+  /* width: 1200px;
+  height: 600px; */
+  background-color: #fcf9ee;
+  display: flex;
+  /* border-bottom: 1px solid black; */
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+
+#top1 > div{
+  flex: 1;
+  /* min-width: 50%; */
+  text-align: center;
+  box-sizing: border-box;
+  
+}
+
+#mlChoose img {
+  width: 100px;
+  height: 100px;
+}
+#mlChoose div:nth-child(2) > #btn1{
+  display: block;
+  text-align: center;
+}
+#mlChoose div:nth-child(2) > #btn2{
+  display: block;
+  text-align: center;
+}
+#mlChoose div:nth-child(2) > #btn3{
+  display: block;
+  text-align: center;
+}
+#top1>div:nth-child(1) {
+
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mlChoose {
+  display: flex;
+}
+
+/* 아코디언 */
+#check-btn , #check-btn2, #check-btn3{
+  display: none;
+}
+/* #check-btn2 {
+  display: none;
+}
+#check-btn3 {
+  display: none;
+} */
+/* #check-btn:checked~.menubars {
+  display: block;
+  height: auto;
+  margin-bottom: 10px;
+} */
+#check-btn:checked~.menubars, 
+#check-btn2:checked~.menubars2, 
+#check-btn3:checked~.menubars3 {
+  display: block;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.menubars, .menubars2, .menubars3 {
+  display: none;
+  height: 0;
+  overflow: hidden;
+
+}
+
+.accordian {
+  width: 100%;
+  max-width: 1200px;
+  /* width: 1200px; */
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.accordian label {
+  line-height: 50px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* 아코디언 끝   */
+
+#taste {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#taste img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+#taste>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 350px;
+  /* border-bottom: 1px solid; */
+}
+
+#tasteing>div:nth-child(1) {
+  margin: 20px 0px;
+  font-size: 28px;
+}
+
+#tasteing p {
+  margin: 30px 0px;
+  padding-left: 20px;
+}
+
+.block {
+  /* width: 300px;
+  height: 600px; */
+
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+
+  /* margin: 50px 0px; */
+  text-align: center;
+  position: relative;
+}
+
+.block img {
+  width: 100%;
+  height: auto;
+  /* width: 300px;
+  height: 300px; */
+  margin-bottom: 50px;
+}
+
+.blockPrice {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+}
+
+.blockBox {
+  display: flex;
+  padding: 0px 40px;
+}
+
+#checkTitle div {
+  width: 100%;
+  height: auto;
+  /* width: 1200px;
+  height: 100px; */
+  font-size: 28px;
+  line-height: 100px;
+}
+
+#checkTitle p {
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100px;
+  font-size: 14px;
+
+}
+#checkTitle{
+  margin-top: 30px;
+  justify-content: left;
+  padding: 0 40px;
+}
+.blockBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.block{
+  width: 23%;
+  margin-bottom: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+#blockBox2 {
+  width: 1280px;
+  height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#blockBox2 img {
+  width: 300px;
+  height: 300px;
+}
+
+#imgBox>div {
+  width: 500px;
+  height: 100px;
+  text-align: center;
+}
+
+#wish {
+  width: 300px;
+  text-align: right;
+}
+
+#imgBox2 {
+  /* width: 1200px;
+  height: 590px; */
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+#imgBox2 > div {
+  /* width: 590px;
+  height: 590px; */
+  width: 50%;
+  height: auto;
+  /* padding: flex; */
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+
+  justify-content: space-between;
+}
+
+/* #imgBox2>video {
+  width: 590px;
+  height: 590px;
+  border: 1px solid black;
+  background-color: black;
+} */
+
+#imgBox2 img{
+  width: 50%;
+  height: auto;
+  max-width: 590px;
+}
+#img4 {
+  width: 100%;
+}
+
+.accordian,
+#tasteing,
+#top1 {
+  width: 100%;
+  height: auto;
+  padding: 0px 40px;
+}
+#tasteing{
+
+  margin-bottom: 70px;
+}
+
+/* .block */
+
+.block:hover .wishIcon {
+  display: flex;
+}
+
+
+
+.Htext1{
+  text-align: left;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: 'NanumMyeongjo';
+}
+
+.Htext2 {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'NanumMyeongjo';
+}
+
+
+.basketBtn{
+  text-align: left;
+}
+
+.ptext {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+.ttext{
+  line-height: 25px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.block img{
+  width: 100%;
+  height: auto;
+}
+.block button {
+  width: 110px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: #fcf9ee;
+  /* margin-top: 10px;
+  padding: 10px 15px; */
+}
+
+#asideBox button {
+  width: 300px;
+  height: 50px;
+  padding: 0px 10px;
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.menubar , p{
+  line-height: 20px;
+}
+.best{
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+/* review */
+#wrap{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.head{
+  width: 100%;
+  height: auto;
+  margin: 0px auto;  
+  text-align: center;
+    display:block;
+    
+    align-items: center; /* 세로 중앙 정렬 */
+    
+}
+.head > h3{
+  width: 100%;
+  height: 30px;
+  font-size: 28px;
+  font-family: 'NanumMyeongjo';
+  margin-bottom: 80px;
+  text-align: center;
+  justify-content: center; /* 가로 중앙 정렬 */
+}
+.head > h3.reviewTit{
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding-top: 50px;
+}
+.head a{
+  text-decoration: underline;
+  font-size: 14px;
+}
+.top{
+  width: 100%;
+  margin: 0px auto;
+}
+.top h2{
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+.top span{
+  margin: 0px 30px 0px 10px;
+  font-size: 14px;
+}
+.reviewCnt{
+  width: 80%;
+  height: 350px;
+  margin: 0px auto;
+}
+.reviewCnt h2{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.reviewCnt h3{
+  font-family: 'NanumMyeongjo';
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.reviewCnt p{
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.more{
+  text-align: left;
+  width: 100%;
+}
+#yes{
+  margin-right: 50px;
+}
+#yes::before{
+  content: 'Yes';
+  text-decoration: underline;
+  padding-right: 10px;
+}
+#no::before{
+  content: 'No';
+  text-decoration: underline;
+  padding-right: 10px;
+}
+.content{
+  width: 100%;
+  font-size: 14px;
+  padding: 0px;
+  margin-top: 40px;
+}
+.leftCnt > span{
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.leftCnt p{
+  margin-bottom: 20px;
+  color: #888;
+}
+.rightCnt{
+  float: right;
+}
+.rightCnt span{
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.rightCnt > button{
+  text-decoration: underline;
+}
+.reviewCnt{
+  padding: 20px 0px;
+  border-bottom: 1px solid #ccc;
+}
+.delete{
+  text-align: right;
+  margin-left: 50px;
+}
+#aBtn1 {
+  color: white;
+}
+
+#deleteModal{
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+#deleteModal > img{
+  position: absolute;
+  top: 10px;
+  left: 97%;
+}
+.modal{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 370px;
+  height: 545px;
+  background-color: #fcf9ee;
+  z-index: 101;
+}
+.modalText{
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+.modalText p{
+  font-weight: bold;
+  font-size: 20px;
+}
+.modalText > div{
+  display: inline-flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+form{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px auto;
+  box-sizing: border-box;
+  align-items: center;
+}
+form label{
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  width: 80%;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+form input[type="text"],
+form textarea{
+  width: 80%;
+  height: 40px;
+  box-sizing: border-box;
+  margin: 0px auto 10px auto;
+}
+form textarea{
+  height: 120px;
+}
+form button[type="submit"]{
+  color: #fff;
+  background-color: #1c1c1c;
+  width: 30%;
+  height: 40px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+form button[type="submit"]:hover{
+  background-color: rgba(28, 28, 28, 0.5);
+}
+
+#asideBox{
+  width: 90%;
+}
+
+/* 제품 박스 반응형 */
+/* 1200px 이상에서는 기본값 유지 */
+
+/* 800px 이상 1200px 이하 */
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  #top1 {
+    flex-direction: row; /* 가로 배치 유지 */
+    justify-content: space-between;
+  }
+  #asideBox {
+    text-align: left; /* 상품 설명은 왼쪽 정렬 유지 */
+    display: block; /* 블록 레이아웃으로 강제 설정 */
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+    .head > h3{
+      width: 100%;
+      height: auto;
+      font-size: 28px;
+      font-family: 'NanumMyeongjo';
+      /* margin-bottom: 80px; */
+      text-align: center;
+      justify-content: center;
+  }
+}
+
+/* 800px 이하일 때는 세로 배치로 변경 */
+@media screen and (max-width: 800px) {
+  #top1 {
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center; /* 모든 요소를 가운데 정렬 */
+  }
+
+  #img1 {
+    margin-bottom: 20px; /* 이미지 아래로 간격 */
+  }
+
+  #asideBox {
+    text-align: center; /* 설명을 가운데 정렬 */
+    padding: 0 15px;
+    display: block; /* 블록 레이아웃 유지 */
+    width: 95%;
+  }
+}
+
+/* Mobile (480px 이하) */
+@media screen and (max-width: 480px) {
+  .center {
+    max-width: 480px;
+    padding: 0 10px;
+  }
+
+  #top1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #img1 {
+    margin-bottom: 20px;
+  }
+
+  #asideBox {
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+
+/* 아코디언 반응형 */
+@media screen and (max-width: 800px) {
+  .accordian {
+    max-width: 800px; /* 태블릿에서는 너비를 800px로 줄임 */
+  }
+
+  .menubars, .menubars2, .menubars3 {
+    padding: 10px 20px; /* 내용에 추가 여백 */
+    font-size: 14px; /* 글자 크기 조정 */
+  }
+
+  .accordian label {
+    font-size: 20px; /* 태블릿에서 라벨 글자 크기 조정 */
+    line-height: 40px;
+  }
+}
+
+/* Mobile (480px 이하) */
+@media screen and (max-width: 480px) {
+  .accordian {
+    max-width: 480px; /* 모바일에서는 너비를 480px로 줄임 */
+  }
+
+  .menubars, .menubars2, .menubars3 {
+    padding: 10px 15px; /* 모바일에서 여백 조정 */
+    font-size: 12px; /* 글자 크기 더 작게 조정 */
+  }
+
+  .accordian label {
+    font-size: 18px; /* 모바일에서 라벨 글자 크기 조정 */
+    line-height: 35px;
+  }
+}
+
+/* tasting 반응형 */
+/* Tablet (800px 이하) */
+@media screen and (max-width: 800px) {
+  #taste {
+    flex-direction: column; /* 태블릿에서는 세로로 배치 */
+    justify-content: center;
+    align-items: center;
+  }
+
+  #taste>div {
+    width: 100%; /* 섹션 너비를 100%로 설정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    padding: 0 15px; /* 여백 추가 */
+    margin-bottom: 20px;
+  }
+
+  #taste img {
+    width: 150px; /* 태블릿에서 이미지 크기를 약간 줄임 */
+    height: 150px;
+  }
+}
+
+/* Mobile (480px 이하) */
+@media screen and (max-width: 480px) {
+  #taste {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #taste>div {
+    width: 100%; /* 모바일에서도 섹션 너비를 100%로 설정 */
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 15px;
+  }
+
+  #taste img {
+    width: 120px; /* 모바일에서 이미지 크기를 더 줄임 */
+    height: 120px;
+  }
+}
+/* 나만의 센트 페이어링 조합하기  */
+/* Tablet (800px 이하) */
+@media screen and (max-width: 800px) {
+  #checkTitle {
+    padding: 15px;
+    max-width: 800px;
+  }
+
+  .Htext2 {
+    font-size: 22px; /* 태블릿에서 글자 크기 약간 축소 */
+  }
+
+  #checkTitle p {
+    font-size: 14px; /* 텍스트 크기 축소 */
+    line-height: 1.4;
+  }
+}
+
+/* Mobile (480px 이하) */
+@media screen and (max-width: 480px) {
+  #checkTitle {
+    padding: 10px;
+    max-width: 480px;
+  }
+
+  .Htext2 {
+    font-size: 20px; /* 모바일에서 글자 크기 더 축소 */
+  }
+
+  #checkTitle p {
+    font-size: 12px; /* 모바일 텍스트 크기 더 작게 */
+    line-height: 1.3;
+  }
+}
+
+/* 제품 반응형 */
+
+/* 800px-1200px 사이에서는 2개씩 배치 */
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .block {
+    width: 48%; /* 두 개씩 배치되도록 너비를 48%로 설정 */
+  }
+
+  .blockPrice {
+    text-align: center; /* 가격과 용량이 중앙에 유지되도록 */
+  }
+
+  .block img {
+    margin-bottom: 10px;
+  }
+}
+/* 800px 이하에서는 한 줄에 하나씩 표시 */
+@media screen and (max-width: 800px) {
+  .block {
+    width: 100%; /* 블록이 한 줄에 하나씩 표시되도록 설정 */
+    margin-bottom: 20px;
+  }
+
+  #blockBox2 {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  #blockBox2 img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* 코롱 사용법 반응형 */
+/* Tablet (800px 이하) */
+@media screen and (max-width: 800px) {
+  #imgBox2 {
+    flex-direction: column; /* 세로 배치로 변경 */
+    align-items: center;
+  }
+
+  #imgBox2 > div {
+    width: 100%; /* 텍스트 영역을 100%로 설정 */
+    margin-bottom: 20px;
+    border: none; /* 경계를 없앰 */
+  }
+
+  #imgBox2 img {
+    width: 100%; /* 이미지 너비를 100%로 설정 */
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+/* Mobile (480px 이하) */
+@media screen and (max-width: 480px) {
+  #imgBox2 {
+    padding: 0 20px; /* 모바일에서는 좌우 여백을 줄임 */
+  }
+
+  #imgBox2 > div {
+    padding: 10px; /* 모바일에서 텍스트 박스의 패딩을 줄임 */
+  }
+
+  #imgBox2 img {
+    width: 100%; /* 이미지가 화면에 맞게 조정됨 */
+    height: auto;
+  }
+}

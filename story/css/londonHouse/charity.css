@@ -1,0 +1,369 @@
+
+@import url(../../../css/onlineServiceCon.css);
+      .wrapper{
+        width: 100%;
+        max-width: 1200px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 100px;
+      }
+      
+      .center{
+        justify-content: center;
+      }
+      .main1{
+        /* width: 1250px;
+        height: 750px; */
+        /*background-color: #ff0;*/
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        justify-content: space-between;
+      }
+
+      .charity{
+        width: 48%;
+        /* width: 620px;
+        height: 650px; */
+        /*background-color: blueviolet;*/
+        font-family: 'NanumMyeongjo';
+        line-height: 25px;
+      }
+
+      .charity > p:nth-child(1){
+        font-size: 24px;
+        white-space: nowrap;
+        
+      }
+
+      .charity > p:nth-child(2){
+        font-size: 16px;
+      }
+
+      .charityImg{
+        width: 48%;
+        /* width: 630px;
+        height: 520px; */
+        /*background-color: brown;*/
+      }
+
+      /* .charityImg > img{
+        width: 600px;
+        height: 500px;
+        margin-top: 30px;
+        float: right;
+      } */
+
+      .charityImg img {
+        width: 100%;
+        height: auto;
+      }
+
+      .main2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid #ccc;
+        margin-top: 50px;
+      }
+      .globalPartner{
+        width: 100%;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+      .globalPartnerImg {
+        width: 100%; 
+        margin-bottom: 20px; 
+      }
+      
+      .globalPartnerImg div img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .globalPartner, .financial, .candle{
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+
+      .globalPartner > p, .financial > p, .candle > p{
+        /* width: 400px;
+        height: 156px; */
+        width: 100%;
+        /* margin-right: 30px; */
+        line-height: 25px;
+        margin-bottom: 20px;
+      }
+      .globalPartner > p{
+        margin-left: 20px;
+      }
+      .globalPartner > p:nth-child(1), 
+      .financial > p:nth-child(1),
+      .candle > p:nth-child(1){
+        font-family: 'NanumMyeongjo';
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .globalPartner > p:nth-child(2), p:nth-child(3), 
+      .financial > p:nth-child(2), p:nth-child(3),
+      .candle > p:nth-child(2), p:nth-child(3){
+        font-size: 14px;
+      }
+     
+      .globalPartnerImg , .candleImg{
+        /* width: 1250px;
+        height: 550px; */
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .globalPartnerImg > div, .candleImg > div{
+        /* width: 400px;
+        height: 535px; */
+        width: 100%;
+      }
+
+      .globalPartnerImg > div > img, .candleImg > div > img{
+        /* width: 400px;
+        height: 535px; */
+        width: 100%;
+        height: auto;
+      }
+
+      .unicef{
+        width: 100%;
+        height: auto;
+        /* width: 759px;
+        height: 120px; */
+        margin: 50px auto;
+        /* margin-top: 50px; */
+        font-size: 32px;
+        font-family: 'NanumMyeongjo';
+        text-align: center;
+        line-height: 50px;
+      }
+
+      .main3{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* width: 1250px;
+        height: 1100px;*/
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+      }
+      .financial {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        /* text-align: left; */
+        margin-right: 30px;
+      }
+     
+      .financial > p {
+       width: 48%;
+        text-align: left;
+        margin-right: 20px;
+
+      }
+      .financialImg {
+        width: 95%;
+        margin-top: 30px;
+        margin-left: 50px;
+      }
+      .financialImg img {
+        width: 100%;
+        height: auto;
+      }
+      
+      /* .financialImg > img{
+        width: 1250px;
+        height: 700px;
+        margin-top: 50px;
+      } */
+
+      .main4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+        /* border-bottom: 1px solid #ccc; */
+        /* width: 1250px;
+        height: 1000px; */
+      }
+      .candle{
+        width: 100%;
+        text-align: left;
+        margin-top: 20px;
+        font-size: 16px;
+        
+      }
+      .candle > p:nth-child(2){
+        margin-right: 25px;
+      }
+      .candleImg{
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .candleImg div img {
+        width: 100%;
+        height: auto;
+      }
+
+      /* 이미지 간격조정 */
+      .globalPartnerImg > div,
+      .candleImg > div {
+        width: 48%; /* 두 이미지가 나란히 배치되도록 설정 */
+        margin-right: 20px; /* 이미지 간에 간격 추가 */
+      }
+      
+      .globalPartnerImg > div:last-child,
+      .candleImg > div:last-child {
+        margin-right: 0; /* 마지막 이미지에는 오른쪽 여백을 제거 */
+      }
+
+
+
+
+      /* 온라인서비스 */
+      #service{
+        margin-top: 20px;
+        width: 100%;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+      }
+      .serviceItem{
+        width: 100%;
+        height: 220px;
+        position: relative;
+      }
+      .serviceItem::after{
+        content: "";
+        position: absolute;
+        top: 10%;
+        right: 0;
+        height: 50%;
+        width: 1px;
+        background-color: #ccc;
+      }
+      .serviceItem:last-child::after{
+        content: none;
+      }
+      .text{
+        text-align: center;
+      }
+      .text p{
+        padding: 20px;
+        font-size: 2rem;
+      }
+      .text p:nth-of-type(2){
+        font-size: 1rem;
+      }
+
+
+      /* 반응형 */
+/* 기본 데스크탑 스타일 (1200px 이상) */
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/* 태블릿 (800px 이하) */
+@media screen and (max-width: 800px) {
+  .main1, .main2, .main4 {
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center;
+  }
+
+  .charity, .globalPartner, .candle {
+    width: 100%; /* 텍스트가 전체 너비를 차지 */
+    margin-bottom: 20px;
+  }
+  
+
+  .financial{
+    flex-direction: column;
+    padding-left: 40px;
+    width: 100%;
+  }
+
+
+  .globalPartnerImg, .candleImg {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* 이미지가 세로로 배치되도록 설정 */
+    align-items: center;
+  }
+
+  .globalPartnerImg div, 
+  .candleImg div {
+    width: 100%; /* 각 이미지가 100% 너비로 */
+    margin-bottom: 20px; /* 이미지 간 간격 */
+  }
+
+  .charityImg img, 
+  .globalPartnerImg div img, 
+  .candleImg div img {
+    width: 100%;
+    height: auto; /* 이미지 비율 유지 */
+  }
+
+  .unicef {
+    font-size: 1.5rem; /* 텍스트 크기 조정 */
+  }
+  .candle{
+    flex-direction: column;
+    width: 95%;
+  }
+  .globalPartner{
+    flex-direction: column;
+  }
+ 
+}
+
+/* 모바일 (480px 이하) */
+@media screen and (max-width: 480px) {
+  .main1, .main2, .main4 {
+    flex-direction: column;
+    align-items: center;
+  }
+  body{
+    overflow-x: auto;
+  }
+  .globalPartnerImg, .candleImg {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* 이미지가 한 개씩 세로로 배치되도록 설정 */
+    align-items: center;
+  }
+
+  .globalPartnerImg div, 
+  .candleImg div {
+    width: 100%; /* 각 이미지가 화면 너비를 차지 */
+    margin-bottom: 20px;
+  }
+
+  .charityImg img, 
+  .globalPartnerImg div img, 
+  .candleImg div img {
+    width: 100%;
+    height: auto;
+  }
+
+  .unicef {
+    font-size: 1.2rem; /* 텍스트 크기 조정 */
+  }
+}
+
+/* 전체적으로 가로 스크롤 방지 */
+body {
+  overflow-x: hidden;
+}

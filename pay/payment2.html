@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment2</title>
+    <link rel="stylesheet" href="CSS/payment2.css">
+    <link rel="stylesheet" href="CSS/paymentStep.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="js/payment2.js"></script>
+    <script src="../js/hF.js"></script>
+    <style>
+      aside > article{
+        line-height: 20px;
+      }
+
+      h4, h3{
+        font-size: 14px;
+        font-weight: bold;
+      }
+    
+      h5{
+        font-size: 12px;
+      }
+    
+      aside > article:nth-of-type(3) > h5{
+        text-decoration: underline;
+        font-weight: 100;
+      }
+    
+      #inputCoupon{
+        font-size: 14px;
+        font-weight: 100;
+      }
+    </style>
+</head>
+<body>
+    
+        <logo>
+            <a href="../index.html"><img src="../imgs/조말론로고.svg"></a>  <!-- 상위 로고 -->
+        </logo>
+
+        <div class="stepContainer">     <!-- 단계 그림 -->
+          <div class="stepActive">
+            <div class="circle"></div>
+            <div class="label">주문서 작성</div>
+          </div>
+  
+          <div class="stepActive">
+            <div class="circle"></div>
+            <div class="label">주문 검토</div>
+          </div>
+  
+          <div class="step">
+            <div class="circle"></div>
+            <div class="label">결제</div>
+          </div>
+  
+          <div class="step">
+            <div class="circle"></div>
+            <div class="label">주문 최종 확인</div>
+          </div>
+        </div>
+    <wrapper>
+      <div>
+        <form>
+            <p><font size="2">결제하기 단계로 이동하기 전에 아래 고객님의 주문사항을 확인해주세요.</font></p></br>
+            <div class="credit">
+                </br><h4>결제방법</h4></br>
+                <div class="creditLogo">
+                  <input type="radio" class="pay" name="payment" value="cc"> <p>신용카드</p>
+                </div>
+
+                <div class="creditLogo">
+                  <input type="radio" class="pay" name="payment" value="mt"> <p>무통장 입금</p> 
+                </div>
+
+                <div class="creditLogo">
+                  <input type="radio" class="pay" name="payment" value="kko"> <img src="../imgs/kakaoPay.svg"> 
+                </div>
+
+                <div class="creditLogo">
+                  <input type="radio" class="pay" name="payment" value="pco"> <img src="../imgs/payco.svg"> 
+                </div>
+
+                <div class="creditLogo">
+                  <input type="radio" class="pay" name="payment" value="np"> <img src="../imgs/naverPay.svg"> 
+                </div>
+            </div>
+        
+            <div class="delInfo">
+            </br><h4>배송지 정보</h4></br>
+                <p><font size="2">김수훈</br>
+                    12285</br>
+                    경기도 남양주시 다산중앙로146번길 7</br>
+                    (다산동, 다산롯데캐슬)</br>
+                    2205동 1702호</br>
+                    휴대전화 번호 010-5153-7365</br></font></p>
+                    <a href="payment1.html" class="edit">수정</a>
+            </div>
+        
+            <div class="delOffer">
+            </br><h4>배송요청사항</h4></br>
+                <p><font size="2">요청사항이 없습니다.</font></p>
+                <a href="payment1.html" class="edit">수정</a>
+            </div>
+        
+            <div class="giftWrap">
+            </br><h4>선물 포장</h4></br>
+                <p><font size="2">이 주문은 선물포장 주문 건입니다.</font></p>
+                <a href="payment1.html" class="edit">수정</a>
+            </div>
+
+          
+            <div class="ProductHead">
+                <div class="productImg">제품</div>
+                <div class="info"></div>
+                <div class="price">가격</div>
+                <div class="qty">수량</div>
+                <div class="total">총 합계</div>
+            </div>
+
+            <div class="prdSection">
+              <div class="productImg"><img src="../imgs/wishPerfume1.avif"></div>
+                <div class="info"><p>블랙베리 앤 베이 코롱</p></div>
+                <div class="price">₩235,000</div>
+                <div class="qty">
+                  <div class="productQty">1</div>
+                </div>
+              <div class="total">₩235,000</div>
+            </div>
+
+            <div class="prdSection">
+              <div class="productImg"><img src="../imgs/wishPerfume2.avif"></div>
+                <div class="info">잉글리쉬 페어 앤 프리지아</div>
+                <div class="price">₩235,000</div>
+                <div class="qty">
+                <div class="productQty">1</div>
+              </div>
+              <div class="total">₩235,000</div>
+            </div>
+    
+            <div class="subTotal">
+              <div class="allTotal">합계</br><div>₩470,000</div></div>
+            </div>
+
+                <div class="buttonSection">
+                    <button class="payButton">결제하기</button>
+                </div>
+            </form>
+
+            <aside>
+                <article>
+                    <h4>고객관리지원팀</h4></br>
+                    <p>
+                        주문하신 제품의 배송 현황은 마이페이지의 ‘주문 내역’에서 확인해 주시기 바랍니다.
+                        추석 연휴 배송 물량 증가로 평소보다 배송이 지연될 수 있습니다. 9월 12일 이후의 주문 건부터는 9월 19일(목)부터 순차적으로 배송되는 점 양해 부탁 드립니다.
+                        그 외 문의 사항은 ‘고객 관리 지원팀’ 탭에 ‘이메일 문의’로 문의 내용 남겨 주시면 연휴 이후 순차적으로 답변 드리겠습니다.
+                        감사합니다.</br></br>
+                        문의 사항이 있으시거나 고객관리지원팀과 상담을 원하실 경우 다음 링크 <a href="mailto:consumercare-kr@jomalone.com">consumercare-kr@jomalone.com</a>를 눌러 이메일 문의 서비스로 보내주시면 응대를 도와드리겠습니다.
+                        도움이 필요하시면 고객관리지원팀으로 문의 바랍니다. 1644-3753
+                        라이브 챗 또는 이메일 문의 서비스를 이용하시면 보다 신속하게 응대를 도와드리겠습니다.
+                        감사합니다.
+                    </p>
+                </article>
+        
+                <article>
+                    <h3>주문 요약</h3></br>
+                    <p>장바구니에 담겨진 수량</p></br>
+                    <div class="asideOrder">
+        
+                        <div>
+                            <div>합계</div>
+                            <div class="asideTotal">₩470,000</div>
+                        </div>
+        
+                        <div>
+                            <div>선물 포장비</div>
+                            <div class="extraPay">₩0</div>
+                        </div>
+                        
+                        <div>
+                            <div>배송비</div>
+                            <div class="extraPay">₩0</div>
+                        </div>
+                    <div class="asideTotalSec">
+                        <div>총 합계</div>
+                        <div class="asideTotal">₩470,000</div>
+                    </div>
+                </article>
+        
+                <article>
+                    <h4>추가 정보<h4></br>
+                    <h5><a href="#" id="modalBtn1">배송 정보</a><h5></br>
+                    <h5><a href="#" id="modalBtn2">반품 및 교환 정책</a><h5></br>
+                    <h5><a href="#" id="modalBtn3">구매 가능 수량 안내</a><h5></br>
+                </article>
+            </aside>
+          </div>
+    </wrapper>
+
+    <footer> <!-- 푸터 -->
+      <div class="footerSite">
+        <div>
+          <div class="tt">
+            <span>고객 서비스</span>
+            <div class="footerIcons">
+              <img class="down" src="../imgs/downIcon.svg" alt="">
+              <img class="up" src="../imgs/upIcon.svg" alt="">
+            </div>
+          </div>
+          <a href="../story/customerSerivce/01_faq.html">자주 묻는 질문</a>
+          <a href="../story/customerSerivce/02_csTeam.html">고객관리지원팀</a>
+          <a href="../story/customerSerivce/03_MyProfile.html">나의 프로필</a>
+          <a href="../story/customerSerivce/04_myOrder.html">나의 오더</a>
+          <a href="../story/stocustomerSerivce/04_myOrder.html">주문 조회</a>
+          <a href="../story/customerSerivce/06_return_exchange.html">교환 및 환불 규정</a>
+          <a href="../story/customerSerivce/07_onlineShopping.html">온라인 부티크 쇼핑</a>
+        </div>
+        <div>
+          <div>
+            <div class="tt">
+              <span>살펴보기</span>
+              <div class="footerIcons">
+                <img class="down" src="../imgs/downIcon.svg" alt="">
+                <img class="up" src="../imgs/upIcon.svg" alt="">
+              </div>
+            </div>
+            <a href="../story/londonHouse/01_ourvalues.html">브랜드 소개</a>
+            <a href="../story/product.html">제품 전체</a>
+            <a href="../story/product.html">신제품</a>
+            <a href="../main/map.html">매장 안내</a>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div class="tt">
+              <span>소셜 네트워크</span>
+              <div class="footerIcons">
+                <img class="down" src="../imgs/downIcon.svg" alt="">
+                <img class="up" src="../imgs/upIcon.svg" alt="">
+              </div>
+            </div>
+            <a href="https://www.instagram.com/jomalonelondon">인스타그램</a>
+            <a href="https://www.facebook.com/JoMaloneLondon">페이스북</a>
+            <a href="https://www.youtube.com/channel/UCWMSJ5L5Zvkr9JfflU4JMUA">유튜브</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          <p>© Jo Malone London 2021</p>
+          <img src="../imgs/main_trustmark.webp" alt="">
+          <div>
+            <a href="../story/customerSerivce/08_termsConditons.html">이용약관</a>
+            <a href="../story/customerSerivce/08_termsConditons.html">개인정보 처리방침</a>
+          </div>
+        </div>
+        <div>
+          <p>
+            이엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine), 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232<br>
+            사업자등록번호: 211-81-71889<br>
+            통신판매업신고번호: 강남-15737호<br>
+            고객관리지원팀: <a href="tel:1644-3753">1644-3753</a><br>
+            호스팅서비스 사업자: (주)엘지유플러스
+          </p>
+        </div>
+      </div>
+    </footer>
+
+      <!-- 모달 1 -->
+  <div id="myModal1" class="modal">
+    <div class="modal-content">
+      <span class="closed" id="closedBtn1">&times;</span>
+      <h3>배송 정보</h3></br>
+      <h4>배송비 안내</h4>
+        <p>전 구매 무료배송 서비스 (제주도 및 도서 산간 지역 포함)</p></br>
+      <h4>배송 기간</h4>
+        <p>주문하신 제품은 결제 완료 시점 익일부터 영업일 기준 1-3일 이내 출고 됩니다. 
+          제품은 우체국 택배(T.1588-1300)를 통해 발송되며, 운송장 번호는 출고 된 이후 
+          마이 페이지에서 확인 가능합니다. (단, 도서 지역 및 섬 지역은 지연될 수 있습니다.)</p></br>
+      <h4>배송 규정 및 제한 사항</h4>
+        <p>명절 및 연말이나 주문 폭주 시 배송 지연될 수 있는 점 양해 부탁 드립니다. 
+          공휴일 및 기타 휴무일에는 배송이 이루어지지 않으며, 배송 소요 기간 에서 제외됩니다. 
+          해외 지역은 배송이 불가능합니다.</p></br>
+        <p>군부대 배송 관련 안내: 군부대 배송의 경우 우체국 택배를 제외한 타 배송사 배송 건은 모두 반송처리 되는 관계로 
+          우체국 택배로 연계되어 배송처리 되며, 이때 발생되는 추가 배송비는 조 말론 런던 온라인 부티크 본사에서 지원합니다. 
+          단, 군부대로 배송하시는 경우, 반드시 배송 요청 사항 입력란에 "군부대 배송 건"이라고 작성해주시기 바랍니다. 
+          군부대 배송 건의 경우, 배송 기간이 영업일 기준 최소 5~7 일까지 소요될 수 있으므로, 이점 양해 부탁 드립니다. 
+          (단, 도서 산간 및 섬마을은 제외 됩니다.)
+        </p>
+  </div>
+</div>
+
+    <!-- 모달 2 -->
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <span class="closed" id="closedBtn2">&times;</span>
+        <h3>반품 및 교환</h3></br>
+          <p>조 말론 런던 온라인 부티크에서 구매하신 제품은 해당 온라인 사이트를 통해서만 반품이 가능합니다. 
+          제품의 교환을 원하시면, 반품 후 재구매해 주시기 바랍니다. 
+          온라인 부티크에서 구매하신 상품은 재판매가 가능한 상태, 즉 사용하시지 않은 상품에 한하여 반품이 가능하며 
+          제품을 반품하실 때에는 배송 받으셨던 포장 박스에 제품을 넣어 보내 주셔야 합니다. 
+          고객님의 변심에 의한 반품의 경우 제품 수령 7일 이내에 반품 신청이 가능하며, 
+          제공받은 상품이 주문 상품의 내용과 다르거나 계약내용과 다르게 이행된 경우에는 그 사실을 안 날 또는 알 수 
+          있었던 날부터 30일 내에 반품 신청이 가능합니다.</p></br>
+          <p>단, 아래와 같은 경우는 예외로 인정하여 반품이 불가합니다.</p></br>
+        <ul>
+          <li>＊ 단순 변심으로 인한 반품/교환 요청이 상품 등을 실제 받으신 날로부터 7일을 경과한 경우</li>
+          <li>＊ 고객님의 책임 있는 사유로 재화 등이 멸실 또는 훼손된 경우</li>
+          <li>＊ 포장을 개봉하였거나 포장이 훼손되어 상품가치가 현저히 상실된 경우</li>
+          <li>＊ 고객의 사용 또는 일부 소비에 의하여 제품의 가치가 감소한 경우</li>
+          <li>＊ 시간이 경과되어 재판매가 곤란할 정도로 >제품의 가치가 상실된 경우</li>
+          <li>＊ 상품 인수 시 포함되어 있던 사은품 및 샘플 등이 누락 된 경우 물품 하자에 의한 반송을 제외하고 
+            고객변심에 의한 반품인 경우 반송비는 고객님 부담입니다. 
+            반품 신청 시 상기 반품이 불가한 경우에 해당 될 경우, 처리되지 않고 고객님께 다시 반송 처리 되오니 
+            이점 양지하여 주시기 바랍니다.
+            부분적으로 반품을 원하시는 경우, 고객관리지원팀에서 자세한 안내를 받으실 수 있습니다. 
+            단, 국민, BC, 삼성, 외환, 신한카드 이외의 카드 혹은 계열사 카드로 결제하시는 경우에는 
+            카드 부분취소가 불가하므로, 반드시 주문 전 확인 부탁 드립니다.</li>
+          </ul></br>
+          <p>
+            반품 접수가 되면 지정된 택배사에서 상품회수를 위해 고객님께 방문하오니 기다려주시기 바랍니다. 
+            고객님의 변심에 의한 반품의 경우에는 왕 복 배송비 6,000원(무료배송 주문건 동일)을 택배 기사님께 
+            전달하여 주시기 바랍니다. 
+            고객님께서 임의로 타 배송업체를 통하여 제품을 배송하실 경우 제품 추적이 어려워 반품 확인이 지연되거나
+            환불이 되지 않을 수 있는 점 유의하여 주시기 바랍니다. 
+            배송 과정의 부주의로 인하여 물품이 훼손된 경우에는, 상자와 상품은 보관하시고, 즉시 고객관리지원팀으로 연락 주시기 바랍니다.
+          </p></br>
+        
+          <p>
+            고객님께서 조 말론 런던 온라인 부티크가 아닌 오프라인 조 말론 런던 부티크(백화점 및 부티크) 
+            또는 백화점 온라인 몰 등에서 제품을 구매하셨다면, 해당 매장 및 판매처의 반품 정책에 따라 주시기 바라며, 
+            조 말론 런던 온라인 부티크에서는 반품이 불가능함을 알려 드립니다. 
+            조 말론 런던 온라인 부티크에서 구매하신 제품에 한해서만 반품처리가 가능합니다.
+          </p></br>
+        
+          <p>
+            조 말론 런던 온라인 부티크에서 구매하신 제품의 교환이나 환불을 원하시면, 아래 지시를 따라 주시기 바랍니다.
+          </p></br>
+        
+          <p>
+            전화 또는 온라인 상으로 청약 철회 신청 후 청약 철회서를 작성하여 제품과 함께 상자 안에 첨부한 후 아래 '반송 주소'로 발송해 주시기 바랍니다. 
+            전화 신청 : 1644-3753
+          </p></br>
+        
+          <p>온라인 신청 : 내 정보 및 주문관리 > 주문 전체보기 > 반품클릭</p></br>
+        
+          <p>배송 과정에서 제품이 손상되지 않도록 해당 제품을 주의해서 포장해 주시기 바랍니다.
+            고객님께서 임의로 타 배송업체를 통하여 제품을 배송하기를 원하시는 경우에는 아래의 
+            주소로 보내주세요.
+            판토스 B2C DC 반품주소 : 15357 경기도 안산시 단원구 중앙대로 815 안산우체국 소포실
+          </p></br>
+        
+          <p>
+            반송 제품의 신속한 배송과 고객님의 안전한 정보보호를 위해 반송 시 추적이 가능한 배송업체를 통해 해당 제품을 반송하시기 바랍니다. 
+            제품을 환불하실 때 물품 하자에 의한 반송을 제외하고 고객변심에 의한 반품, 교환의 경우 반송료는 고객님 부담이오니 이 점 양해 부탁 드립니다. 
+            손상된 제품의 경우, 조 말론 런던 온라인 부티크 고객관리지원팀 (1644-3753)으로 신속히 연락 주시기 바랍니다. 
+            부분적으로 반품을 원하시는 경우, 고객관리지원팀에서 자세한 안내를 받으실 수 있습니다. 
+            신용 카드 결제 취소 및 입금하신 금액의 환불 처리는 제품을 반환 받은 날부터 7 일(영업일 기준) 이내에 처리됩니다. 
+            단, 조 말론 런던 공식 온라인 몰에서 구매한 제품만 본 교환 및 환불이 가능합니다. 
+            환불에 관한 문의는 조 말론 런던 고객관리지원팀(1644-3753)으로 전화 주시거나 또는 Contact US로 연락 주시기 바랍니다. 
+            손상된 제품이 도착하면 먼저 배송 과정에서 생길 수 있는 손상을 확인해주세요. 
+            만약 배송에서 제품 손상이 발생하였을 시 즉시 조 말론 런던 고객관리지원팀(1644-3753)으로 연락 주시기 바랍니다.
+          </p>
+      </div>
+  </div>
+
+    <!-- 모달 3 -->
+    <div id="myModal3" class="modal">
+      <div class="modal-content">
+        <span class="closed" id="closedBtn3">&times;</span>
+        <h3>구매 가능 수량 안내</h3></br>
+        <ul>
+          <li>＊ 동일 제품 최대구매 가능 수량은 8개입니다.</li>
+          <li>＊ 최대구매 가능한 총 제품 수량은 14개입니다.</li>
+          <li>＊ ID당 1일 최대 3개의 주문까지 생성 가능합니다.</li>
+        </ul></br>
+        <p><font size="2"><a href="../story/customerSerivce/07_onlineShopping.html">여기</a>를 클릭하시면 최대 구매가능 수량 정책 내용을 확인하실 수 있습니다.</font></p>
+      </div>
+    </div>
+
+    <script>
+      // 모달 & 버튼 변수
+    var modal1 = document.getElementById("myModal1");
+    var modal2 = document.getElementById("myModal2");
+    var modal3 = document.getElementById("myModal3");
+
+    var btn1 = document.getElementById("modalBtn1");
+    var btn2 = document.getElementById("modalBtn2");
+    var btn3 = document.getElementById("modalBtn3");
+    
+    var close1 = document.getElementById("closedBtn1");
+    var close2 = document.getElementById("closedBtn2");
+    var close3 = document.getElementById("closedBtn3");
+    
+
+    // 모달 열기
+    btn1.onclick = function() {
+      modal1.style.display = "block";
+    }
+    btn2.onclick = function() {
+      modal2.style.display = "block";
+    }
+    btn3.onclick = function() {
+      modal3.style.display = "block";
+    }
+    
+    // 모달 닫기
+    close1.onclick = function() {
+      modal1.style.display = "none";
+    }
+    close2.onclick = function() {
+      modal2.style.display = "none";
+    }
+    close3.onclick = function() {
+      modal3.style.display = "none";
+    }
+    </script>
+</body>
+</html>

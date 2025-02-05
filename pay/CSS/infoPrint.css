@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  wrapper{
+      width: 750px;
+      margin: 0 auto;    
+      display: block;
+  }
+
+  logo{
+      width: 200px;
+      height: 60px;
+      display: flex;
+      margin: auto;
+      margin-top: 80px;
+  }
+
+  logo > img{
+      width: 200px;
+      height: 50px;
+  }
+
+  logo > a{
+      width: 200px;
+  }
+
+  h2{
+    width: 160px;
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'NanumMyeongjo';
+    font-weight: 100;
+  }
+
+  .orderNum{
+    border-top: 1px solid #ccc;
+    height: 100px;
+    line-height: 100px;
+  }
+
+  .orderMain{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+  }
+
+  .orderMain > div{
+    margin-bottom: 30px;
+  }
+
+  .credit{
+    border-top: 1px solid #ccc;
+    margin-bottom: 30px;
+  }
+
+  .credit > p{
+    font-size: 14px;
+  }
+
+  .allTotal > p {
+    text-align: right;
+  }
+
+
+  @media screen and (max-width:800px){
+    wrapper{
+      width: 100%;
+      text-align: center;
+    }
+
+    .orderMain{
+      flex-direction: column;
+      margin: auto;
+      width: 90%;
+    }
+
+    .orderNum{
+      width: 90%;
+      margin: auto;
+    }
+
+    .credit{
+      width: 90%;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+
+    .ProductHead{
+    width: 90%;
+    margin: auto;
+    }
+
+    .prdSection{
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  @media screen and (max-width:500px){
+    wrapper{
+      width: 100%;
+      text-align: center;
+    }
+
+    .stepContainer{
+    width: 100%;
+    }
+
+    .orderMain{
+      flex-direction: column;
+    }
+
+    .ProductHead{
+    width: 90%;
+    margin: auto;
+    }
+
+    .prdSection{
+      width: 90%;
+      margin: auto;
+    }
+  }

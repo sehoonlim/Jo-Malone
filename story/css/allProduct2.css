@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer img{
+    box-sizing: unset;
+}
+.pBox{
+    width: 100%;
+    max-width: 1280px;
+    display: block;
+    background-color: #fcf9ee;
+    margin: 0 auto;
+  
+}
+.pHtext{
+    font-family: 'NanumMyeongjo';
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.ptext{
+    font-family: 'NotoSansKR';
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+#bodywahsBox{
+    margin: 0 auto;
+    text-align: center;
+}
+main section{
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+/* 센트필터 */
+#fBox{
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    /* background-color: yellowgreen; */
+}
+#lFilter{
+ display: flex;
+ align-self: center;
+ gap: 10px;
+ margin-left: 45px;
+}
+
+
+#lFilter button:hover{
+    background-color: none;
+}
+#scentOptions {
+    background-color: #fcf9ee; 
+    padding: 10px; 
+    display: none; 
+    position: absolute; 
+    z-index: 10; 
+}
+#scentOptions button {
+    display: block; 
+    margin: 5px 0; 
+    background: none; 
+    border: none; 
+    padding: 5px; 
+}
+
+#scentOptions button:after {
+    background-color: #fff; 
+}
+#lFilter:hover #scentOptions{
+    display: flex; 
+    background-color: #fcf9ee; 
+    padding: 5px; 
+    position: absolute; 
+    z-index: 10; 
+}
+
+
+/* 정렬하기 필터 */
+/* #rFilter{
+    margin-left: 1060px;
+} */
+#lFilter button{
+    margin-right: 15px; 
+    background: none;
+    border: none;
+}
+
+
+
+.productC{
+    display: none;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border: radius 10px;
+    text-align: center;
+    
+}
+#productList {
+    float: left;
+}
+
+
+
+
+/* 상품  */
+
+.bigprdwrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+.prdBox{
+    font-family: 'NotoSansKR';
+    font-size: 14px;
+    width: 25%;
+    height: 550px;
+    margin: 0px 0px 64px;
+    padding: 8px;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.prdBox img{
+
+    width: 275px;
+    height: 275px;
+    /* border: 1px solid #000; */
+    justify-content: center;
+}
+/* .prdBox .ename, .prdBox .kname{
+    overflow: hidden;
+} */
+.ename{
+    padding: 10px;
+}
+.kname{
+    
+}
+.prCa{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+
+}
+.prCa div{
+    
+}
+.price{
+    text-align: center;
+    margin: 0px 5px 0px 0px;
+}
+.capacity{
+    text-align: center;
+}
+.goBasket{
+    border: solid 1px #1c1c1c;
+    color: #1c1c1c;
+    background: none;
+    padding: 14px;
+}
+/* 일시적으로 품절 */
+.noBasket{
+    border: solid 1px #1c1c1c;
+    color: #1c1c1c;
+    background: none;
+    padding: 14px;
+}
+#pageNum{
+    display: flex;
+    justify-content: center;
+}
+.pagenum{
+    /* font-weight: bold; */
+    font-size: 15px;
+    /* border: solid 3px #1c1c1c; */
+    color: #1c1c1c;
+    background: none;
+    padding: 5px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 10px;
+}
+.prName > p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  
+/*반응형 */
+.prdBox img {
+    width: 100%; /* 부모 컨테이너의 너비에 맞춰서 조정 */
+    height: auto; /* 비율을 유지하며 높이 자동 조정 */
+    display: block; /* 이미지 주위에 여백이 생기는 것을 방지 */
+}
+
+
+@media (min-width: 801px) {
+    body{
+        overflow-x: hidden;
+    }
+    .prdBox {
+        width: calc(25% - 20px); /* 데스크탑에서 4개의 아이템 */
+        margin: 10px;
+    }
+}
+
+
+
+/* 화면 너비가 800px 이하일 때의 미디어 쿼리 */
+@media (max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    }
+    .prdBox {
+        width: calc(50% - 20px); /* 한 줄에 4개의 아이템 유지 */
+        margin: 5px;
+    }
+}
+
+  /* 화면 너비가 480px 이하일 때의 미디어 쿼리 */
+@media (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+    .prdBox {
+        width: 95%;
+        /* width: calc(100% - 20px); */
+        flex: 0 0 100%; /* 제품 박스가 전체 너비를 차지하도록 설정 */
+        display: block;
+        margin-bottom: 20px;
+        height: auto;
+        
+    }
+}
+
+

@@ -1,0 +1,443 @@
+@charset "utf-8";
+
+
+/* 구글폰트 css */
+
+* {
+   font-family: "Noto Sans KR", sans-serif;
+   ;
+}
+
+.nanum-myeongjo-regular {
+   font-family: "Nanum Myeongjo", serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.noto-sans-kr {
+   font-family: "Noto Sans KR", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 100;
+   font-style: normal;
+}
+
+
+
+
+/*  */
+
+h2 {
+   width: 515px;
+   height: 35px;
+   font-size: 24px;
+   padding-bottom: 24px;
+   margin-bottom: 24px;
+   border-bottom: 1px solid black;
+}
+
+main>div:nth-child(1) {
+   width: 100%;
+   height: 70px;
+}
+
+#p1 {
+   width: 100%;
+}
+
+h3 {
+   margin: 20px 0px;
+}
+
+fieldset {
+
+   margin: 10px;
+}
+
+#inforInput a {
+   margin-left: 20px;
+   font-size: 15px;
+}
+
+#inforInput input {
+   width: 50%;
+   height: 44px;
+}
+
+.selectN {
+   width: 130px;
+   height: 30px;
+   padding: 10px 15px;
+   margin: 8px;
+
+}
+
+.selectN1 {
+   width: 130px;
+   height: 48px;
+   padding: 10px 15px;
+   margin: 8px;
+   margin-left: 0px;
+   appearance: none;
+}
+
+
+#callNum {
+   display: flex;
+   height: 80px;
+}
+
+#callNum div {
+   margin-top: 20px;
+}
+
+
+.callNumInput {
+   width: 100px;
+   height: 25px;
+   padding: 10px 15px;
+   margin: 8px;
+}
+
+#checkNumPlz {
+   width: 170px;
+   height: 45px;
+   background-color: black;
+   color: white;
+   padding: 0px 32px;
+   font-size: 14px;
+   margin: 10px 0px;
+   margin-left: 20px;
+}
+
+
+
+#checkNumInput {
+   margin-bottom: 30px;
+   margin-left: 8px;
+}
+
+#checkNumInput input {
+   width: 100px;
+   height: 25px;
+   padding: 10px 15px;
+   margin-top: 10px;
+   margin-right: 5px;
+
+}
+
+#checkNumInput button {
+   width: 135px;
+   height: 45px;
+   padding: 10px 15px;
+   background-color: black;
+   color: white;
+   margin-left: 10px;
+}
+
+#newsInf div:nth-child(1) {
+   font-size: 12px;
+   font-weight: bold;
+   margin: 10px 0px;
+}
+
+#newsInf div:nth-child(2) {
+   font-size: 15px;
+   margin: 10px 0px;
+}
+
+#newsCheck {
+   width: 100%;
+   height: 240px;
+   border: none;
+}
+
+.checkName {
+   margin: 20px 0px;
+}
+
+.checkName div {
+   margin: 10px 0px;
+}
+
+#birth>div:nth-child(1) {
+   font-weight: bold;
+   font-size: 15px;
+   margin: 10px 0px;
+   margin-top: 20px;
+}
+
+
+
+#lastCheck {
+   width: 95px;
+   height: 50px;
+   padding: 0px 32px;
+   background-color: black;
+   color: white;
+}
+
+#connect {
+   width: 820px;
+   height: 420px;
+   font-size: 15px;
+
+
+
+}
+
+#connect>div:nth-child(1) {
+   width: 820px;
+   height: 30px;
+   padding: 25px 0px;
+   font-size: 25px;
+   font-family: "Nanum Myeongjo", serif;
+   border-bottom: 1px solid #ccc;
+
+}
+
+#connect>div:nth-child(2) {
+   margin-top: 20px;
+
+}
+
+.social {
+   width: 100%;
+   height: 50px;
+   margin: 10px 0px;
+   padding: 20px 0px;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid #ccc;
+   line-height: 50px;
+}
+
+.social>div:nth-child(1) {
+   display: flex;
+   line-height: 50px;
+}
+
+.social>div:nth-child(2) {
+   width: 20%;
+}
+
+.social p {
+   margin-left: 10px;
+   line-height: 50px;
+}
+
+
+
+.social img {
+   width: 50px;
+   height: 50px;
+
+}
+
+h2,
+h3,
+strong {
+   font-family: "Nanum Myeongjo", serif;
+}
+
+fieldset {
+   border: none;
+}
+
+
+/* 모달 */
+
+.modal {
+   position: absolute;
+   position: fixed;
+   display: none;
+
+   justify-content: center;
+   top: 0;
+   left: 0;
+
+   width: 100%;
+   height: 2000px;
+
+
+
+   background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/*  비밀번호 재설정 */
+
+.modalBody {
+   width: 90%;
+   margin: 0 auto;
+   height: 600px;
+   padding: 20px;
+   border: 1px solid black;
+   background-color: #FCF9EE;
+}
+
+.modalBody>div:nth-child(1) {
+   margin: 10px 0px;
+   display: flex;
+   justify-content: space-between;
+}
+
+#deleteModal,
+.btn-open-modal {
+   all: unset;
+   font-size: 14px;
+   padding-left: 10px;
+}
+
+#pwinput input {
+   width: 90%;
+   height: 20px;
+   padding: 15px 10px;
+   border: 1px solid #ccc;
+   margin: 10px 0px;
+}
+
+.modalBody>div:nth-child(4) {
+   width: 410px;
+   height: 180px;
+   color: red;
+   font-size: 13px;
+
+}
+
+.modalBody>div:nth-child(4) div {
+   width: 200px;
+   height: 50px;
+
+   float: left;
+
+   /* float는 flex처럼 부모에 주는게 아니라 각 요소에 주도록 한다. */
+   /* 추가로 flex보다 float가 더 유용한 순간도 있어보인다. */
+}
+
+#mainBtn {
+   width: 410px;
+   height: 40px;
+   margin-top: 20px;
+}
+
+#mainBtn button:nth-child(1) {
+   width: 190px;
+   height: 40px;
+
+   margin-right: 10px;
+   background-color: black;
+   color: white;
+}
+
+#mainBtn button:nth-child(2) {
+   width: 190px;
+   height: 40px;
+   background-color: white;
+   color: black;
+   border: 1px solid black;
+}
+
+#bar {
+   width: 410px;
+   height: 20px;
+   border: 1px solid black;
+   margin: 20px 0px;
+}
+
+/* 유효성 */
+
+.checkGreen {
+   color: greenyellow;
+}
+
+/* 게이지바 */
+
+.progress-bar {
+   width: 100%;
+   height: 15px;
+   background-color: #dedede;
+   font-weight: 600;
+   font-size: .8rem;
+   border-radius: 15px;
+   /* 모서리 둥글게 */
+}
+
+/* 나타내고자 하는 퍼센트 값을 넣으면 됩니다. */
+.progress {
+   width: 0%;
+   height: 15px;
+   padding: 0;
+   text-align: center;
+   background-color: #4F98FF;
+   color: #111;
+   margin-bottom: 15px;
+   transition: width 0.5s ease;
+   /* 애니메이션 효과 */
+   border-radius: 15px;
+   /* 모서리 둥글게 */
+}
+
+.progress1 {
+   width: 22%;
+   height: 15px;
+   padding: 0;
+   text-align: center;
+   background-color: red;
+   color: #111;
+   margin-bottom: 15px;
+   transition: width 0.5s ease;
+   /* 애니메이션 효과 */
+   border-radius: 15px;
+   /* 모서리 둥글게 */
+}
+
+.progress2 {
+   width: 48%;
+   height: 15px;
+   padding: 0;
+   text-align: center;
+   background-color: orange;
+   color: #111;
+   margin-bottom: 15px;
+   transition: width 0.5s ease;
+   /* 애니메이션 효과 */
+   border-radius: 15px;
+   /* 모서리 둥글게 */
+}
+
+.progress3 {
+   width: 72%;
+   height: 15px;
+   padding: 0;
+   text-align: center;
+   background-color: yellow;
+   color: #111;
+   margin-bottom: 15px;
+   transition: width 0.5s ease;
+   /* 애니메이션 효과 */
+   border-radius: 15px;
+   /* 모서리 둥글게 */
+}
+
+.progress4 {
+   width: 100%;
+   height: 15px;
+   padding: 0;
+   text-align: center;
+   background-color: green;
+   color: #111;
+   margin-bottom: 15px;
+   transition: width 0.5s ease;
+   /* 애니메이션 효과 */
+   border-radius: 15px;
+   /* 모서리 둥글게 */
+}
+
+#progress-bar-strong {
+   display: flex;
+}
+
+#strong {
+   font-size: 13px;
+   margin-left: 10px;
+}

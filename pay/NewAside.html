@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewAside</title>
+    <style>
+        aside{
+            width: 100%;
+            height: 1200px;
+            margin-left: 50px;
+            float: left;
+            /*background-color: #faf;*/
+            font-family: 'NotoSansKR';
+        }
+
+        aside > article{
+            width: 80%;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+        }
+
+        #coupon{
+            width: 180px;
+            height: 40px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        #inputCoupon{
+            width: 100px;
+            height: 44px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            color: #000;
+        }
+
+        .asideOrder > div{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        
+        .asideTotal, .extraPay{
+            margin-left: 100px;
+            margin-bottom: 30px;
+        }
+
+        .asideTotalSec{
+            margin-top: 30px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <article>
+            <h4>고객관리지원팀</h4>
+            <p>
+                주문하신 제품의 배송 현황은 마이페이지의 ‘주문 내역’에서 확인해 주시기 바랍니다.
+                추석 연휴 배송 물량 증가로 평소보다 배송이 지연될 수 있습니다. 9월 12일 이후의 주문 건부터는 9월 19일(목)부터 순차적으로 배송되는 점 양해 부탁 드립니다.
+                그 외 문의 사항은 ‘고객 관리 지원팀’ 탭에 ‘이메일 문의’로 문의 내용 남겨 주시면 연휴 이후 순차적으로 답변 드리겠습니다.
+                감사합니다.</br></br>
+                문의 사항이 있으시거나 고객관리지원팀과 상담을 원하실 경우 다음 링크 <a href="mailto:consumercare-kr@jomalone.com">consumercare-kr@jomalone.com</a>를 눌러 이메일 문의 서비스로 보내주시면 응대를 도와드리겠습니다.
+                도움이 필요하시면 고객관리지원팀으로 문의 바랍니다. 1644-3753
+                라이브 챗 또는 이메일 문의 서비스를 이용하시면 보다 신속하게 응대를 도와드리겠습니다.
+                감사합니다.
+            </p>
+        </article>
+
+        <article>
+            <h3>주문 요약</h3>
+            <p>장바구니에 담겨진 수량</p></br>
+            <div class="asideOrder">
+
+                <div>
+                    <div>합계</div>
+                    <div class="asideTotal">₩110,000</div>
+                </div>
+
+                <div>
+                    <div>선물 포장비</div>
+                    <div class="extraPay">₩0</div>
+                </div>
+                
+                <div>
+                    <div>배송비</div>
+                    <div class="extraPay">₩0</div>
+                </div>
+            <div class="asideTotalSec">
+                <div>총 합계</div>
+                <div class="asideTotal">₩110,000</div>
+            </div>
+        </article>
+
+        <article>
+            <h4>쿠폰 코드<h4>
+            <h5>사용 가능한 쿠폰 코드를 입력하세요.<h5></br>
+            <input type="text" id="coupon">
+            <button id="inputCoupon">입력</button></br>
+            <h5>한 주문당 코드 1회 사용 가능<h5>
+        </article>
+
+        <article>
+            <h4>추가 정보<h4>
+            <h5><a href="../story/customerSerivce/05_delivery.html">배송 정보</a><h5>
+            <h5><a href="../story/customerSerivce/06_return_exchange.html">반품 및 교환 정책</a><h5>
+            <h5><a href="../story/customerSerivce/07_onlineShopping.html">구매 가능 수량 안내</a><h5>
+        </article>
+    </aside>
+    
+</body>
+</html>

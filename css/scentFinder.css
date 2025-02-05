@@ -1,0 +1,248 @@
+@import url(reset.css);
+@import url(topDir.css);
+@import url(onlineServiceCon.css);
+@import url(hF.css);
+*{
+  margin: 0px auto;
+  padding: 0px;
+}
+html,
+body{
+  background-color: #fcf9ee;
+}
+main{
+  width: 100%;
+  height: 100%;
+}
+main > div:first-of-type{
+  width: 470px;
+  height: 175px;
+  margin: 0px auto;
+  text-align: center;
+}
+main h2{
+  font-family: 'NanumMyeongjo';
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+main > div:first-of-type p{
+  font-size: 14px;
+  line-height: 20px;
+}
+main button{
+  font-size: 14px;
+  display: block;
+  width: 90px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  background-color: #1c1c1c;
+  color: #fff;
+  margin: 20px auto;
+}
+main img{
+  max-width: 100%;
+  margin: 50px 0px;
+}
+main > div:last-of-type{
+  width: 630px;
+  height: 400px;
+  margin: 40px auto;
+  text-align: center;
+}
+main h1{
+  font-family: 'NanumMyeongjo';
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 36px;
+  height: 200px;
+}
+main > div:last-of-type p{
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 0px;
+}
+.modalBg{
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+#modal{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 370px;
+  height: 545px;
+  background-color: #fcf9ee;
+  z-index: 101;
+}
+#page1{
+  text-align: center;
+  font-family: 'NanumMyeongjo';
+}
+#page1 h2,
+#page6 h2{
+  font-size: 24px;
+  margin: 30px 0px;
+}
+.closeIcon{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#page1 img:last-of-type{
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+#page1 p{
+  width: 300px;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0px auto;
+}
+#page6 p{
+  width: 370px;
+  font-size: 14px;
+  line-height: 18px;
+}
+#page1 button,
+#page6 a:first-of-type{
+  display: block;
+  width: 330px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #1c1c1c;
+  color: #fff;
+  margin: 20px auto;
+  font-family: 'NotoSansKR';
+  font-size: 12px;
+}
+.modalItem{
+  display: none;
+}
+.modalItem.active{
+  display: block;
+}
+.prevIcon{
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+.modalItem > div:first-of-type{
+  width: 370px;
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.pageNum{
+  width: 370px;
+  height: 30px;
+  margin: 10px 0px;
+  padding-right: 20px;
+  text-align: right;
+  box-sizing: border-box;
+}
+.contents{
+  width: 370px;
+  height: 200px;
+}
+.title{
+  width: 50%;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 20px;
+}
+.content{
+  width: 200px;
+  height: 120px;
+  margin-top: 20px;
+}
+.content span{
+  display: block;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 200px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.bigTitle{
+  width: 80%;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 20px;
+}
+.big span{
+  display: block;
+  width: 120%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #1c1c1c;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 110px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#page6{
+  text-align: center;
+}
+#page6 img:last-of-type{
+  width: 370px;
+  height: 200px;
+  margin-top: 50px;
+}
+#page6 p{
+  width: 250px;
+  margin: 0px auto;
+}
+#return{
+  text-decoration: underline;
+  font-size: 14px;
+  float: left;
+  margin-left: 20px;
+}
+#return:hover{
+  cursor: pointer;
+}
+.modalItem span:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 반응형 */
+@media screen and (max-width: 800px) {
+  main > div:first-of-type{
+    width: 100%;
+  }
+  main h2{
+    font-size: 1.5rem;
+  }
+  main > div:last-of-type{
+    width: 100%;
+  }
+  main h1{
+    font-size: 1.5rem;
+  }
+  #service{
+    display: none;
+  }
+}

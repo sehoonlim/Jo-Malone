@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basketMenu</title>
+    <style>
+        main{
+            width: 350px;
+            background-color: #FCF9EE;
+            padding: 30px;
+        }
+
+        .basketMenu{
+            width: 330px;
+            border-top: 1px solid #ccc;
+            margin-top: 15px;
+            /*background-color: aqua;*/
+        }
+
+        .basketImg{
+            width: 100px;
+            height: 130px;
+            float: left;
+        }
+
+        .delete > a{
+            margin-left: 290px;
+            margin-bottom: 50px;
+        }
+
+        .totalCnt{
+            width: 330px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            border-top: 1px solid #ccc;
+            margin-top: 30px;
+        }
+
+        .totalPrice{
+            width: 330px;
+            height: 70px;
+            text-align: center;
+            line-height: 70px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .basketPayBT{
+            width: 330px;
+            height: 60px;
+            background-color: #000;
+            color: #fff;
+            font-size: 15px;
+            margin-top: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <p>장바구니</p>
+            <div class="basketMenu">
+                <div class="basketImg">
+                    <img src="">상품이미지
+                </div>
+                <div class="basketStuff">
+                    <div class="basketName">상품이름</div></br>
+                    <div class="basketCnt">수량 : </div>
+                    <div class="basketPrice">가격</div>
+                    <div class="delete"><a href="">삭제</a></div>
+                </div>
+            </div>
+
+            <div class="basketMenu">
+                <div class="basketImg">
+                    <img src="">상품이미지
+                </div>
+                <div class="basketStuff">
+                    <div class="basketName">상품이름</div></br>
+                    <div class="basketCnt">수량 : </div>
+                    <div class="basketPrice">가격</div>
+                </div>
+                <div class="delete"><a href="">삭제</a></div>
+            </div>
+            <div class="totalCnt">전체 수량 :</div>
+            <div class="totalPrice">전체 합계 : </div>
+            <button class="basketPayBT">결제하기</button>
+    </main>
+    
+</body>
+</html>
