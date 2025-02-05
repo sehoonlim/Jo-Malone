@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/hF.css">
+  <link rel="stylesheet" href="./css/Product.css">
+  <link rel="stylesheet" href="../css/review.css">
+  <link rel="stylesheet" href="../css/topDir.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/main_search.js"></script>
+  <script src="../js/review.js"></script>
+  <script src="../js/hF.js"></script>
+  <!-- <script src="js/product.js"></script> -->
+  <title>product</title>
+
+</head>
+
+<body>
+
+
+
+ <!-- 팝업 -->
+ <div class="events">
+  <div class="event">
+    <p>배송 지연안내</p>
+    <a href="customerSerivce/05_delivery.html">자세히 보기</a>
+  </div>
+  <div class="event">
+    <p>첫 구매 시, 레드 히비스커스 코롱 인텐스 9ml를 선물로 드립니다. (쿠폰코드: WELCOME)</p>
+    <a href="customerSerivce/07_onlineShopping.html">더 알아보기</a>
+  </div>
+  <div class="close">
+    <img src="../imgs/close_icon_w.svg" alt="">
+  </div>
+</div>
+<header> <!-- 헤더 -->
+  <div class="wrap">
+    <div>
+      <div class="hamIcon">
+        <img src="../imgs/menuIcon.svg" alt="">
+      </div>
+      <div class="searchIcon"> <!-- 검색 -->
+        <img src="../imgs/searchIcon.svg" alt="">
+        <div id="search">
+          <form>
+            <button type="button" class="searchClose"><img src="../imgs/close_icon.svg" alt=""></button>
+            <input type="text" placeholder="찾으시는 상품을 입력하여 주세요.">
+          </form>
+          <div class="defContent">
+            <p style="font-family: 'NotoSansKR';">도움이 필요하세요?</p>
+            <a href="../story/product.html">히노키 앤 시더우드 코롱 인텐스</a>
+            <a href="../story/product.html">코롱 인텐스</a>
+            <a href="../story/product.html">베스트셀러</a>
+          </div>
+          <div class="activeContent">
+            <h2>추천상품</h2>
+            <div class="items">
+              <a href="../story/product.html">
+                <div class="item">
+                  <img src="../imgs/item1.avif" alt="">
+                  <div class="txt">
+                    <div>블랙베리 앤 베이 코롱</div>
+                    <div>₩112,000</div>
+                  </div>
+                </div>
+              </a>
+              <a href="../story/product.html">
+                <div class="item">
+                  <img src="../imgs/item2.avif" alt="">
+                  <div class="txt">
+                    <div>우드 세이지 앤 씨 솔트 바디 크림</div>
+                    <div>₩45,000</div>
+                  </div>
+                </div>
+              </a>
+              <a href="../story/product.html">
+                <div class="item">
+                  <img src="../imgs/item3.avif" alt="">
+                  <div class="txt">
+                    <div>포피 앤 바알리 바디 앤 핸드 워시</div>
+                    <div>₩105,000</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mapIcon"><a href="../main/map.html"> <!-- 매장 찾기 -->
+          <img src="../imgs/mapIcon.svg" alt="">
+        </a></div>
+    </div>
+    <div class="logo">
+      <a href="../index.html"><img src="../imgs/조말론로고.svg" alt=""></a>
+    </div>
+    <div>
+      <div class="myPageIcon"><a href="../sign/signIn.html"> <!-- 마이페이지 -->
+          <img src="../imgs/myPageIcon.svg" alt="">
+        </a></div>
+      <div class="wishContainer">
+        <div class="wishIcon"><a href="../pay/wishList.html"> <!-- 위시 -->
+            <img src="../imgs/wishIcon.svg" alt="">
+          </a></div>
+        <!-- 관심상품 리스트 호버-->
+        <main class="wishMm">
+          <p>관심상품 리스트</p>
+          <div class="wishMenu">
+            <div class="wishImg">
+              <img src="../imgs/wishPerfume1.avif">
+            </div>
+            <div class="wishName">블랙베리 앤 베이 코롱</br>
+              Blackberry & Bay Cologne</div>
+          </div>
+          <div class="wishCnt">수량 : 1</div>
+          <div class="wishPrice">₩235,000</div></br>
+          <div class="moveBasket">
+            <a href="">장바구니 담기</a></br>
+          </div>
+
+          <div class="wishMenu">
+            <div class="wishImg">
+              <img src="../imgs/wishPerfume2.avif">
+            </div>
+            <div class="wishName">잉글리쉬 페어 앤 프리지아 코롱</br>
+              English Pear & Freesia Cologne Blackberry & Bay Cologne</div>
+          </div>
+          <div class="wishCnt">수량 : 1</div>
+          <div class="wishPrice">₩235,000</div></br>
+          <div class="moveBasket">
+            <a href="">장바구니 담기</a></br>
+          </div>
+          <button class="wishButton">관심상품 리스트 보기</button>
+        </main>
+      </div>
+
+      <div class="basketContainer">
+        <div class="basketIcon"><a href="../pay/basket.html"> <!-- 장바구니 -->
+            <img src="../imgs/basketIcon.svg" alt="">
+          </a></div>
+        <!-- 장바구니 리스트 호버-->
+        <main class="basketMm">
+          <p>장바구니</p>
+          <div class="basketMenu">
+            <div class="basketImg">
+              <img src="../imgs/wishPerfume1.avif">
+            </div>
+            <div class="basketStuff">
+              <div class="basketName">블랙베리 앤 베이 코롱</br>
+                Blackberry & Bay Cologne</div></br>
+              <div class="basketCnt">수량 : 1</div></br>
+              <div class="basketPrice">₩235,000</div>
+              <div class="delete"><a href="#" onclick="this.closest('.basketMenu').remove(); return false;">삭제</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="basketMenu">
+            <div class="basketImg">
+              <img src="../imgs/wishPerfume2.avif">
+            </div>
+            <div class="basketStuff">
+              <div class="basketName">잉글리쉬 페어 앤 프리지아 코롱</br>
+                English Pear & Freesia Cologne Blackberry & Bay Cologne</div></br>
+              <div class="basketCnt">수량 : 1</div></br>
+              <div class="basketPrice">₩235,000</div>
+              <div class="delete"><a href="#" onclick="this.closest('.basketMenu').remove(); return false;">삭제</a>
+              </div>
+            </div>
+          </div>
+          <div class="totalCnt">전체 수량 : [2]</div>
+          <div class="totalPrice">전체 합계 : ₩470,000</div>
+          <button class="basketPayBT">결제하기</button>
+        </main>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="hamBg"></div>
+<div id="hamMenu">
+  <ul class="hMenu">
+    <li>
+      <a href="../story/product.html">브랜드</a>
+      <ul class="hSubmenu bb">
+        <li><a href="../story/londonHouse/peopleWorkplace.html">소개</a></li>
+        <li><a href="allProduct.html">제품전체</a></li>
+        <li><a href="allProduct2.html">신제품</a></li>
+        <li><a href="../main/map.html">매장안내</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="product.html">코롱</a>
+      <ul class="hSubmenu">
+        <li>
+          <a href="product.html">베스트셀러</a>
+          <ul class="hSubitem">
+            <li><a href="product.html">블랙베리 앤 베이</a></li>
+            <li><a href="product.html">잉글리쉬 페어 앤 프리지아</a></li>
+            <li><a href="product.html">라임 바질 앤 만다린</a></li>
+            <li><a href="product.html">히노키 앤 시더우드</a></li>
+            <li><a href="product.html">사이프러스 앤 그레이프바인</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="product.html">사이즈</a>
+          <ul class="hSubitem">
+            <li><a href="product.html">100ml</a></li>
+            <li><a href="product.html">50ml</a></li>
+            <li><a href="product.html">30ml</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="product.html">센트패밀리</a>
+          <ul class="hSubitem">
+            <li><a href="product.html">시트러스</a></li>
+            <li><a href="product.html">프루티</a></li>
+            <li><a href="product.html">라이트 플로랄</a></li>
+            <li><a href="product.html">플로랄</a></li>
+            <li><a href="product.html">우디</a></li>
+            <li><a href="product.html">원료</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="allProduct.html">홈 프레그런스</a>
+      <ul class="hSubmenu">
+        <li>
+          <a href="allProduct.html">캔들</a>
+          <ul class="hSubitem">
+            <li><a href="allProduct.html">캔들 전체보기</a></li>
+            <li><a href="allProduct.html">타운하우스 캔들</a></li>
+            <li><a href="allProduct.html">채리티 캔들</a></li>
+            <li><a href="allProduct.html">캔들 케어 에센셜</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="product.html">디퓨저</a>
+          <ul class="hSubitem">
+            <li><a href="product.html">디퓨저 전체보기</a></li>
+            <li><a href="product.html">타운하우스 디퓨저</a></li>
+            <li><a href="product.html">카 디퓨저</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="product.html">스프레이</a>
+          <ul class="hSubitem">
+            <li><a href="product.html">스프레이 전체보기</a></li>
+            <li><a href="product.html">룸 스프레이</a></li>
+            <li><a href="product.html">필로우 미스트</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="product.html">홈 컬렉션</a>
+          <ul class="hSubitem">
+            <li><a href="product.html">나이트 컬렉션</a></li>
+            <li><a href="product.html">타운하우스 컬렉션</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="allProduct2.html">배스 앤 바디</a>
+      <ul class="hSubmenu">
+        <li>
+          <a href="allProduct2.html">배스 앤 샤워</a>
+          <ul class="hSubitem">
+            <li><a href="allProduct2.html">바디 앤 핸드워시</a></li>
+            <li><a href="allProduct2.html">샤워 젤 앤 오일</a></li>
+            <li><a href="allProduct2.html">배스 오일</a></li>
+            <li><a href="allProduct2.html">솝</a></li>
+            <li><a href="allProduct2.html">헤어 케어</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="story/product.html">바디 케어</a>
+          <ul class="hSubitem">
+            <li><a href="product.html">바디 크림</a></li>
+            <li><a href="product.html">바디 앤 핸드 로션</a></li>
+            <li><a href="product.html">바디 미스트</a></li>
+            <li><a href="product.html">핸드 크림</a></li>
+            <li><a href="product.html">헤어 미스트</a></li>
+            <li><a href="product.html">비타민 E 컬렉션</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="product.html">베스트셀러</a>
+          <ul class="hSubitem">
+            <li><a href="product.html">라임 바질 앤 만다린 바디 앤 핸드 워시</a></li>
+            <li><a href="product.html">잉글리쉬 페어 앤 프리지아 바디 앤 핸드 로션</a></li>
+            <li><a href="product.html">비타민 E 컨디셔너</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="product.html">맨즈</a>
+      <ul class="hSubmenu">
+        <li>
+          <a href="product.html">코롱</a>
+          <ul class="hSubitem">
+            <li><a href="product.html">맨즈 코롱 전체보기</a></li>
+            <li><a href="product.html">히노키 앤 시더우드</a></li>
+            <li><a href="product.html">NEW 헌츠맨 컬렉션</a></li>
+            <li><a href="product.html">코롱 인텐스</a></li>
+            <li><a href="product.html">맨즈 코롱 컬렉션</a></li>
+            <li><a href="product.html">코롱 인텐스 컬렉션</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="story/product.html">그루밍</a>
+          <ul class="hSubitem">
+            <li><a href="product.html">그루밍 전체 보기</a></li>
+            <li><a href="product.html">바디 앤 핸드 워시</a></li>
+            <li><a href="product.html">바디 앤 핸드 로션</a></li>
+            <li><a href="product.html">익스 폴리에이팅 샤워 젤</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="product.html">홈 프레그런스</a>
+          <ul class="hSubitem">
+            <li><a href="product.html">맨즈 홈 프레그런스 전체 보기</a></li>
+            <li><a href="product.html">우드 세이지 앤 씨 솔트 홈 캔들</a></li>
+            <li><a href="product.html">라임 바질 앤 만다린 디퓨저</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="../myInf/onlineService/onlineService.html">서비스</a>
+      <ul class="hSubmenu bb">
+        <li><a href="../myInf/onlineService/onlineService.html">온라인 서비스</a></li>
+        <li><a href="../main/scentFinder.html">센트 파인더</a></li>
+        <li><a href="../story/customerSerivce/01_faq.html">고객 서비스</a></li>
+      </ul>
+    </li>
+    <li><a href="../myInf/myInformationMain/myInformationMain.html">마이페이지</a></li>
+    <li><a href="../pay/wishList.html">위시리스트</a></li>
+    <li><a href="../pay/basket.html">장바구니</a></li>
+    <li><a href="../main/map.html">매장위치</a></li>
+  </ul>
+</div>
+<nav> <!-- 메뉴 -->
+  <ul class="menu">
+    <li>
+      <a href="product.html">브랜드</a>
+      <ul class="submenu">
+        <li>
+          <div>
+            <a href="product.html">
+              <img src="../imgs/25B01_Nav_New.avif" alt="">
+            </a>
+            <div class="subItem bold">
+              <a href="../story/londonHouse/peopleWorkplace.html">소개</a>
+              <a href="allProduct.html">제품전체</a>
+              <a href="allProduct2.html">신제품</a>
+              <a href="../main/map.html">매장안내</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="product.html">코롱</a>
+      <ul class="submenu">
+        <li>
+          <a href="product.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <p class="bestseller">베스트셀러</p>
+          </a>
+          <div class="subItem">
+            <a href="product.html">블랙베리 앤 베이</a>
+            <a href="product.html">잉글리쉬 페어 앤 프리지아</a>
+            <a href="product.html">라임 바질 앤 만다린</a>
+            <a href="product.html">히노키 앤 시더우드</a>
+            <a href="product.html">사이프러스 앤 그레이프바인</a>
+          </div>
+        </li>
+        <li>
+          <a href="product.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>사이즈</span>
+          </a>
+          <div class="subItem">
+            <a href="product.html">100ml</a>
+            <a href="product.html">50ml</a>
+            <a href="product.html">30ml</a>
+          </div>
+        </li>
+        <li>
+          <a href="product.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>센트패밀리</span>
+          </a>
+          <div class="subItem">
+            <a href="product.html">시트러스</a>
+            <a href="product.html">프루티</a>
+            <a href="product.html">라이트 플로랄</a>
+            <a href="product.html">플로랄</a>
+            <a href="product.html">우디</a>
+            <a href="product.html">원료</a>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="product.html">홈 프레그런스</a>
+      <ul class="submenu">
+        <li>
+          <a href="allProduct.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>캔들</span>
+          </a>
+          <div class="subItem">
+            <a href="allProduct.html">캔들 전체보기</a>
+            <a href="allProduct.html">타운하우스 캔들</a>
+            <a href="allProduct.html">채리티 캔들</a>
+            <a href="allProduct.html">캔들 케어 에센셜</a>
+          </div>
+        </li>
+        <li>
+          <a href="product.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>디퓨저</span>
+          </a>
+          <div class="subItem">
+            <a href="product.html">디퓨저 전체보기</a>
+            <a href="product.html">타운하우스 디퓨저</a>
+            <a href="product.html">카 디퓨저</a>
+          </div>
+        </li>
+        <li>
+          <a href="product.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>스프레이</span>
+          </a>
+          <div class="subItem">
+            <a href="product.html">스프레이 전체보기</a>
+            <a href="product.html">룸 스프레이</a>
+            <a href="product.html">필로우 미스트</a>
+          </div>
+        </li>
+        <li>
+          <a href="product.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>홈 컬렉션</span>
+          </a>
+          <div class="subItem">
+            <a href="product.html">나이트 컬렉션</a>
+            <a href="product.html">타운하우스 컬렉션</a>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="allProduct2.html">배스 앤 바디</a>
+      <ul class="submenu">
+        <li>
+          <a href="allProduct2.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>배스 앤 샤워</span>
+          </a>
+          <div class="subItem">
+            <a href="allProduct2.html">바디 앤 핸드워시</a>
+            <a href="allProduct2.html">샤워 젤 앤 오일</a>
+            <a href="allProduct2.html">배스 오일</a>
+            <a href="allProduct2.html">솝</a>
+            <a href="allProduct2.html">헤어 케어</a>
+          </div>
+        </li>
+        <li>
+          <a href="product.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>바디 케어</span>
+          </a>
+          <div class="subItem">
+            <a href="product.html">바디 크림</a>
+            <a href="product.html">바디 앤 핸드 로션</a>
+            <a href="product.html">바디 미스트</a>
+            <a href="product.html">핸드 크림</a>
+            <a href="product.html">헤어 미스트</a>
+            <a href="product.html">비타민 E 컬렉션</a>
+          </div>
+        </li>
+        <li>
+          <a href="product.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>베스트셀러</span>
+          </a>
+          <div class="subItem">
+            <a href="product.html">배스 앤 바디 베스트셀러 보기</a>
+            <a href="product.html">라임 바질 앤 만다린 바디 앤 핸드 워시</a>
+            <a href="product.html">잉글리쉬 페어 앤 프리지아 바디 앤 핸드 로션</a>
+            <a href="product.html">비타민 E 컨디셔너</a>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="product.html">맨즈</a>
+      <ul class="submenu">
+        <li>
+          <a href="product.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>코롱</span>
+          </a>
+          <div class="subItem">
+            <a href="product.html">맨즈 코롱 전체보기</a>
+            <a href="product.html">히노키 앤 시더우드</a>
+            <a href="product.html">NEW 헌츠맨 컬렉션</a>
+            <a href="product.html">코롱 인텐스</a>
+            <a href="product.html">맨즈 코롱 컬렉션</a>
+            <a href="product.html">코롱 인텐스 컬렉션</a>
+          </div>
+        </li>
+        <li>
+          <a href="product.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>그루밍</span>
+          </a>
+          <div class="subItem">
+            <a href="product.html">그루밍 전체 보기</a>
+            <a href="product.html">바디 앤 핸드 워시</a>
+            <a href="product.html">바디 앤 핸드 로션</a>
+            <a href="product.html">익스 폴리에이팅 샤워 젤</a>
+          </div>
+        </li>
+        <li>
+          <a href="product.html">
+            <img src="../imgs/25B01_Nav_New.avif" alt="">
+            <span>홈 프레그런스</span>
+          </a>
+          <div class="subItem">
+            <a href="product.html">맨즈 홈 프레그런스 전체 보기</a>
+            <a href="product.html">우드 세이지 앤 씨 솔트 홈 캔들</a>
+            <a href="product.html">라임 바질 앤 만다린 디퓨저</a>
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="../myInf/onlineService/onlineService.html">서비스</a>
+      <ul class="submenu">
+        <li>
+          <div>
+            <a href="../myInf/onlineService/onlineService.html">
+              <img src="../imgs/25B01_Nav_New.avif" alt="">
+            </a>
+            <div class="subItem bold">
+              <a href="../myInf/onlineService/onlineService.html">온라인 서비스</a>
+              <a href="../main/scentFinder.html">센트 파인더</a>
+              <a href="../story/customerSerivce/01_faq.html">고객 서비스</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<div class="center">
+
+
+
+
+
+  <div id="big">
+
+    <div id="top1">
+
+      <div>
+        <div id="imgBox">
+
+          <img src="./imgs/product/jo_sku_L32R01_1000x1000_0.avif" alt="" id="img1">
+
+        </div>
+      </div>
+
+
+      <div id="asideBox">
+
+
+        <p class="best"> 베스트 셀러</p>
+
+        <div class="Htext1">Blackberry & Bay Cologne</div>
+        <div class="Htext2">블랙베리 앤 베이 코롱</div>
+
+        <!-- 별표 5개 이미지 -->
+        <p class="ptext">★★★★★ 13리뷰</p>
+        <p id="price" class="ptext">₩235,000</p>
+
+        <div class="ptext">
+          순수의 향. 블랙베리를 따던 어린 시절의 추억,
+          블랙베리로 물든 입술과 손. 
+          <br>이제 막 수확한 월계수 잎의
+          신선함에 톡 쏘는 블랙베리 과즙을 가미하였습니다.
+          <br>
+          매력적이고 생기 넘치는 상쾌한 느낌의 향입니다.
+        </div>
+
+
+        <!-- 용량선택 -->
+        <div id="mlChoose" class="ptext">
+
+          <div>
+            <a href="product.html" id="btn4"><img src="./imgs/product/100ml.avif" alt="" class="pimg"></a>
+            <div> <a href="product.html" id="btn1">100ml</a> </div>
+          </div>
+
+
+          <div>
+            <a href="product.html" id="btn5"><img src="./imgs/product/30ml.avif" alt="" class="pimg"></a>
+            <div> <a href="product.html" id="btn2">30ml</a> </div>
+          </div>
+
+          <div>
+            <a href="product.html" id="btn6"><img src="./imgs/product/50ml.avif" alt="" class="pimg"></a>
+            <div> <a href="product.html" id="btn3">50ml</a> </div>
+          </div>
+
+
+        </div>
+
+        <!-- 장바구니 담기랑 위시리스트 버튼 -->
+        <p class="basketBtn"> <button> <a href="../pay/basket.html" id="aBtn1">장바구니 담기</a> </button> </p>
+
+        <div class="ptext" id="wish"><a href="../pay/wishList.html">관심상품 리스트</a> <i class="fa-regular fa-bookmark"></i>
+        </div>
+
+
+
+
+      </div>
+
+    </div> <!-- 상단 이미지 파트 끝 -->
+
+
+    <!-- 아코디언 1 -->
+    <div>
+
+      <div class="accordian">
+
+        <input id="check-btn" type="checkbox" />
+
+        <label for="check-btn" class="Htext2">성분</label>
+        <div class="menubars">
+
+          <p class="ttext">전성분: 변성알코올, 정제수, 향료, 유제놀,
+            하이드록시이소헥실3-사이클로헥센카복스알데하이드,
+            리모넨, 신나밀알코올, 리날룰 [ILN29015]<br>
+            *제공된
+            성분은 동일 제품이라도 경우에 따라 변경될 수 있습니다.
+            최신정보는 제품 포장의 성분을 참고하시거나 본사 고객관리지원팀으로
+            연락 부탁 드립니다.</p>
+
+          <p class="ttext">조 말론 런던의 제품을 구성하는 성분은 변경될 수 있음을 알려드립니다.
+            제품 뒷면의 성분 목록을 확인하시면 가장 최신 성분표를 확인하실 수 있습니다.</p>
+
+        </div>
+      </div>
+
+
+      <!-- 아코디언 2 -->
+
+      <div class="accordian">
+        <input id="check-btn2" type="checkbox" />
+        <label for="check-btn2" class="Htext2">사용할 때의 주의사항
+        </label>
+        <div class="menubars2">
+
+          <p class="ttext">1. 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, <br>부어오름 또는 가려움증 등의 이상
+            증상이나 부작용이 있는 경우에는 전문의 등과 상담할 것<br>
+            2. 상처가 있는 부위 등에는 사용을 자제할 것<br>
+            3. 눈에 들어가지 않도록 주의할 것<br>
+            4. 보관 및 취급 시 주의사항<br>
+            * 어린이의 손이 닿지 않는 곳에 보관할 것<br>
+            * 직사광선을 피해서 보관할 것.<br>
+            기타 제품 특이적인 주의사항은 제품 포장 참조</p>
+
+        </div>
+
+      </div>
+      <!-- 아코디언 3 -->
+
+      <div class="accordian">
+        <input id="check-btn3" type="checkbox" />
+        <label for="check-btn3" class="Htext2">추가 정보
+        </label>
+        <div class="menubars3">
+
+          <p class="ttext">
+            제품 주요 사양 : 모든 피부/성별 사용 가능<br>
+            사용기한 : 제품 별도표기 (출고일 기준 사용기한이 1년 이상 남은 제품을 배송해드립니다)<br>
+            책임판매업자 : 이엘씨에이한국(유)<br>
+            품질 보증 기준 : 이엘씨에이한국(유)를 통해 공식 수입, 판매되는 제품에 한해서, <br>
+            상품에 이상이 있을 경우 공정거래위원회고시 품목별 소비자 분쟁 해결 기준에 의거한 보상 및 제품관련 서비스를 받으실 수
+            있습니다.<br>
+            제조국 : 영국<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- 테이스팅 노트 -->
+    <div id="tasteing">
+
+      <div class="Htext2">테이스팅 노트</div>
+
+      <div id="taste">
+
+
+        <div> <!-- 1번째 section -->
+          <img src="imgs/product/Blackberry_Desktop.avif" alt="">
+
+          <div>
+            <p>탑 노트</p>
+
+            <p>블랙베리</p>
+
+            <p class="ttext">톡하고 과즙을 내뿜는 천연 블랙커런트
+              꽃봉오리가 과일 향과 새콤한 느낌을 더해주고,
+              버코 트리 에센스가 블랙베리 잎의 신선함과
+              풋풋함을 끌어올립니다.</p>
+          </div>
+
+
+
+        </div>
+
+        <div> <!-- 2번째 section -->
+          <img src="imgs/product/Bay_Leaves_Desktop.avif" alt="">
+
+
+          <div>
+            <p>하트 노트</p>
+
+            <p>월계수 잎</p>
+
+            <p class="ttext">갈바넘의 천연향을 바탕으로 한 어코드가 향에 식물의 선명함과 눈부신 녹음의 느낌을 더해줍니다.</p>
+          </div>
+
+
+        </div>
+
+
+        <div> <!-- 3번째 section -->
+          <img src="imgs/product/Cedarwood_Desktop.avif" alt="">
+
+
+          <div>
+            <p>베이스 노트</p>
+
+            <p>시더우드</p>
+
+            <p class="ttext">우디하고 드라이한 느낌이 <br> 하트 노트에
+              카리스마 있는 <br>강렬함을 채워줍니다</p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- 나만의 센트 페어링 조합하기 -->
+    <div>
+
+      <div id="checkTitle">
+
+
+        <div class="Htext2">나만의 센트 페어링 조합하기</div>
+
+        <p>서로 다른 향을 페어링하여 나만의 시그니처 향을 완성할 수 있습니다. 따뜻한 느낌 혹은 프레쉬한 느낌을 더해보세요.</p>
+
+      </div>
+
+      <div>
+        <input type="radio" id="option1" name="temperature" checked>
+        <label for="option1">프레셔</label>
+
+        <input type="radio" id="option2" name="temperature">
+        <label for="option2">워머</label>
+
+      </div>
+
+      <div class="blockBox">
+
+        <div class="block"> <!-- 1번째 block -->
+          <div class="wishIcon"> <i class="fa-regular fa-bookmark"></i> </div>
+          <img src="imgs/product/jo_sku_L32R01_670x670_0.avif" alt="">
+          <div>Lime & bazil Cologne</div>
+          <div>cream</div>
+          <div>라임 바질 앤 만다린 코롱</div>
+          <div class="blockPrice">$235000 100ml</div>
+
+          <button><a href="../pay/basket.html">장바구니 담기</a></button>
+        </div>
+
+
+        <div class="block"> <!-- 2번째 block -->
+          <div class="wishIcon"> <i class="fa-regular fa-bookmark"></i> </div>
+          <img src="imgs/product/jo_sku_L32R01_670x670_0.avif" alt="">
+          <div>Lime & bazil Cologne</div>
+          <div>cream</div>
+          <div>라임 바질 앤 만다린 코롱</div>
+          <div class="blockPrice">$235000 100ml</div>
+
+          <button><a href="../pay/basket.html">장바구니 담기</a></button>
+        </div>
+
+        <div class="block"> <!-- 3번째 block -->
+          <div class="wishIcon"> <i class="fa-regular fa-bookmark"></i> </div>
+          <img src="imgs/product/jo_sku_L32R01_670x670_0.avif" alt="">
+          <div>Lime & bazil Cologne</div>
+          <div>cream</div>
+          <div>라임 바질 앤 만다린 코롱</div>
+          <div class="blockPrice">$235000 100ml</div>
+
+          <button><a href="../pay/basket.html">장바구니 담기</a></button>
+        </div>
+
+        <div class="block"> <!-- 4번째 block -->
+          <div class="wishIcon"> <i class="fa-regular fa-bookmark"></i> </div>
+          <img src="imgs/product/jo_sku_L32R01_670x670_0.avif" alt="">
+          <div>Lime & bazil Cologne</div>
+          <div>cream</div>
+          <div>라임 바질 앤 만다린 코롱</div>
+          <div class="blockPrice">$235000 100ml</div>
+
+          <button><a href="../pay/basket.html">장바구니 담기</a></button>
+        </div>
+
+      </div>
+
+
+
+      <!-- <div id="blockBox2">
+
+        <div class="block"> 
+          <div class="wishIcon"> <i class="fa-regular fa-bookmark"></i> </div>
+          <img src="imgs/product/jo_sku_L32R01_670x670_0.avif" alt="">
+          <div>Lime & bazil Cologne</div>
+          <div>cream</div>
+          <div>라임 바질 앤 만다린 코롱</div>
+          <div class="blockPrice">$235000 100ml</div>
+
+          <button id="basketbtn"><a href="../pay/basket.html">장바구니 담기</a></button>
+        </div>
+
+      </div> -->
+
+    </div>
+
+    <div id="imgBox2">
+
+      <div id="imgBox3">
+
+        <div>
+
+          <div class="Htext2">코롱 사용법</div>
+ 
+          <p class="ttext">코롱에 관한 다양한 에티켓을 살펴보고 프레그런스 전문가처럼 향을 입는 방법을 알아보세요.</p>
+          <p class="ttext">손목, 귀 뒤 등 맥박이 뛰는 곳에 뿌려줍니다. 단독으로 사용하거나 다른 제품과 함께 컴바이닝할 수 있으며 같은 라인의 바디 제품과 사용할 수 있습니다.</p>
+
+        </div>
+
+      </div>
+      <img src="imgs/product/jo_sku_L32R01_670x670_0.avif" alt="">
+
+
+
+    </div>
+
+    <img src="../story/imgs/product/blackberryBanner.avif" alt="" id="img4">
+
+    <div>당신을 위한 추천상품</div>
+    <div></div>
+
+    <div class="blockBox">
+
+
+      <div class="block"> <!-- 1번째 block -->
+        <div class="wishIcon"> <i class="fa-regular fa-bookmark"></i> </div>
+        <img src="imgs/product/jo_sku_L32R01_670x670_0.avif" alt="">
+        <div>Lime & bazil Cologne</div>
+        <div>cream</div>
+        <div>라임 바질 앤 만다린 코롱</div>
+        <div class="blockPrice">$235000 100ml</div>
+
+        <button><a href="../pay/basket.html">장바구니 담기</a></button>
+      </div>
+
+      <div class="block"> <!-- 2번째 block -->
+        <div class="wishIcon"> <i class="fa-regular fa-bookmark"></i> </div>
+        <img src="imgs/product/jo_sku_L32R01_670x670_0.avif" alt="">
+        <div>Lime & bazil Cologne</div>
+        <div>cream</div>
+        <div>라임 바질 앤 만다린 코롱</div>
+        <div class="blockPrice">$235000 100ml</div>
+
+        <button><a href="../pay/basket.html">장바구니 담기</a></button>
+      </div>
+
+
+      <div class="block"> <!-- 3번째 block -->
+        <div class="wishIcon"> <i class="fa-regular fa-bookmark"></i> </div>
+        <img src="imgs/product/jo_sku_L32R01_670x670_0.avif" alt="">
+        <div>Lime & bazil Cologne</div>
+        <div>cream</div>
+        <div>라임 바질 앤 만다린 코롱</div>
+        <div class="blockPrice">$235000 100ml</div>
+
+        <button><a href="../pay/basket.html">장바구니 담기</a></button>
+      </div>
+
+      <div class="block"> <!-- 4번째 block -->
+        <div class="wishIcon"> <i class="fa-regular fa-bookmark"></i> </div>
+        <img src="imgs/product/jo_sku_L32R01_670x670_0.avif" alt="">
+        <div>Lime & bazil Cologne</div>
+        <div>cream</div>
+        <div>라임 바질 앤 만다린 코롱</div>
+        <div class="blockPrice">$235000 100ml</div>
+
+        <button><a href="../pay/basket.html">장바구니 담기</a></button>
+      </div>
+
+
+    </div>
+
+  </div>
+  <div id="wrap">
+    <div class="head">
+      <h3 class="reviewTit">리뷰</h3>
+      <div class="top">
+        <h2>4.6/5</h2>
+        <span>13명 참여</span>
+        <a href="../review/reviewCreate.html">리뷰 작성하기</a>
+      </div>
+    </div>
+    <!-- <div class="filt">
+          <select id="filter">
+            <option value="" disabled>노출 순서</option>
+            <option value="">최근 등록 순</option>
+            <option value="">유용한 리뷰 순</option>
+            <option value="">평점 낮은 순</option>
+            <option value="">평점 높은 순</option>
+            <option value="">이전 검색결과</option>
+            <option value="">사진들</option>
+          </select>
+        </div> -->
+    <div class="reviewCnt">
+      <h2>5/5</h2>
+      <h3>향이 너무 좋아요</h3>
+      <p>매일 매일 뿌릴게요 너무 맘에 드네요</p>
+      <button class="more" type="button">더 보기</button>
+      <button class="hide" type="button">숨기기</button>
+      <div class="moreReview">
+        <dl class="reviewList">
+          <dt>연령대:</dt>
+          <dd>25 ~ 34</dd>
+          <dt>조 말론 런던의 제품 사용 기간:</dt>
+          <dd>1년 이하</dd>
+          <dt>평소 사용하는 향수 계열:</dt>
+          <dd>시트러스</dd>
+          <dt>이 제품이 잘 어울리는 시간대:</dt>
+          <dd>낮</dd>
+          <dt>선물 여부:</dt>
+          <dd>나 자신을 위한 선물입니다</dd>
+        </dl>
+      </div>
+      <div class="content">
+        <div class="leftCnt">
+          <span>이 제품을 추천합니다.</span>
+          <p>이 리뷰가 도움이 되셨나요?</p>
+          <span id="yes">0</span>
+          <span id="no">0</span>
+        </div>
+        <div class="rightCnt">
+          <span>작성자 : </span>
+          <span>tntndus</span>
+          <br>
+          <span>지역 : </span>
+          <span>서울</span>
+          <br>
+          <button class="delete">신고하기</button>
+          <div id="deleteModal">
+            <img class="closeModalBtn" src="../imgs/close_icon_w.svg" alt="">
+            <div class="modal">
+              <div class="modalText">
+                <p>이것이 어떤 종류의 문제인지 알려주세요: *</p>
+                <div>
+                  <span>저속함</span>
+                  <span>틀린 상품</span>
+                  <span>스팸</span>
+                  <span>중복</span>
+                </div>
+                <div>
+                  <span>저작권 위반</span>
+                  <span>상품리뷰가 아니다</span>
+                  <span>고객 이미지</span>
+                  <span>기타</span>
+                </div>
+              </div>
+              <form class="commentForm">
+                <label for="email">이메일 주소:*</label>
+                <input type="text" id="email">
+                <label for="comment">코멘트:</label>
+                <textarea id="comment"></textarea>
+                <button class="deleteEnd" type="submit">신고하기</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviewCnt">
+      <h2>5/5</h2>
+      <h3>향이 너무 좋아요</h3>
+      <p>매일 매일 뿌릴게요 너무 맘에 드네요</p>
+      <button class="more" type="button">더 보기</button>
+      <button class="hide" type="button">숨기기</button>
+      <div class="moreReview">
+        <dl class="reviewList">
+          <dt>연령대:</dt>
+          <dd>25 ~ 34</dd>
+          <dt>조 말론 런던의 제품 사용 기간:</dt>
+          <dd>1년 이하</dd>
+          <dt>평소 사용하는 향수 계열:</dt>
+          <dd>시트러스</dd>
+          <dt>이 제품이 잘 어울리는 시간대:</dt>
+          <dd>낮</dd>
+          <dt>선물 여부:</dt>
+          <dd>나 자신을 위한 선물입니다</dd>
+        </dl>
+      </div>
+      <div class="content">
+        <div class="leftCnt">
+          <span>이 제품을 추천합니다.</span>
+          <p>이 리뷰가 도움이 되셨나요?</p>
+          <span id="yes">0</span>
+          <span id="no">0</span>
+        </div>
+        <div class="rightCnt">
+          <span>작성자 : </span>
+          <span>tntndus</span>
+          <br>
+          <span>지역 : </span>
+          <span>서울</span>
+          <br>
+          <button class="delete">신고하기</button>
+          <div id="deleteModal">
+            <img class="closeModalBtn" src="../imgs/close_icon_w.svg" alt="">
+            <div class="modal">
+              <div class="modalText">
+                <p>이것이 어떤 종류의 문제인지 알려주세요: *</p>
+                <div>
+                  <span>저속함</span>
+                  <span>틀린 상품</span>
+                  <span>스팸</span>
+                  <span>중복</span>
+                </div>
+                <div>
+                  <span>저작권 위반</span>
+                  <span>상품리뷰가 아니다</span>
+                  <span>고객 이미지</span>
+                  <span>기타</span>
+                </div>
+              </div>
+              <form>
+                <label for="email">이메일 주소:*</label>
+                <input type="text" id="email">
+                <label for="comment">코멘트:</label>
+                <textarea id="comment"></textarea>
+                <button class="deleteEnd" type="submit">신고하기</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviewCnt">
+      <h2>5/5</h2>
+      <h3>향이 너무 좋아요</h3>
+      <p>매일 매일 뿌릴게요 너무 맘에 드네요</p>
+      <button class="more" type="button">더 보기</button>
+      <button class="hide" type="button">숨기기</button>
+      <div class="moreReview">
+        <dl class="reviewList">
+          <dt>연령대:</dt>
+          <dd>25 ~ 34</dd>
+          <dt>조 말론 런던의 제품 사용 기간:</dt>
+          <dd>1년 이하</dd>
+          <dt>평소 사용하는 향수 계열:</dt>
+          <dd>시트러스</dd>
+          <dt>이 제품이 잘 어울리는 시간대:</dt>
+          <dd>낮</dd>
+          <dt>선물 여부:</dt>
+          <dd>나 자신을 위한 선물입니다</dd>
+        </dl>
+      </div>
+      <div class="content">
+        <div class="leftCnt">
+          <span>이 제품을 추천합니다.</span>
+          <p>이 리뷰가 도움이 되셨나요?</p>
+          <span id="yes">0</span>
+          <span id="no">0</span>
+        </div>
+        <div class="rightCnt">
+          <span>작성자 : </span>
+          <span>tntndus</span>
+          <br>
+          <span>지역 : </span>
+          <span>서울</span>
+          <br>
+          <button class="delete">신고하기</button>
+          <div id="deleteModal">
+            <img class="closeModalBtn" src="../imgs/close_icon_w.svg" alt="">
+            <div class="modal">
+              <div class="modalText">
+                <p>이것이 어떤 종류의 문제인지 알려주세요: *</p>
+                <div>
+                  <span>저속함</span>
+                  <span>틀린 상품</span>
+                  <span>스팸</span>
+                  <span>중복</span>
+                </div>
+                <div>
+                  <span>저작권 위반</span>
+                  <span>상품리뷰가 아니다</span>
+                  <span>고객 이미지</span>
+                  <span>기타</span>
+                </div>
+              </div>
+              <form>
+                <label for="email">이메일 주소:*</label>
+                <input type="text" id="email">
+                <label for="comment">코멘트:</label>
+                <textarea id="comment"></textarea>
+                <button class="deleteEnd" type="submit">신고하기</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  
+  
+
+
+  <script>
+
+
+  const btn1 = document.querySelector("#btn1")
+  const btn2 = document.querySelector("#btn2")
+  const btn3 = document.querySelector("#btn3")
+  const btn4 = document.querySelector("#btn4")
+  const btn5 = document.querySelector("#btn5")
+  const btn6 = document.querySelector("#btn6")
+  const img1 = document.querySelector("#img1")
+  const price = document.querySelector("#price")
+
+  function btnChange1() {
+    event.preventDefault()
+    img1.src = "./imgs/product/100ml.avif"
+    btn1.style.borderBottom = "1px solid black";
+    btn2.style.borderBottom = "none";
+    btn3.style.borderBottom = "none";
+    price.textContent = "₩235,000"
+  }
+
+
+  function btnChange2() {
+    event.preventDefault()
+    img1.src = "./imgs/product/30ml.avif"
+    btn1.style.borderBottom = "none"
+    btn2.style.borderBottom = "1px solid black";
+    btn3.style.borderBottom = "none";
+    price.textContent = "₩85,000"
+  }
+
+  function btnChange3() {
+    event.preventDefault()
+    img1.src = "./imgs/product/50ml.avif"
+    btn1.style.borderBottom = "none"
+    btn2.style.borderBottom = "none";
+    btn3.style.borderBottom = "1px solid black";
+    price.textContent = "₩135,000"
+  }
+
+
+  function btnChange4() {
+    event.preventDefault()
+    img1.src = "./imgs/product/100ml.avif"
+    btn1.style.borderBottom = "1px solid black";
+    btn2.style.borderBottom = "none";
+    btn3.style.borderBottom = "none";
+    price.textContent = "₩235,000"
+  }
+
+  function btnChange5() {
+    event.preventDefault()
+    img1.src = "./imgs/product/30ml.avif"
+    btn1.style.borderBottom = "none"
+    btn2.style.borderBottom = "1px solid black";
+    btn3.style.borderBottom = "none";
+    price.textContent = "₩85,000"
+  }
+
+  function btnChange6() {
+    event.preventDefault()
+    img1.src = "./imgs/product/50ml.avif"
+    btn1.style.borderBottom = "none"
+    btn2.style.borderBottom = "none";
+    btn3.style.borderBottom = "1px solid black";
+    price.textContent = "₩135,000"
+  }
+
+  btn1.addEventListener("click", btnChange1)
+  btn2.addEventListener("click", btnChange2)
+  btn3.addEventListener("click", btnChange3)
+  btn4.addEventListener("click", btnChange4)
+  btn5.addEventListener("click", btnChange5)
+  btn6.addEventListener("click", btnChange6)
+</script> 
+</div>
+<footer> <!-- 푸터 -->
+  <div class="footerSite">
+    <div>
+      <div class="tt">
+        <span>고객 서비스</span>
+        <div class="footerIcons">
+          <img class="down" src="../imgs/downIcon.svg" alt="">
+          <img class="up" src="../imgs/upIcon.svg" alt="">
+        </div>
+      </div>
+      <a href="../story/customerSerivce/01_faq.html">자주 묻는 질문</a>
+      <a href="../story/customerSerivce/02_csTeam.html">고객관리지원팀</a>
+      <a href="../story/customerSerivce/03_MyProfile.html">나의 프로필</a>
+      <a href="../story/customerSerivce/04_myOrder.html">나의 오더</a>
+      <a href="../story/customerSerivce/05_delivery.html">배송관련</a>
+      <a href="../story/customerSerivce/06_return_exchange.html">교환 및 환불 규정</a>
+      <a href="../story/customerSerivce/07_onlineShopping.html">온라인 부티크 쇼핑</a>
+    </div>
+    <div>
+      <div>
+        <div class="tt">
+          <span>살펴보기</span>
+          <div class="footerIcons">
+            <img class="down" src="../imgs/downIcon.svg" alt="">
+            <img class="up" src="../imgs/upIcon.svg" alt="">
+          </div>
+        </div>
+        <a href="../story/londonHouse/01_ourvalues.html">브랜드 소개</a>
+        <a href="../story/allProduct2.html">제품 전체</a>
+        <a href="../story/product.html">신제품</a>
+        <a href="../main/map.html">매장 안내</a>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div class="tt">
+          <span>소셜 네트워크</span>
+          <div class="footerIcons">
+            <img class="down" src="../imgs/downIcon.svg" alt="">
+            <img class="up" src="../imgs/upIcon.svg" alt="">
+          </div>
+        </div>
+        <a href="https://www.instagram.com/jomalonelondon">인스타그램</a>
+        <a href="https://www.facebook.com/JoMaloneLondon">페이스북</a>
+        <a href="https://www.youtube.com/channel/UCWMSJ5L5Zvkr9JfflU4JMUA">유튜브</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div>
+      <p>© Jo Malone London 2021</p>
+      <img src="../imgs/main_trustmark.webp" alt="">
+      <div>
+        <a href="../story/customerSerivce/08_termsConditons.html">이용약관</a>
+        <a href="../story/customerSerivce/08_termsConditons.html">개인정보 처리방침</a>
+      </div>
+    </div>
+    <div>
+      <p>
+        이엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine), 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232<br>
+        사업자등록번호: 211-81-71889<br>
+        통신판매업신고번호: 강남-15737호<br>
+        고객관리지원팀: <a href="tel:1644-3753">1644-3753</a><br>
+        호스팅서비스 사업자: (주)엘지유플러스
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+<!-- 
+<script>
+
+
+  const btn1 = document.querySelector("#btn1")
+  const btn2 = document.querySelector("#btn2")
+  const btn3 = document.querySelector("#btn3")
+  const btn4 = document.querySelector("#btn4")
+  const btn5 = document.querySelector("#btn5")
+  const btn6 = document.querySelector("#btn6")
+  const img1 = document.querySelector("#img1")
+  const price = document.querySelector("#price")
+
+  function btnChange1() {
+    event.preventDefault()
+    img1.src = "./imgs/product/100ml.avif"
+    btn1.style.borderBottom = "1px solid black";
+    btn2.style.borderBottom = "none";
+    btn3.style.borderBottom = "none";
+    price.textContent = "₩235,000"
+  }
+
+
+  function btnChange2() {
+    event.preventDefault()
+    img1.src = "./imgs/product/30ml.avif"
+    btn1.style.borderBottom = "none"
+    btn2.style.borderBottom = "1px solid black";
+    btn3.style.borderBottom = "none";
+    price.textContent = "₩85,000"
+  }
+
+  function btnChange3() {
+    event.preventDefault()
+    img1.src = "./imgs/product/50ml.avif"
+    btn1.style.borderBottom = "none"
+    btn2.style.borderBottom = "none";
+    btn3.style.borderBottom = "1px solid black";
+    price.textContent = "₩135,000"
+  }
+
+
+  function btnChange4() {
+    event.preventDefault()
+    img1.src = "./imgs/product/100ml.avif"
+    btn1.style.borderBottom = "1px solid black";
+    btn2.style.borderBottom = "none";
+    btn3.style.borderBottom = "none";
+    price.textContent = "₩235,000"
+  }
+
+  function btnChange5() {
+    event.preventDefault()
+    img1.src = "./imgs/product/30ml.avif"
+    btn1.style.borderBottom = "none"
+    btn2.style.borderBottom = "1px solid black";
+    btn3.style.borderBottom = "none";
+    price.textContent = "₩85,000"
+  }
+
+  function btnChange6() {
+    event.preventDefault()
+    img1.src = "./imgs/product/50ml.avif"
+    btn1.style.borderBottom = "none"
+    btn2.style.borderBottom = "none";
+    btn3.style.borderBottom = "1px solid black";
+    price.textContent = "₩135,000"
+  }
+
+  btn1.addEventListener("click", btnChange1)
+  btn2.addEventListener("click", btnChange2)
+  btn3.addEventListener("click", btnChange3)
+  btn4.addEventListener("click", btnChange4)
+  btn5.addEventListener("click", btnChange5)
+  btn6.addEventListener("click", btnChange6)
+</script>  -->
+

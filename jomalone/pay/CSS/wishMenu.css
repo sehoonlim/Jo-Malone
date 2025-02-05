@@ -1,0 +1,81 @@
+.wishContainer {
+    position: relative;
+    display: inline-block;
+  }
+
+  .wishMm {
+    display: none;
+    position: absolute;
+    top: 50px; /* 아이콘 아래에 위치시키기 위해 조정 */
+    right: -110px;
+    background-color: #FCF9EE;
+    border: 1px solid #ccc;
+    padding: 30px;
+    z-index: 1000;
+    /*width: 400px;*/
+    font-size: 15px;
+  }
+  
+  /*
+  .wishContainer:hover .wishMm {
+    display: block;
+  }
+  */
+    
+.wishMm > p{
+    font-family: 'NotoSansKR';
+    font-size: 17px;
+}
+
+/*
+div:hover + .wishMm{
+        display: block;
+    }
+*/
+
+.wishMenu{
+    display: flex;
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+}
+
+.wishImg{
+    width: 100px;
+    height: 130px;
+    margin-top: 15px;
+    /*background-color: bisque;*/
+}
+
+.wishName{
+    width: 250px;
+    height: 80px;
+    margin-top: 30px;
+    /*background-color: aquamarine;*/
+}
+
+.wishCnt{
+    width: 80px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+.wishPrice{
+    width: 130px;
+    margin-left: 100px;
+}
+
+.moveBasket{
+    margin-left: 250px;
+}
+
+.moveBasket > a{
+    text-decoration: underline;
+}
+
+.wishButton{
+    width: 350px;
+    height: 45px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 15px;
+}

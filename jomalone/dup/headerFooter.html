@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/hF.css">
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="events">
+    <div class="event">
+      <p>추석배송 지연안내</p>
+      <a href="#">자세히 보기</a>
+    </div>
+    <div class="event">
+      <p>이벤트2</p>
+      <a href="#">더 알아보기</a>
+    </div>
+    <div class="event">
+      <p>이벤트3</p>
+      <a href="#">더 알아보기</a>
+    </div>
+    <div class="close">
+      <img src="imgs/close_icon_w.svg" alt="">
+    </div>
+  </div>
+  <header> <!-- 헤더 -->
+    <div class="wrap">
+      <div>
+        <div class="searchIcon"> <!-- 검색 -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="#1C1C1C" stroke-width="2"><circle cx="11" cy="11" r="7"/><path stroke-linecap="round" d="m20 20l-3-3"/></g></svg>
+          <div id="search">
+            <form action="">
+              <button><img src="imgs/close_icon.svg" alt=""></button>
+              <input type="text" placeholder="찾으시는 상품을 입력하여 주세요.">
+            </form>
+            <div>
+              <p>도움이 필요하세요?</p>
+              <a href="#">히노키 앤 시더우드 코롱 인텐스</a>
+              <a href="#">코롱 인텐스</a>
+              <a href="#">베스트셀러</a>
+            </div>
+          </div>
+        </div>
+        <div><a href="map/map.html"> <!-- 매장 찾기 -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 56 56"><path fill="#1C1C1C" d="M28 4c9.389 0 17 7 17 19c0 4.764-2.679 10.63-5.91 15.974l-.543.885q-.275.44-.551.874l-.558.861l-.28.425l-.561.839l-.563.82l-.56.803l-.556.782l-.55.76l-.542.735l-.531.71l-.519.682l-.749.97l-.708.898l-.66.822l-.207.256c-1.354 1.604-3.627 1.54-4.903 0l-.642-.794l-.692-.874l-.487-.623l-.503-.654l-.783-1.034l-.537-.723l-.546-.747l-.553-.771l-.559-.792l-.562-.812l-.562-.83q-.28-.42-.56-.847l-.558-.86l-.551-.875l-.543-.885C13.679 33.63 11 27.764 11 23c0-12 7.611-19 17-19m0 4c-7.622 0-13 5.682-13 15c0 3.345 1.746 7.812 4.61 12.747l.503.85l.523.859l.544.867l.279.436l.573.876l.592.883l.61.888l.627.892l.644.896l.328.45l.668.9l.605.799l.312.405a2 2 0 0 0 3.163 0l.568-.74l.676-.904l.661-.9l.645-.897l.629-.894l.61-.889q.302-.443.593-.884l.574-.877q.706-1.094 1.348-2.164l.502-.85C39.255 30.81 41 26.343 41 23c0-9.318-5.378-15-13-15m0 5a8 8 0 1 1 0 16a8 8 0 0 1 0-16m0 4a4 4 0 1 0 0 8a4 4 0 0 0 0-8"/></svg>
+        </a></div>
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="imgs/조말론로고.svg" alt=""></a>
+      </div>
+      <div>
+        <div><a href="#"> <!-- 마이페이지 -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="#1C1C1C" d="M12 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4m0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2m0 8a7 7 0 0 0-7 7a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a7 7 0 0 0-7-7"/></svg>
+        </a></div>
+        <div><a href="#"> <!-- 위시 -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 1024 1024"><path fill="#1C1C1C" d="M256 128v698.88l196.032-156.864a96 96 0 0 1 119.936 0L768 826.816V128zm-32-64h576a32 32 0 0 1 32 32v797.44a32 32 0 0 1-51.968 24.96L531.968 720a32 32 0 0 0-39.936 0L243.968 918.4A32 32 0 0 1 192 893.44V96a32 32 0 0 1 32-32"/></svg>
+        </a></div>
+        <div><a href="#"> <!-- 장바구니 -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><g fill="none" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="#1C1C1C"><path d="m3.062 14.441l.365-2.142c.432-2.533.647-3.8 1.502-4.55C5.784 7 7.012 7 9.467 7h5.066c2.455 0 3.683 0 4.538.75s1.07 2.016 1.502 4.549l.365 2.142c.598 3.505.896 5.257-.023 6.408C19.995 22 18.295 22 14.898 22H9.102c-3.398 0-5.097 0-6.017-1.15c-.92-1.152-.62-2.904-.023-6.409"/><path d="m7.5 9l.215-3.01a4.296 4.296 0 0 1 8.57 0L16.5 9"/></g></svg>
+        </a></div>
+      </div>
+    </div>
+  </header>
+  <nav> <!-- 메뉴 -->
+    <ul class="menu">
+      <li>
+        <a href="#">브랜드</a>
+        <ul class="submenu">
+          <li>
+            <div>
+              <a href="#">
+                <img src="imgs/25B01_Nav_New.avif" alt="">
+              </a>
+              <div class="subItem bold">
+                <a href="#">소개</a>
+                <a href="#">제품전체</a>
+                <a href="#">신제품</a>
+                <a href="#">매장안내</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">코롱</a>
+        <ul class="submenu">
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>베스트셀러</span>
+            </a>
+            <div class="subItem">
+              <a href="#">블랙베리 앤 베이</a>
+              <a href="#">잉글리쉬 페어 앤 프리지아</a>
+              <a href="#">라임 바질 앤 만다린</a>
+              <a href="#">히노키 앤 시더우드</a>
+              <a href="#">사이프러스 앤 그레이프바인</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>사이즈</span>
+            </a>
+            <div class="subItem">
+              <a href="#">100ml</a>
+              <a href="#">50ml</a>
+              <a href="#">30ml</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>센트패밀리</span>
+            </a>
+            <div class="subItem">
+              <a href="#">시트러스</a>
+              <a href="#">프루티</a>
+              <a href="#">라이트 플로랄</a>
+              <a href="#">플로랄</a>
+              <a href="#">우디</a>
+              <a href="#">원료</a>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">홈 프레그런스</a>
+        <ul class="submenu">
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>캔들</span>
+            </a>
+            <div class="subItem">
+              <a href="#">캔들 전체보기</a>
+              <a href="#">타운하우스 캔들</a>
+              <a href="#">채리티 캔들</a>
+              <a href="#">캔들 케어 에센셜</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>디퓨저</span>
+            </a>
+            <div class="subItem">
+              <a href="#">디퓨저 전체보기</a>
+              <a href="#">타운하우스 디퓨저</a>
+              <a href="#">카 디퓨저</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>스프레이</span>
+            </a>
+            <div class="subItem">
+              <a href="#">스프레이 전체보기</a>
+              <a href="#">룸 스프레이</a>
+              <a href="#">필로우 미스트</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>홈 컬렉션</span>
+            </a>
+            <div class="subItem">
+              <a href="#">나이트 컬렉션</a>
+              <a href="#">타운하우스 컬렉션</a>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">배스 앤 바디</a>
+        <ul class="submenu">
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>배스 앤 샤워</span>
+            </a>
+            <div class="subItem">
+              <a href="#">바디 앤 핸드워시</a>
+              <a href="#">샤워 젤 앤 오일</a>
+              <a href="#">배스 오일</a>
+              <a href="#">솝</a>
+              <a href="#">헤어 케어</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>바디 케어</span>
+            </a>
+            <div class="subItem">
+              <a href="#">바디 크림</a>
+              <a href="#">바디 앤 핸드 로션</a>
+              <a href="#">바디 미스트</a>
+              <a href="#">핸드 크림</a>
+              <a href="#">헤어 미스트</a>
+              <a href="#">비타민 E 컬렉션</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>베스트셀러</span>
+            </a>
+            <div class="subItem">
+              <a href="#">배스 앤 바디 베스트셀러 보기</a>
+              <a href="#">라임 바질 앤 만다린 바디 앤 핸드 워시</a>
+              <a href="#">잉글리쉬 페어 앤 프리지아 바디 앤 핸드 로션</a>
+              <a href="#">비타민 E 컨디셔너</a>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">맨즈</a>
+        <ul class="submenu">
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>코롱</span>
+            </a>
+            <div class="subItem">
+              <a href="#">맨즈 코롱 전체보기</a>
+              <a href="#">히노키 앤 시더우드</a>
+              <a href="#">NEW 헌츠맨 컬렉션</a>
+              <a href="#">코롱 인텐스</a>
+              <a href="#">맨즈 코롱 컬렉션</a>
+              <a href="#">코롱 인텐스 컬렉션</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>그루밍</span>
+            </a>
+            <div class="subItem">
+              <a href="#">그루밍 전체 보기</a>
+              <a href="#">바디 앤 핸드 워시</a>
+              <a href="#">바디 앤 핸드 로션</a>
+              <a href="#">익스 폴리에이팅 샤워 젤</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>홈 프레그런스</span>
+            </a>
+            <div class="subItem">
+              <a href="#">맨즈 홈 프레그런스 전체 보기</a>
+              <a href="#">우드 세이지 앤 씨 솔트 홈 캔들</a>
+              <a href="#">라임 바질 앤 만다린 디퓨저</a>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">선물하기</a>
+        <ul class="submenu">
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>선물</span>
+            </a>
+            <div class="subItem">
+              <a href="#">기프트 파인더</a>
+              <a href="#">그를 위한 기프트</a>
+              <a href="#">리틀 럭셔리</a>
+              <a href="#">퍼스널라이제이션</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <img src="imgs/25B01_Nav_New.avif" alt="">
+              <span>베스트셀러</span>
+            </a>
+            <div class="subItem">
+              <a href="#">베스트셀러 전체 보기</a>
+              <a href="#">트래블 코롱 듀오</a>
+              <a href="#">잉글리쉬 페어 앤 프리지아 홈 컬렉션</a>
+              <a href="#">우드 세이지 앤 씨 솔트 카 디퓨저</a>
+              <a href="#">우디 앤 허니 듀오</a>
+              <a href="#">블랙베리 앤 베이 기프트 세트</a>
+              <a href="#">필로우 미스트 듀오</a>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">서비스</a>
+        <ul class="submenu">
+          <li>
+            <div>
+              <a href="#">
+                <img src="imgs/25B01_Nav_New.avif" alt="">
+              </a>
+              <div class="subItem bold">
+                <a href="#">매장 서비스</a>
+                <a href="#">센트 파인더</a>
+                <a href="#">센트 레이어링</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+  <footer> <!-- 푸터 -->
+    <div class="footerSite">
+      <div>
+        <div class="tt">고객 서비스</div>
+        <a href="#">자주 묻는 질문</a>
+        <a href="#">고객관리지원팀</a>
+        <a href="#">나의 프로필</a>
+        <a href="#">나의 오더</a>
+        <a href="#">주문 조회</a>
+        <a href="#">교환 및 환불 규정</a>
+        <a href="#">온라인 부티크 쇼핑</a>
+      </div>
+      <div>
+        <div>
+          <div class="tt">살펴보기</div>
+          <a href="#">브랜드 소개</a>
+          <a href="#">제품 전체</a>
+          <a href="#">신제품</a>
+          <a href="#">매장 안내</a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div class="tt">회사 소개</div>
+          <a href="#">법인 정보</a>
+          <a href="#">커리어</a>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div class="tt">소셜 네트워크</div>
+          <a href="#">인스타그램</a>
+          <a href="#">페이스북</a>
+          <a href="#">유튜브</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <p>© Jo Malone London 2021</p>
+        <img src="imgs/main_trustmark.webp" alt="">
+        <div>
+          <a href="#">이용약관</a>
+          <a href="#">개인정보 처리방침</a>
+          <a href="#">Cookie 관리</a>
+        </div>
+      </div>
+      <div>
+        <p>
+          이엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine), 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232<br>
+          사업자등록번호: 211-81-71889<br>
+          통신판매업신고번호: 강남-15737호<br>
+          <a href="#">사업자정보조회</a><br>
+          고객관리지원팀: <a href="tel:1644-3753">1644-3753</a><br>
+          호스팅서비스 사업자: (주)엘지유플러스
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

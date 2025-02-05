@@ -1,0 +1,240 @@
+@import url(reset.css);
+@import url(hF.css);
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body{
+  background-color: #fcf9ee;
+}
+main{
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+}
+.contents{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}
+.asideImg{
+  width: 50%;
+  margin-top: -80px;
+}
+.asideImg img{
+  width: 100%;
+}
+.content{
+  width: 50%;
+  height: 2000px;
+}
+.text{
+  margin-top: 40px;
+  font-family: 'NanumMyeongjo';
+}
+.text h2{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.text h3{
+  font-size: 20px;
+}
+.content form{
+  width: 80%;
+  height: 100%;
+}
+form input[type='radio']{
+  display: none;
+}
+form input[type='checkbox']{
+  display: none;
+}
+.checkbox{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  margin: 0px 5px;
+}
+.checkbox{
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+input[type="checkbox"]:checked + .checkbox::after{
+  opacity: 1;
+}
+.rating{
+  margin-top: 40px;
+}
+.recommend{
+  margin-top: 40px;
+}
+.recommend div{
+  margin: 5px 0px;
+}
+.rec{
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border: 1px solid #1c1c1c;
+  text-align: center;
+  line-height: 40px;
+  margin: 10px 0px 40px 0px;
+}
+input[type="checkbox"]:checked + .rec{
+  background-color: #1c1c1c;
+  color: #fff;
+}
+label:hover .rec{
+  background-color: #ccc;
+}
+input[type='text']{
+  border: none;
+  border-bottom: 1px solid #1c1c1c;
+  background-color: #fcf9ee;
+  width: 100%;
+  height: 40px;
+}
+.name label{
+  display: block;
+  margin-bottom: 5px;
+}
+.title{
+  margin-top: 40px;
+}
+textarea{
+  border: none;
+  border-bottom: 1px solid #1c1c1c;
+  background-color: #fcf9ee;
+  width: 100%;
+  height: 120px;
+  margin-top: 10px;
+  font-family: 'NotoSansKR';
+}
+.plusText,
+.minusText{
+  display: none;
+}
+.plus input[type='text'],
+.minus input[type='text']{
+  width: 340px;
+  height: 40px;
+}
+.plus span,
+.minus span{
+  display: block;
+  margin: 40px 0px 10px 0px;
+}
+.plus > button,
+.minus > button{
+  width: 100px;
+  height: 40px;
+  border: 1px solid #1c1c1c;
+}
+.plus > button:hover,
+.minus > button:hover{
+  background-color: #1c1c1c;
+  color: #fff;
+}
+.add,
+.remove{
+  width: 55px;
+  height: 40px;
+}
+.add{
+  background-color: #1c1c1c;
+  color: #fff;
+}
+.remove{
+  text-decoration: underline;
+}
+select{
+  border: none;
+  border-bottom: 1px solid #1c1c1c;
+  background-color: #fcf9ee;
+  width: 100%;
+  height: 40px;
+}
+.load{
+  padding: 20px 20px 20px 0px;
+}
+.load input[type='file']{
+  display: none;
+}
+.load button{
+  width: 150px;
+  height: 60px;
+  margin-left: 20px;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+.load span{
+  font-weight: bold;
+}
+button[type='submit']{
+  margin-top: 20px;
+  width: 80px;
+  height: 50px;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+#labelBox{
+display: flex;
+}
+.rating .checkbox i {
+  font-size: 24px; /* 원하는 크기로 변경 */
+}
+.checkbox i.fa-solid{
+  display: none;
+}
+
+/* 반응형 */
+@media screen and (max-width: 800px) {
+  .asideImg{
+    margin-top: 0px;
+  }
+  .contents{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content{
+    width: 100%;
+  }
+  .text{
+    text-align: center;
+  }
+  .content form{
+    width: 80%;
+    margin: 0px auto;
+  }
+  input[type='text']{
+    width: 100%;
+  }
+  textarea{
+    width: 100%;
+  }
+  select{
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 480px) {
+  .load{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 20px 20px 0px;
+  }
+  .load label{
+    margin-bottom: 20px;
+  }
+  .load button{
+    width: 100%;
+    margin-left: 0px;
+  }
+}

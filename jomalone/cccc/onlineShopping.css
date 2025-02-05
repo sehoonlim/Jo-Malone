@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  width: 100%
+}
+.wrapper{
+    width: 100%;
+    background-color: #fcf9ee;
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    height: auto;
+}
+
+aside{
+width: 23%;
+height: auto;
+display: flex;
+flex-direction: column;
+}
+/* 0930 수정 */
+#leftNav div {
+  height: auto;
+}
+#leftNav div a {
+  height: 25px;
+}
+/* 0930 수정 끝 */
+.shopping{
+  margin-top: 110px;
+  font-size: 24px;
+  font-family: 'NanumMyeongjo';
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+.onlinewrapper{
+ width: 100%;;
+}
+main{
+  width: 76%;
+  display: block;
+}
+#service{
+    display: flex;
+}
+main div{
+    /* display: flex; */
+}
+.accordionwrapper{
+  display: block;
+}
+
+/* 아코디언 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf9ee; /* 배경 색상 */
+    color: #1c1c1c; /* 텍스트 색상 */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .accordion {
+    border-top: 1px solid #ddd;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-header {
+    padding: 2%;
+    cursor: pointer;
+    background-color: #fcf9ee;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'NanumMyeongjo';
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 15px;
+    background-color: #fcf9ee;
+    line-height: 25px;
+
+
+    
+  }
+  .font14{
+    font-size: 14px;
+  }
+  .accordion-content p {
+    margin: 15px 0;
+    font-size: 14px;
+  }
+  
+  /* 아코디언 활성화(펼쳐졌을 때) 상태 */
+  .accordion-item.active .accordion-content {
+    max-height: 700px; /* 펼쳐진 상태에서의 최대 높이 설정 */
+  }
+  
+  .accordion-header::after {
+    content: '\002B'; /* '+' 아이콘 */
+    font-size: 20px;
+  }
+  
+  .accordion-item.active .accordion-header::after {
+    content: '\2212'; /* '-' 아이콘 */
+  }
+  .accordion-content li{
+    font-size: 14px;
+  }
+/* 반응형 */
+  /* @media screen and (max-width: 1200px) {
+    .wrapper{
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+    }
+    article{
+      width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    }
+}
+  /* 반응형 레이아웃: 태블릿 이하 */
+
+/* @media screen and (max-width: 800px) {
+  .wrapper {
+      flex-direction: column; /
+  }
+  
+  aside {
+      width: 100%; 
+      order: 2;
+  }
+  article{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+  main {
+      width: 100%; 
+      order: 1;
+      padding: 10px;
+  }
+
+  .accordion-header {
+      font-size: 4vw;
+  }
+  .accordion-item.active .accordion-content {
+    max-height: 800px; 
+  }
+  #service{
+    margin-bottom: 20px;
+  }
+}
+
+/* 모바일 이하 */
+/* @media screen and (max-width: 480px) {
+  aside {
+        height: auto;
+      display: none; 
+  }
+
+  main {
+      width: 100%; 
+      padding: 10px;
+  }
+aside{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+  .accordion-header {
+      font-size: 5vw;
+  }
+  .accordion-item.active .accordion-content {
+    height: auto;
+    max-height: 1000px; 
+  }
+}  */ 
+
+/* 반응형 */
+/* 태블릿 (800px 이하) */
+@media screen and (max-width: 800px) {
+  aside {
+    display: none; /* 태블릿에서 왼쪽 네비게이션 숨김 */
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬 */
+  }
+
+  article {
+    max-width: 90%; /* 태블릿에서는 전체 너비의 90%로 조정 */
+    margin: 0 auto;
+    text-align: center; /* 콘텐츠 중앙 정렬 */
+  }
+
+  .accordion-item {
+    max-width: 100%;
+  }
+}
+
+/* 모바일 (480px 이하) */
+@media screen and (max-width: 480px) {
+  .accordion-header {
+    font-size: 18px;
+  }
+
+  .accordion-content {
+    padding: 10px;
+  }
+
+  .ques {
+    font-size: 1.2rem;
+  }
+
+  .ques2 {
+    font-size: 1rem;
+  }
+
+  article {
+    max-width: 100%;
+  }
+}

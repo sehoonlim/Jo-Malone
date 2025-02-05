@@ -1,0 +1,173 @@
+@import url(../../css/customerService/customerNav.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    height: 156.25%;
+    background-color: #fcf9ee;
+    display: flex;        
+    flex-direction: row;
+
+}
+
+.refund {
+    height: 56.88%;
+    border: 1px solid #000;
+}
+
+aside{
+width: 23%;
+height: 156%;
+display: flex;
+}
+
+article{
+  display: block;
+}
+.re{
+  font-size: 24px;
+  margin-bottom: 70px;
+  margin-top: 100px;
+  font-family: 'NanumMyeongjo';
+}
+a{
+  text-decoration: underline;
+}
+.btext{
+  font-weight: bold;
+}
+.accordionwrapper{
+  margin-bottom: 5%;
+} 
+
+#service{
+  height: auto;
+}
+
+/* 아코디언 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf9ee; /* 배경 색상 */
+    color: #3e3a31; /* 텍스트 색상 */
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .accordion {
+    border-top: 1px solid #ddd;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'NanumMyeongjo';
+    
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0 15px;
+    line-height: 20px;
+    font-family: 'NotoSansKR';
+
+  }
+  .pHtext{
+    font-weight: bold;
+  }
+
+  .accordion-content p {
+    margin: 15px 0;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+  
+  /* 0930 수정 */
+  /* 아코디언 활성화(펼쳐졌을 때) 상태 */
+  .accordion-item.active .accordion-content {
+    max-height: none; /* 펼쳐진 상태에서의 최대 높이 설정 */
+  }
+  /* 0930 수정 끝 */
+  
+  .accordion-header::after {
+    content: '\002B'; /* '+' 아이콘 */
+    font-size: 20px;
+  }
+  
+  .accordion-item.active .accordion-header::after {
+    content: '\2212'; /* '-' 아이콘 */
+  }
+  
+
+
+
+
+  /* 태블릿 (800px - 1200px) */
+@media screen and (max-width: 1200px) {
+  .wrapper {
+      flex-direction: column;
+  }
+  
+  aside {
+      width: 100%;
+      order: 1;
+  }
+
+  main {
+      width: 100%;
+      order: 2;
+      padding: 2%;
+  }
+}
+
+/* 모바일 (480px - 800px) */
+@media screen and (max-width: 800px) {
+  aside {
+      display: none; /* 모바일에서 aside 숨김 */
+  }
+
+  main {
+      width: 100%;
+      padding: 5%;
+      max-height: 800px;
+  }
+
+ 
+  .accordion-content p {
+   
+      line-height: 1.875;
+  }
+}
+
+/* 모바일 (480px 이하) */
+@media screen and (max-width: 480px) {
+  body {
+      padding: 1.56%;
+  }
+
+  main {
+      width: 100%;
+      padding: 2%;
+      max-height: 800px;
+  }
+
+
+  .accordion-content p {
+      line-height: 1.5%;
+  }
+}

@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #fcf9ee;
+  /* display: flex; */
+}
+
+aside {
+  width: 300px;
+  height: 2000px;
+  display: flex;
+}
+
+.emailok {
+  display: flex;
+}
+
+main {
+  display: flex;
+}
+
+.sidemenu {
+  margin-top: 80px;
+  width: 220px;
+}
+
+.sidemenu #service {
+  display: block;
+  width: 100%;
+}
+
+.emailq {
+  font-size: 26px;
+  margin-top: 110px;
+  margin-bottom: 30px;
+  font-family: 'NanumMyeongjo';
+}
+
+/* .quebox{
+  font-size: 14px;
+  height: 200px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.que2{
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+} */
+
+a {
+  text-decoration: underline;
+}
+
+.ptextq {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: 'NotoSansKR';
+}
+
+.pHtext {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+article {
+  margin-left: 100px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  aside {
+
+    height: auto;
+  }
+}
+
+/* 태블릿 이하에서 특정 항목 숨기기 */
+@media screen and (max-width: 800px) {
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  aside {
+    order: 1;
+  }
+
+  main {
+    width: 90%;
+    order: 2;
+    padding: 15px;
+  }
+
+  article {
+    width: 90%;
+    /* article도 100%로 설정 */
+    padding: 15px;
+    word-wrap: break-word;
+    /* 내용이 길어도 자동으로 줄바꿈 */
+    word-break: break-all;
+    margin: 0 auto;
+  }
+
+  .emailok {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .sidemenu {
+    margin-top: 60px;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  aside {
+    display: none;
+    /* 모바일에서 aside 숨김 */
+  }
+
+  main {
+    width: 100%;
+    /* main은 전체 너비 차지 */
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  article {
+    width: 90%;
+    /* 모바일에서 article도 100%로 설정 */
+    /* padding: 10px; */
+    word-wrap: break-word;
+    /* 긴 단어도 줄바꿈 */
+    word-break: break-all;
+    margin: 0 auto;
+  }
+
+
+}

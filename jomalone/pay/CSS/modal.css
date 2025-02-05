@@ -1,0 +1,149 @@
+/* 모달 스타일 */
+.modal {
+    display: none; /* 기본적으로 숨겨진 상태 */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    line-height: 30px;
+  }
+
+  .modal-content > p{
+    font-size: 14px;
+  }
+
+  .modal-content > ul > li{
+    list-style: none;
+    font-size: 14px;
+  }
+  
+  .modal-content {
+    background-color: #f9f4e7;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+    max-height: 300px;
+    overflow-y: auto; 
+  }
+
+  .modal-content > h3{
+    font-size: 24px;
+  }
+
+  .modal > div > h4{
+    font-size: 19px;
+    font-weight: 100;
+  }
+  
+  .closed {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -10px;
+  }
+  
+  .closed:hover {
+    color: black;
+  }
+
+  #modalBtn1, #modalBtn2, #modalBtn3{
+    color: #000;
+  }
+
+  .addrContent {
+    background-color: #f9f4e7;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 670px;
+    max-height: 500px;
+    overflow-y: auto; 
+  }
+
+  .addrContent > p{
+    font-size: 14px;
+  }
+
+  .addrContent > h3{
+    border-bottom: 1px solid #ccc;
+  }
+
+  #addrSearch{
+    width: 500px;
+    height: 40px;
+    border: 1px solid #ccc;
+  }
+  .searchBtn{
+    width: 150px;
+    height: 45px;
+    color: #fff;
+    background-color: #000;
+    margin-left: 5px;
+  }
+  
+  table{
+    font-size: 14px;
+  }
+
+  td{
+    width: 220px;
+    height: 35px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  tr:nth-of-type(1){
+    background-color: #ccc;
+    font-weight: bold;
+  }
+
+  tr {
+    background-color: #fff;
+  }
+
+  @media screen and (max-width:800px){
+
+    #addrSearch{
+      width: 70%;
+      height: 40px;
+      border: 1px solid #ccc;
+    }
+
+    .addrList{
+      width: 70%;
+    }
+    .addrList > table{
+      width: 70%;
+    }
+  
+  }
+
+  @media screen and (max-width:500px){
+
+    #addrSearch{
+      width: 70%;
+      height: 40px;
+      border: 1px solid #ccc;
+    }
+
+    .searchBtn{
+      width: 22%;
+      height: 45px;
+      color: #fff;
+      background-color: #000;
+      margin-left: 5px;
+    }
+
+    .addrList{
+      width: 50%;
+    }
+  
+  }

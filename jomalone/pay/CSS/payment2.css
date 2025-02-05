@@ -1,0 +1,224 @@
+@import "../CSS/aside.css";
+@import "../CSS/basketProduct.css";
+@import "../CSS/modal.css";
+@import "../../css/hF.css";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FCF9EE;
+}
+
+wrapper{
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  /*background-color: aqua;*/
+}
+
+logo{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+}
+
+logo > img{
+    width: 200px;
+    height: 50px;
+}
+
+logo > a{
+    width: 200px;
+}
+
+form{
+    width: 50%;
+    float: left;
+    /*background-color: aqua;*/
+    margin-left: 10%;
+    margin-bottom: 80px;
+}
+
+.credit{
+    width: 100%;
+    height: 250px;
+    float: left;
+    /*background-color: #fa0;*/
+    border-top: solid 1px #ccc;
+}
+
+.creditLogo{
+    display: flex;
+    line-height: 30px;
+}
+  
+.creditLogo > img{
+    width: 50px;
+    height: 30px;
+    margin-right: 7px;
+}
+
+.pay{
+    margin-right: 7px;
+}
+
+.delInfo{
+    width: 100%;
+    height: 250px;
+    line-height: 20px;
+    float: left;
+    /*background-color: #fa0;*/
+    border-top: solid 1px #ccc;
+}
+
+.delOffer,.giftWrap{
+    width: 100%;
+    height: 130px;
+    float: left;
+    line-height: 20px;
+    /*background-color: #f0f;*/
+    border-top: solid 1px #ccc;
+    margin-bottom: 30px;
+    
+}
+
+.edit{
+    float: right;
+    margin-right: 50px;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+aside{
+  margin-left: 5%;
+}
+
+article > p > a{
+  color: #000;
+}
+
+.subTotal{
+ /*background-color: aqua;*/
+ margin-bottom: 50px;
+}
+
+.allTotal{
+  float: right;
+  width: 10%;
+  height: 100%;
+  /*background-color: aquamarine;*/
+}
+
+.allTotal > div{
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width:800px){
+    wrapper{
+      width: 100%;
+    }
+
+    form > p {
+      width: 160%
+    }
+
+    .stepContainer{
+    width: 80%;
+    }
+
+    .ProductHead{
+    width: 160%;
+    }
+
+    .prdSection{
+      width: 160%;
+    }
+
+    .credit,.delInfo,.delOffer,.giftWrap{
+      width: 160%;
+    }
+    
+    .subTotal{
+      width: 160%;
+    }
+    .buttonSection{
+      width: 175%;
+    }
+    .buttonSection > .payButton{
+      width: 100%;
+    }
+    aside{
+      width: 77%;
+      height: 100%;
+    }
+
+    aside > article{
+      width: 100%;
+    }
+
+    aside > article:nth-of-type(3){
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width:500px){
+    wrapper{
+      width: 100%;
+    }
+
+    form > p {
+      width: 160%;
+    }
+
+    .stepContainer{
+    width: 100%;
+    }
+
+    .credit,.delInfo,.delOffer,.giftWrap{
+      width: 160%;
+    }
+    
+    .ProductHead{
+    width: 160%;
+    }
+
+    .prdSection{
+      width: 160%;
+    }
+    
+    .subTotal{
+      width: 160%;
+    }
+    .buttonSection{
+      width: 160%;
+    }
+    .buttonSection > .payButton{
+      width: 95%;
+      margin: auto;
+    }
+    aside{
+      width: 65%;
+      height: 100%;
+    }
+
+    aside > article{
+      width: 112%;
+    }
+
+     .allTotal{
+       float: right;
+       width: 20%;
+       height: 100%;
+       /*background-color: aquamarine;*/
+     }
+
+     .edit{
+      font-size: 13px;
+     }
+  }

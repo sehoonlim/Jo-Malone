@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+main>div:nth-child(1) {
+  font-size: 24px;
+  border-bottom: 1px solid black;
+  padding-bottom: 24px;
+  font-family: "Nanum Myeongjo", serif;
+
+}
+
+main>div:nth-child(2) {
+  padding: 24px 0px;
+  font-size: 12px;
+}
+
+section {
+  width: 365px;
+  height: 205px;
+
+  margin-bottom: 45px;
+  margin-right: 45px;
+}
+
+.sectionHeader {
+  font-size: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.sectionHeader>div {
+
+  font-size: 15px;
+  float: right;
+  margin-right: 15px;
+}
+
+.sectionBox {
+  display: flex;
+}
+
+.sectionBox section:nth-child(1) {
+  margin-right: 45px;
+}
+
+footer img {
+  box-sizing: unset;
+}
+
+/*  */
+
+/* 태블릿 (800px 이하) */
+@media screen and (max-width: 800px) {
+
+  body {
+    height: auto;
+  }
+
+  #total {
+    height: auto;
+    /* 높이 자동 조절 */
+    display: block;
+    width: 100%;
+  }
+
+  #subNav {
+    width: 100%;
+
+  }
+
+  #subNav a {
+    line-height: 25px;
+  }
+
+  #subNav>div {
+    width: 100%;
+    /* margin: 0 auto; */
+    border-bottom: 1px solid #ccc;
+  }
+
+  aside {
+
+    height: 500px;
+    width: 100%;
+  }
+
+  #customer {
+    display: none;
+  }
+
+
+  #totNav {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    padding: 0px;
+  }
+
+
+  form {
+    width: 100%;
+    /* 폼 너비를 100%로 */
+    height: auto;
+    /* 높이 자동 조절 */
+  }
+
+  #mainTit {
+    width: 100%;
+    /* 타이틀 너비를 100%로 */
+    font-size: 20px;
+    /* 폰트 크기 조정 */
+  }
+
+  .btn-open-modal {
+    width: 100%;
+    /* 버튼 너비를 100%로 */
+    height: 40px;
+    /* 높이 조정 */
+  }
+
+  #inforInput {
+    width: 100%
+  }
+
+  #inforInput>div:nth-child(1) input {
+    width: 100%;
+  }
+
+  #callNum {
+    display: block;
+    width: 100%;
+    height: 350px;
+
+  }
+
+  #callNum input,
+  #callNum select {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #checkNumPlz,
+  #checkNumInput {
+
+    margin-left: 0px;
+  }
+
+  #birth>div:nth-child(3) {
+    width: 100%;
+  }
+
+
+
+  .selectN {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+
+  }
+
+  footer {
+    margin-top: 1000px;
+  }
+
+  #connect {
+    width: 100%;
+  }
+
+  #connect>div {
+    width: 100%;
+  }
+
+  .wrap {
+    width: 100%;
+  }
+
+  .sectionBox {
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .sectionHeader {
+    border: none;
+  }
+
+}

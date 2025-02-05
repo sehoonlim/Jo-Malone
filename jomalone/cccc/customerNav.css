@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* 
+main {
+    width: 745px;
+    height: 870px;
+    padding-left: 160px;
+    margin-top: 45px;
+
+} */
+aside > div:nth-child(1){
+    height: 500px;   
+}
+
+aside {
+    width: 220px;
+}
+
+
+#service {
+    display: flex;
+    width: 300px;
+    background-color: #fcf9ee;
+    padding: 0px 40px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+div > p {
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+
+aside > div:nth-child(1) a {
+    text-decoration: none;
+}
+
+aside > div:nth-child(1) {
+    width: 220px;
+    height: 450px;
+    padding: 11px 0px;
+}
+
+#mainNav {
+    width: 220px;
+    height: 60px;
+    margin-bottom: 40px;
+
+}
+
+
+#mainNav > div {
+    width: 220px;
+    height: 25px;
+    margin-bottom: 11px;
+    font-size: 13px;
+
+}
+
+/* 0930 수정 */
+#leftNav div {
+    width: 220px;
+    height: auto;
+    padding: 12px 0px;
+
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+#leftNav div a {
+    height: 25px;
+}
+/* 0930 수정 끝 */
+
+aside > div:nth-child(2) {
+    width: 200px;
+    height: 630px;
+    border: 1px solid black;
+    padding: 10px;
+}

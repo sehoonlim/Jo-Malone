@@ -1,0 +1,167 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+.center{
+  justify-content: center;
+}
+    .wrapper {
+      width: 100%;
+      max-width: 1280px;
+      background-color: #fcf9ee;
+      display: flex;
+      justify-content: space-between;
+    }
+aside{
+  width: 300px;
+  height: auto;
+  
+}
+
+/* 0930 수정 */
+main{
+  flex: 1;
+  width: calc(100% - 220px);
+  padding-left: 80px;
+}
+/* 0930 수정 끝 */
+
+article{
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+}
+
+
+.ques{
+  font-size: 24px;
+  margin-top: 100px;
+  font-size: 24px;
+  font-family: 'NanumMyeongjo';
+}
+.ques2{
+  line-height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'NotoSansKR';
+  
+}
+a{
+  text-decoration: underline;
+}
+/* 아코디언 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f4e9; 
+  color: #3e3a31; 
+  padding: 20px;
+}
+/* 
+.accordion {
+  border-top: 1px solid #ddd;
+} */
+.pmap a{
+  text-decoration: underline;
+}
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.accordion-header {
+  cursor: pointer;
+  background-color: #fcf9ee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-family: 'NanumMyeongjo';
+  height: 5rem;
+}
+
+.accordion-content {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding: 0 1rem;
+  background-color: #fcf9ee;
+  line-height: 25px;
+  /* margin: 15px 0; */
+  font-family: 'NotoSansKR';
+  display: none;
+}
+
+.accordion-content p {
+  margin: 30px 0;
+}
+
+/* 아코디언 활성화(펼쳐졌을 때) 상태 */
+.accordion-item.active .accordion-content {
+  max-height: 270px; /* 펼쳐진 상태에서의 최대 높이 설정 */
+  display: block;
+}
+
+.accordion-header::after {
+  content: '\002B'; /* '+' 아이콘 */
+  font-size: 20px;
+}
+
+.accordion-item.active .accordion-header::after {
+  content: '\2212'; /* '-' 아이콘 */
+}
+
+
+/* 반응형 */
+/* 태블릿 (800px 이하) */
+@media screen and (max-width: 800px) {
+  aside {
+    display: none; /* 태블릿에서 왼쪽 네비게이션 숨김 */
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬 */
+  }
+
+  article {
+    max-width: 90%; /* 태블릿에서는 전체 너비의 90%로 조정 */
+    margin: 0 auto;
+    text-align: center; /* 콘텐츠 중앙 정렬 */
+  }
+
+  .accordion-item {
+    max-width: 100%;
+  }
+}
+
+/* 모바일 (480px 이하) */
+@media screen and (max-width: 480px) {
+  .accordion-header {
+    font-size: 18px;
+  }
+
+  .accordion-content {
+    padding: 10px;
+  }
+
+  .ques {
+    font-size: 1.2rem;
+  }
+
+  .ques2 {
+    font-size: 1rem;
+  }
+
+  article {
+    max-width: 100%;
+  }
+}

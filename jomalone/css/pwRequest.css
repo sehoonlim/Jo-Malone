@@ -1,0 +1,82 @@
+@import url(reset.css);
+@import url(hF.css);
+html,
+body{
+  background-color: #fcf9ee;
+}
+main{
+  width: 100%;
+  display: flex;
+}
+.content{
+  width: 60%;
+  margin-left: 150px;
+  padding-top: 60px;
+  font-size: 14px;
+}
+h2{
+  font-size: 24px;
+  font-family: 'NanumMyeongjo';
+  margin-bottom: 50px;
+}
+.content p:first-of-type{
+  color: #f00;
+}
+.content p{
+  padding-bottom: 30px;
+}
+form{
+  margin: 0px;
+  width: 80%;
+}
+form label{
+  display: block;
+  margin-bottom: 5px;
+}
+form input[type='text']{
+  width: 179px;
+  height: 43px;
+}
+form button{
+  display: block;
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 20px;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+.content p:last-of-type{
+  margin-top: 30px;
+}
+.aside{
+  width: 20%;
+  height: 900px;
+  margin-top: 60px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  line-height: 25px;
+}
+.title{
+  font-size: 20px;
+  padding: 10px 0px 20px 0px;
+  text-align: center;
+  font-family: 'NanumMyeongjo';
+}
+strong{
+  font-weight: bold;
+}
+.aside a{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .content{
+    margin-left: 0px;
+    margin: 0px auto;
+  }
+  .aside{
+    display: none;
+  }
+}

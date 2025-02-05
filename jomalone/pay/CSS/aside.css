@@ -1,0 +1,50 @@
+
+aside{
+    width: 30%;
+    margin-left: 50px;
+    float: left;
+    font-family: 'NotoSansKR';
+}
+
+aside > article{
+    width: 70%;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+h5{
+    font-weight: 300;
+}
+
+#coupon{
+    width: 180px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+#inputCoupon{
+    width: 100px;
+    height: 44px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+.asideOrder > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.asideTotal, .extraPay{
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.asideTotalSec{
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+}

@@ -1,0 +1,169 @@
+@import url(basketHead.css);
+@import url(basketProduct.css);
+@import url(aside.css);
+@import url(../../css/hF.css);
+@import "../CSS/modal.css";
+@import "../CSS/basketMenu.css";
+@import "../CSS/wishMenu.css";
+body{
+  background-color: #fcf9ee;
+}
+wrapper{
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  /*background-color: aqua;*/
+}
+
+.imgSection{
+    width: 70%;
+    /*background-color: #ff0;*/
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+main{
+    width: 55%;
+    /*background-color: #ccc;*/
+    margin-left: 10%;
+    float: left;
+}
+
+aside > article{
+    line-height: 20px;
+  }
+
+  h4, h3{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  h5{
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  aside > article:nth-of-type(4) > h5{
+    text-decoration: underline;
+  }
+
+  #inputCoupon{
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  .totalPrice{
+    border: 0px;
+    width: 52%;
+    margin-left: 60px;
+    margin-top: -43px;
+  }
+
+  .allTotal{
+    display: flex;
+    margin-right: 50px;
+    width: 180px;
+  }
+
+  .basketPayBT > a, .wishButton > a{
+    color: #fff;
+  }
+
+  .basketMm, .wishMm{
+    width: 350px;
+  }
+
+  
+
+  @media screen and (max-width:800px){
+    
+    wrapper{
+      width: 100%;
+    }
+
+    .searchIcon{
+      width: 20px;
+    }
+
+    .imgSection > img{
+      width: 100%;
+      display: flex;
+    }
+
+    .shoppingHead, .shoppingHead2 > div:first-child{
+      width: 150%;
+    }
+
+    .ProductHead, .prdSection{
+      width: 150%;
+    }
+
+    .buttonSection{
+      width: 150%;
+      margin-bottom: 50px;
+    }
+    
+    .buttonSection > .payButton{
+      width: 90%;
+      margin-top: 20px;
+    }
+    aside{
+      width: 92%;
+      height: 100%;
+    }
+
+    aside > article{
+      width: 95%;
+    }
+
+    aside > article:nth-of-type(3){
+      text-align: center;
+    }
+
+    aside > article:nth-of-type(4){
+      text-align: center;
+    }
+    
+    .subTotal{
+      margin-left: 60%;
+    }
+
+    
+  }
+
+  @media screen and (max-width:500px){
+
+    .price,.price1{
+      display: none;
+    }
+
+    .productQty{
+      width: 150%;
+      margin-left: 10%;
+    }
+
+    .buttonSection{
+      width: 160%;
+      margin-left: 3%;
+      margin-bottom: 50px;
+    }
+
+    .buttonSection > a{
+      margin-right: 80%;
+    }
+    
+    .buttonSection > .payButton{
+      width: 95%;
+      margin-top: 20px;
+    }
+
+    aside{
+      width: 90%;
+      height: 100%;
+    }
+
+    aside > article{
+      width: 92%;
+    }
+    
+}

@@ -1,0 +1,310 @@
+@import url(../../../css/onlineServiceCon.css);
+* {
+  box-sizing: border-box; 
+}
+footer img{
+  box-sizing: unset;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+footer img{
+  box-sizing: unset;
+}
+.textwrap{
+  display: flex;
+  gap: 30px;
+  line-height: 1.5;
+  width: calc(100% - 150px);
+  /* flex-direction: column; */
+}
+
+      .wrapper{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5%;
+        padding: 0 5%; 
+      }
+      .center{
+        justify-content: center;
+      }
+      .main1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .charity{
+        width: 48%;
+        height: auto;
+        font-family: 'NanumMyeongjo';
+        line-height: 25px;
+      }
+
+      .charity > p:nth-child(1){
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+
+      .charity > p:nth-child(2){
+        font-size: 14px;
+        font-family: 'NotoSansKR';
+      }
+      .wtext{
+        font-size: 16px;
+        font-family: 'NotoSansKR';
+        line-height: 1.7;
+      }
+      .charityImg{
+        width: 48%;
+        height: auto;
+        /* width: 630px;
+        height: 520px; */
+      }
+
+      .charityImg  img{
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+        /* float: right; */
+      }
+      .wWrapper{
+
+      }
+      .globalPartner, .financial{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border-top: 1px solid #ccc;
+        gap: 30px;
+      }
+      .financial{
+        padding-top: 30px;
+      }
+      .globalPartner{
+        padding-top: 30px;
+      }
+
+      .globalPartner > p, .financial > p{
+        width: 100%;
+        height: auto;
+        /* margin-right: 30px; */
+        margin-top: 0;
+        line-height: 1.5;
+        width: 150px;
+      }
+
+      .globalPartner > p:nth-child(1), 
+      .financial > p:nth-child(1){
+        font-family: 'NanumMyeongjo';
+        font-size: 24px;
+      }
+
+      .globalPartner > p:nth-child(2), p:nth-child(3), 
+      .financial > p:nth-child(2), p:nth-child(3){
+        font-size: 14px;
+        margin-left: 1%;
+      }
+
+      .globalPartnerImg{
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        /*background-color: #ff0;*/
+      }
+
+      .globalPartnerImg > div{
+        width: 48%;
+        height: auto;
+      }
+
+      .globalPartnerImg > div > img{
+        width: 100%;
+        height: auto;
+      }
+
+      .main3{
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+        /*background-color: blanchedalmond;*/
+      }
+
+      .financialImg > img{
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+      }
+
+      .aaa{
+        font-family: 'NanumMyeongjo';
+        font-size: 24px;
+        margin-top: 5%;
+      }
+
+      .more{
+        width: 100%;
+        display: flex;
+        margin-top: 5%;
+        justify-content: space-around;
+      }
+
+      .more > a {
+       width: 48%;
+        text-decoration: none;
+        color: #000;
+        line-height: 25px;
+        margin-bottom: 5%;
+
+      }
+      .moreview{
+        text-decoration: underline;
+      }
+      .more > a > img{
+        width: 100%;
+        margin-bottom: 5%;
+      }
+
+      .moreHead{
+        font-family: 'NanumMyeongjo';
+        font-size: 25px;
+      }
+      /* 이미지 사이 간격 조정 */
+.globalPartnerImg > div:not(:last-child) {
+  margin-right: 2%; 
+}
+
+/* 태블릿 (800px 이하) */
+@media screen and (max-width: 800px) {
+  .main1, .main2, .main3 {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .charity, .globalPartner, .financial, .charityImg, .globalPartnerImg, .financialImg {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+  .globalPartner, .financial{
+    flex-direction: column;
+    margin-left: 40px;
+  }
+
+  .globalPartnerImg, .financialImg {
+    display: block; 
+    margin-top: 20px; 
+    margin-left: 30px;
+  }
+  /* .globalPartnerImg > div > img{
+    width: 100%;
+    height: auto;
+  } */
+  .globalPartnerImg > div:nth-child(2){
+    width: 100%;
+    height: auto;
+  }
+  .globalPartnerImg > div:nth-child(3){
+    width: 100%;
+    height: auto;
+  }
+
+  .more {
+    flex-direction: column;
+  }
+
+  .more > a {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .textwrap{
+    flex-direction: column;
+  }
+  
+}
+
+/* 모바일 (480px 이하) */
+@media screen and (max-width: 480px) {
+  .main1, .main2, .main3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .charity, .globalPartner, .financial, .charityImg, .globalPartnerImg, .financialImg {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .charityImg img, .globalPartnerImg > div > img, .financialImg img {
+    width: 100%;
+    height: auto;
+  }
+
+  .globalPartnerImg, .financialImg {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .aaa {
+    font-size: 20px;
+  }
+
+  .more {
+    flex-direction: column;
+  }
+
+  .more > a {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+
+
+
+
+
+/* 태블릿 (800px 이하) */
+/* @media screen and (max-width: 800px) {
+  .globalPartnerImg, .financialImg {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+  }
+
+  .globalPartnerImg > div, .financialImg > div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%; 
+  }
+} */
+
+/* 모바일 (480px 이하) */
+/* @media screen and (max-width: 480px) {
+  .globalPartnerImg, .financialImg {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px;
+  }
+
+  .globalPartnerImg > div, .financialImg > div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%; 
+  }
+} */

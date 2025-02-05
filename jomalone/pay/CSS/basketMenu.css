@@ -1,0 +1,93 @@
+.basketContainer {
+    position: relative;
+    display: inline-block;
+  }
+
+  .basketMm {
+    display: none;
+    position: absolute;
+    top: 50px; /* 아이콘 아래에 위치시키기 위해 조정 */
+    right: -70px;
+    background-color: #FCF9EE;
+    border: 1px solid #ccc;
+    padding: 30px;
+    z-index: 1000;
+    /*width: 350px;  원하는 너비로 설정 */
+    font-size: 15px;
+  }
+  
+/*
+  .basketContainer:hover .basketMm {
+    display: block;
+  }
+*/
+
+.basketMm > p{
+    font-family: 'NotoSansKR';
+    font-size: 17px;
+}
+
+/*
+div:hover + .basketMm{
+    display: block;
+}
+*/
+
+.basketMenu{
+    width: 330px;
+    border-top: 1px solid #ccc;
+    margin-top: 15px;
+    /*background-color: aqua;*/
+}
+
+.basketStuff{
+    width: 330px;
+    height: 130px;
+    margin-top: 30px;
+}
+
+.basketImg{
+    width: 100px;
+    height: 120px;
+    margin-top: 10px;
+    /*background-color: bisque;*/
+    float: left;
+}
+
+.delete{
+    margin-top: 20px;
+    margin-left: 290px;
+    text-decoration: underline;
+}
+
+.delete > a{
+    color: #000;
+}
+
+.totalCnt{
+    width: 330px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+.totalPrice{
+    width: 330px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.basketPayBT{
+    width: 330px;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 30px;
+}
+

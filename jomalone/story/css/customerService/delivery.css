@@ -1,0 +1,118 @@
+@import url(../CustomerService.css/delivery.css);
+body{
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer img{
+  box-sizing: unset;
+}
+.wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #fcf9ee;
+}
+.sidemenu{
+  margin-top: 80px;
+  width: 220px;
+}
+.sidemenu #service{
+  display: block;
+  width: 100%;
+}
+aside {
+  width: 23%;
+  height: auto;
+  display: flex;
+}
+
+main{
+  width: 80%;
+  display: flex;
+  margin-bottom: 5%;
+}
+.de1{
+  font-size: 24px;
+  margin-top: 120px;
+  margin-bottom: 40px;
+  font-family: 'NanumMyeongjo';
+}
+.de2{
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.de3{
+  font-size: 14px;
+  line-height: 20px;
+}
+#debox{
+  display: block;
+}
+
+/* 반응형 */
+/* 기본 데스크탑 레이아웃 */
+.wrapper {
+  display: flex;
+  flex-direction: row; /* 가로 정렬 */
+}
+
+aside {
+  width: 23.4%; /* 데스크탑에서 aside의 너비 */
+}
+
+main {
+  width: 76.6%; /* 데스크탑에서 main의 너비 */
+}
+
+#debox {
+  width: 100%;
+}
+
+/* 태블릿과 모바일 - 800px 이하일 때 */
+@media screen and (max-width: 800px) {
+  .wrapper {
+    flex-direction: column; /* 세로 정렬로 변경 */
+  }
+
+  aside {
+    width: 100%; /* aside가 전체 너비 차지 */
+    order: 1; /* aside가 위로 이동 */
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* main도 전체 너비 차지 */
+    order: 2; /* main이 aside 아래로 이동 */
+    margin-bottom: 5%;
+  }
+
+  #debox {
+    padding-left: 25px;
+    width: 100%;
+  }
+  .sidemenu{
+    margin-top: 60px;
+    width: 100%;
+  }
+}
+
+/* 모바일 - 480px 이하일 때 */
+@media screen and (max-width: 480px) {
+  aside {
+    display: none; /* 모바일에서는 aside를 숨김 */
+  }
+
+  main {
+    width: 100%; /* 메인 콘텐츠가 전체 너비 차지 */
+    margin-bottom: 5%;
+  }
+
+  #debox {
+    width: 100%;
+  }
+}

@@ -1,0 +1,261 @@
+@import url(../css/reset.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer img{
+  box-sizing: unset;
+}
+.wrapper {
+  width: 100%;
+  height: 2000px;
+  background-color: #fcf9ee;
+  display: flex;
+}
+
+main {
+ display: flex;
+}
+.sidemenu{
+  margin-top: 80px;
+  width: 220px;
+}
+.sidemenu #service{
+  display: block;
+  width: 100%;
+}
+aside {
+  width: 300px;
+  height: 2000px;
+}
+
+#accordionbox {
+  display: block;
+}
+
+.libox{
+  margin-bottom: 20px;
+}
+.order{
+  font-size: 22px;
+  line-height: 30px;
+  font-family: 'NanumMyeongjo';
+}
+.order > p a{
+  text-decoration: underline;
+  line-height: 20px;
+}
+
+.orderwrapper{
+  margin-top: 100px;
+
+}
+a{
+  text-decoration: underline;
+}
+.pHtext{
+  font-weight: bold;
+  font-family: 'NotoSansKR';
+}
+
+/* 아코디언 */
+body {
+  font-family: Arial, sans-serif;
+
+  /* 배경 색상 */
+  color: #3e3a31;
+  /* 텍스트 색상 */
+  margin: 0;
+  padding: 20px;
+}
+
+.accordion {
+  border-top: 1px solid #ddd;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'NanumMyeongjo';
+
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding: 0 15px;
+  background-color: #fcf9ee;
+  line-height: 25px;
+  margin: 15px 0;
+  font-family: 'NotoSansKR';
+  font-size: 14px;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+}
+
+/* 아코디언 활성화(펼쳐졌을 때) 상태 */
+.accordion-item.active .accordion-content {
+  max-height: 300px;
+  /* 펼쳐진 상태에서의 최대 높이 설정 */
+}
+
+.accordion-header::after {
+  content: '\002B';
+  /* '+' 아이콘 */
+  font-size: 20px;
+}
+
+.accordion-item.active .accordion-header::after {
+  content: '\2212';
+  /* '-' 아이콘 */
+}
+
+
+
+
+
+/* 반응형 */
+@media screen and (max-width: 1200px) {
+  .wrapper{
+    display: flex;
+    width: 100%;
+      
+  }
+
+    aside {
+      display: none; /* 모바일에서 aside 숨김 */
+      width: 100%;
+      order: 1;
+      height: auto;
+  }
+  main{
+    flex-direction: column;
+  }
+  .accordion-item {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+      flex-direction: column; 
+
+  }
+
+  aside {
+      width: 100%; /* 태블릿에서 aside가 전체 너비 차지 */
+      order: 1; /* aside가 아래로 이동 */
+      height: auto;
+  }
+  .order{
+    padding-left: 15px;
+  }
+
+  main {
+      width: 100%; 
+      order: 2; 
+      padding: 0;
+      height: auto;
+  }
+  .sidemenu{
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  article {
+      width: 100%; /* article도 100%로 설정 */
+      padding: 15px; /* 패딩 조정 */
+      word-wrap: break-word; /* 내용이 길어도 자동으로 줄바꿈 */
+       word-break: break-all;
+  }
+  .orderwrapper{
+    width: 100%;
+    height: auto;
+  }
+  .accordion-item {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+}
+
+
+/* 모바일  */
+@media screen and (max-width: 480px) {
+  .wrapper{
+    flex-direction: column; 
+  }
+ 
+  main {
+      width: 100%; 
+      padding: 10px; /* 모바일에서는 padding을 더 줄여 공간 확보 */
+
+  }
+
+  .orderwrapper{
+    width: 100%;
+    height: auto;
+    
+  }
+  .accordion-item {
+    max-width: 100%;
+    width: 100%;
+  }
+  .accordion-item.active .accordion-content {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/* 태블릿 (800px 이하) */
+@media screen and (max-width: 800px) {
+  aside {
+    display: none; /* 태블릿에서 왼쪽 네비게이션 숨김 */
+  }
+  
+  .wrapper {
+    flex-direction: column;
+    align-items: center; /* 중앙 정렬 */
+  }
+  
+  article {
+    max-width: 90%; /* 태블릿에서는 전체 너비의 90%로 조정 */
+    margin: 0 auto;
+    text-align: center; /* 콘텐츠 중앙 정렬 */
+  }
+  
+  .accordion-item {
+    max-width: 100%;
+  }
+  }
+  
+  /* 모바일 (480px 이하) */
+  @media screen and (max-width: 480px) {
+  .accordion-header {
+    font-size: 18px;
+  }
+  .accordion-item.active .accordion-content {
+    max-height: 800px;
+    /* 펼쳐진 상태에서의 최대 높이 설정 */
+  }
+  .accordion-content {
+    padding: 10px;
+  }
+}

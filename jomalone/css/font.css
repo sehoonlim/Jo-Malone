@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'NotoSansEN';
+  src: url('../fonts/NotoSans_Condensed-Medium.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'NotoSansKR';
+  src: url('../fonts/NotoSansKR-Medium.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'NanumMyeongjo';
+  src: url('../fonts/NanumMyeongjo-Regular.ttf') format('ttf');
+}

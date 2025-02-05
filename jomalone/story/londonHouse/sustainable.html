@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/hF.css">
+  <link rel="stylesheet" href="../css/londonHouse/sustainable.css">
+  <script src="../../js/jquery-3.7.1.min.js"></script>
+  <script src="../../js/main_search.js"></script>
+  <script src="../../js/hF.js"></script>
+  <title>sustainable</title>
+
+
+</head>
+
+
+<body>
+
+  <div class="center">
+
+    <div class="events">
+      <div class="event">
+        <p>배송 지연안내</p>
+        <a href="../../story/customerSerivce/05_delivery.html">자세히 보기</a>
+      </div>
+      <div class="event">
+        <p>첫 구매 시, 레드 히비스커스 코롱 인텐스 9ml를 선물로 드립니다. (쿠폰코드: WELCOME)</p>
+        <a href="../customerSerivce/07_onlineShopping.html">더 알아보기</a>
+      </div>
+      <div class="close">
+        <img src="../../imgs/close_icon_w.svg" alt="">
+      </div>
+    </div>
+
+
+    <header> <!-- 헤더 -->
+      <div class="wrap">
+        <div>
+          <div class="hamIcon">
+            <img src="../../imgs/menuIcon.svg" alt="">
+          </div>
+          <div class="searchIcon"> <!-- 검색 -->
+            <img src="../../imgs/searchIcon.svg" alt="">
+            <div id="search">
+              <form>
+                <button type="button" class="searchClose"><img src="../../imgs/close_icon.svg" alt=""></button>
+                <input type="text" placeholder="찾으시는 상품을 입력하여 주세요.">
+              </form>
+              <div class="defContent">
+                <p style="font-family: 'NotoSansKR';">도움이 필요하세요?</p>
+                <a href="../../story/product.html">히노키 앤 시더우드 코롱 인텐스</a>
+                <a href="../../story/product.html">코롱 인텐스</a>
+                <a href="../../story/product.html">베스트셀러</a>
+              </div>
+              <div class="activeContent">
+                <h2>추천상품</h2>
+                <div class="items">
+                  <a href="../../story/product.html">
+                    <div class="item">
+                      <img src="../../imgs/item1.avif" alt="">
+                      <div class="txt">
+                        <div>블랙베리 앤 베이 코롱</div>
+                        <div>₩112,000</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../../story/product.html">
+                    <div class="item">
+                      <img src="../../imgs/item2.avif" alt="">
+                      <div class="txt">
+                        <div>우드 세이지 앤 씨 솔트 바디 크림</div>
+                        <div>₩45,000</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="../../story/product.html">
+                    <div class="item">
+                      <img src="../../imgs/item3.avif" alt="">
+                      <div class="txt">
+                        <div>포피 앤 바알리 바디 앤 핸드 워시</div>
+                        <div>₩105,000</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mapIcon"><a href="../../main/map.html"> <!-- 매장 찾기 -->
+              <img src="../../imgs/mapIcon.svg" alt="">
+            </a></div>
+        </div>
+        <div class="logo">
+          <a href="../../index.html"><img src="../../imgs/조말론로고.svg" alt=""></a>
+        </div>
+        <div>
+          <div class="myPageIcon"><a href="../../sign/signIn.html"> <!-- 마이페이지 -->
+              <img src="../../imgs/myPageIcon.svg" alt="">
+            </a></div>
+          <div class="wishContainer">
+            <div class="wishIcon"><a href="../../pay/wishList.html"> <!-- 위시 -->
+                <img src="../../imgs/wishIcon.svg" alt="">
+              </a></div>
+            <!-- 관심상품 리스트 호버-->
+            <main class="wishMm">
+              <p>관심상품 리스트</p>
+              <div class="wishMenu">
+                <div class="wishImg">
+                  <img src="../../imgs/wishPerfume1.avif">
+                </div>
+                <div class="wishName">블랙베리 앤 베이 코롱</br>
+                  Blackberry & Bay Cologne</div>
+              </div>
+              <div class="wishCnt">수량 : 1</div>
+              <div class="wishPrice">₩235,000</div></br>
+              <div class="moveBasket">
+                <a href="">장바구니 담기</a></br>
+              </div>
+
+              <div class="wishMenu">
+                <div class="wishImg">
+                  <img src="../../imgs/wishPerfume2.avif">
+                </div>
+                <div class="wishName">잉글리쉬 페어 앤 프리지아 코롱</br>
+                  English Pear & Freesia Cologne Blackberry & Bay Cologne</div>
+              </div>
+              <div class="wishCnt">수량 : 1</div>
+              <div class="wishPrice">₩235,000</div></br>
+              <div class="moveBasket">
+                <a href="">장바구니 담기</a></br>
+              </div>
+              <button class="wishButton">관심상품 리스트 보기</button>
+            </main>
+          </div>
+
+          <div class="basketContainer">
+            <div class="basketIcon"><a href="../../pay/basket.html"> <!-- 장바구니 -->
+                <img src="../../imgs/basketIcon.svg" alt="">
+              </a></div>
+            <!-- 장바구니 리스트 호버-->
+            <main class="basketMm">
+              <p>장바구니</p>
+              <div class="basketMenu">
+                <div class="basketImg">
+                  <img src="../../imgs/wishPerfume1.avif">
+                </div>
+                <div class="basketStuff">
+                  <div class="basketName">블랙베리 앤 베이 코롱</br>
+                    Blackberry & Bay Cologne</div></br>
+                  <div class="basketCnt">수량 : 1</div></br>
+                  <div class="basketPrice">₩235,000</div>
+                  <div class="delete"><a href="#" onclick="this.closest('.basketMenu').remove(); return false;">삭제</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="basketMenu">
+                <div class="basketImg">
+                  <img src="../../imgs/wishPerfume2.avif">
+                </div>
+                <div class="basketStuff">
+                  <div class="basketName">잉글리쉬 페어 앤 프리지아 코롱</br>
+                    English Pear & Freesia Cologne Blackberry & Bay Cologne</div></br>
+                  <div class="basketCnt">수량 : 1</div></br>
+                  <div class="basketPrice">₩235,000</div>
+                  <div class="delete"><a href="#" onclick="this.closest('.basketMenu').remove(); return false;">삭제</a>
+                  </div>
+                </div>
+              </div>
+              <div class="totalCnt">전체 수량 : [2]</div>
+              <div class="totalPrice">전체 합계 : ₩470,000</div>
+              <button class="basketPayBT">결제하기</button>
+            </main>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="hamBg"></div>
+    <div id="hamMenu">
+      <ul class="hMenu">
+        <li>
+          <a href="../product.html">브랜드</a>
+          <ul class="hSubmenu bb">
+            <li><a href="peopleWorkplace.html">소개</a></li>
+            <li><a href="../allproduct.html">제품전체</a></li>
+            <li><a href="../allProduct2.html">신제품</a></li>
+            <li><a href="../../main/map.html">매장안내</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../product.html">코롱</a>
+          <ul class="hSubmenu">
+            <li>
+              <a href="../product.html">베스트셀러</a>
+              <ul class="hSubitem">
+                <li><a href="../product.html">블랙베리 앤 베이</a></li>
+                <li><a href="../product.html">잉글리쉬 페어 앤 프리지아</a></li>
+                <li><a href="../product.html">라임 바질 앤 만다린</a></li>
+                <li><a href="../product.html">히노키 앤 시더우드</a></li>
+                <li><a href="../product.html">사이프러스 앤 그레이프바인</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../product.html">사이즈</a>
+              <ul class="hSubitem">
+                <li><a href="../product.html">100ml</a></li>
+                <li><a href="../product.html">50ml</a></li>
+                <li><a href="../product.html">30ml</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../product.html">센트패밀리</a>
+              <ul class="hSubitem">
+                <li><a href="../product.html">시트러스</a></li>
+                <li><a href="../product.html">프루티</a></li>
+                <li><a href="../product.html">라이트 플로랄</a></li>
+                <li><a href="../product.html">플로랄</a></li>
+                <li><a href="../product.html">우디</a></li>
+                <li><a href="../product.html">원료</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../allProduct.html">홈 프레그런스</a>
+          <ul class="hSubmenu">
+            <li>
+              <a href="../allProduct.html">캔들</a>
+              <ul class="hSubitem">
+                <li><a href="../allProduct.html">캔들 전체보기</a></li>
+                <li><a href="../allProduct.html">타운하우스 캔들</a></li>
+                <li><a href="../allProduct.html">채리티 캔들</a></li>
+                <li><a href="../allProduct.html">캔들 케어 에센셜</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../product.html">디퓨저</a>
+              <ul class="hSubitem">
+                <li><a href="../product.html">디퓨저 전체보기</a></li>
+                <li><a href="../product.html">타운하우스 디퓨저</a></li>
+                <li><a href="../product.html">카 디퓨저</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../product.html">스프레이</a>
+              <ul class="hSubitem">
+                <li><a href="../product.html">스프레이 전체보기</a></li>
+                <li><a href="../product.html">룸 스프레이</a></li>
+                <li><a href="../product.html">필로우 미스트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../product.html">홈 컬렉션</a>
+              <ul class="hSubitem">
+                <li><a href="../product.html">나이트 컬렉션</a></li>
+                <li><a href="../product.html">타운하우스 컬렉션</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../allProduct2.html">배스 앤 바디</a>
+          <ul class="hSubmenu">
+            <li>
+              <a href="../allProduct2.html">배스 앤 샤워</a>
+              <ul class="hSubitem">
+                <li><a href="../allProduct2.html">바디 앤 핸드워시</a></li>
+                <li><a href="../allProduct2.html">샤워 젤 앤 오일</a></li>
+                <li><a href="../allProduct2.html">배스 오일</a></li>
+                <li><a href="../allProduct2.html">솝</a></li>
+                <li><a href="../allProduct2.html">헤어 케어</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../product.html">바디 케어</a>
+              <ul class="hSubitem">
+                <li><a href="../product.html">바디 크림</a></li>
+                <li><a href="../product.html">바디 앤 핸드 로션</a></li>
+                <li><a href="../product.html">바디 미스트</a></li>
+                <li><a href="../product.html">핸드 크림</a></li>
+                <li><a href="../product.html">헤어 미스트</a></li>
+                <li><a href="../product.html">비타민 E 컬렉션</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../product.html">베스트셀러</a>
+              <ul class="hSubitem">
+                <li><a href="../product.html">라임 바질 앤 만다린 바디 앤 핸드 워시</a></li>
+                <li><a href="../product.html">잉글리쉬 페어 앤 프리지아 바디 앤 핸드 로션</a></li>
+                <li><a href="../product.html">비타민 E 컨디셔너</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../product.html">맨즈</a>
+          <ul class="hSubmenu">
+            <li>
+              <a href="../product.html">코롱</a>
+              <ul class="hSubitem">
+                <li><a href="../product.html">맨즈 코롱 전체보기</a></li>
+                <li><a href="../product.html">히노키 앤 시더우드</a></li>
+                <li><a href="../product.html">NEW 헌츠맨 컬렉션</a></li>
+                <li><a href="../product.html">코롱 인텐스</a></li>
+                <li><a href="../product.html">맨즈 코롱 컬렉션</a></li>
+                <li><a href="../product.html">코롱 인텐스 컬렉션</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../product.html">그루밍</a>
+              <ul class="hSubitem">
+                <li><a href="../product.html">그루밍 전체 보기</a></li>
+                <li><a href="../product.html">바디 앤 핸드 워시</a></li>
+                <li><a href="../product.html">바디 앤 핸드 로션</a></li>
+                <li><a href="../product.html">익스 폴리에이팅 샤워 젤</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../product.html">홈 프레그런스</a>
+              <ul class="hSubitem">
+                <li><a href="../product.html">맨즈 홈 프레그런스 전체 보기</a></li>
+                <li><a href="../product.html">우드 세이지 앤 씨 솔트 홈 캔들</a></li>
+                <li><a href="../product.html">라임 바질 앤 만다린 디퓨저</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../../myInf/onlineService/onlineService.html">서비스</a>
+          <ul class="hSubmenu bb">
+            <li><a href="../../myInf/onlineService/onlineService.html">온라인 서비스</a></li>
+            <li><a href="../../main/scentFinder.html">센트 파인더</a></li>
+            <li><a href="../customerSerivce/01_faq.html">고객 서비스</a></li>
+          </ul>
+        </li>
+        <li><a href="../../myInf/myInformationMain/myInformationMain.html">마이페이지</a></li>
+        <li><a href="../../pay/wishList.html">위시리스트</a></li>
+        <li><a href="../../pay/basket.html">장바구니</a></li>
+        <li><a href="../../main/map.html">매장위치</a></li>
+      </ul>
+    </div>
+    <nav> <!-- 메뉴 -->
+      <ul class="menu">
+        <li>
+          <a href="../../story/product.html">브랜드</a>
+          <ul class="submenu">
+            <li>
+              <div>
+                <a href="../story/product.html">
+                  <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                </a>
+                <div class="subItem bold">
+                  <a href="../../story/londonHouse/peopleWorkplace.html">소개</a>
+                  <a href="../allProduct.html">제품전체</a>
+                  <a href="../allProduct2.html">신제품</a>
+                  <a href="../../main/map.html">매장안내</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../../story/product.html">코롱</a>
+          <ul class="submenu">
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>베스트셀러</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">블랙베리 앤 베이</a>
+                <a href="../../story/product.html">잉글리쉬 페어 앤 프리지아</a>
+                <a href="../../story/product.html">라임 바질 앤 만다린</a>
+                <a href="../../story/product.html">히노키 앤 시더우드</a>
+                <a href="../../story/product.html">사이프러스 앤 그레이프바인</a>
+              </div>
+            </li>
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>사이즈</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">100ml</a>
+                <a href="../../story/product.html">50ml</a>
+                <a href="../../story/product.html">30ml</a>
+              </div>
+            </li>
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>센트패밀리</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">시트러스</a>
+                <a href="../../story/product.html">프루티</a>
+                <a href="../../story/product.html">라이트 플로랄</a>
+                <a href="../../story/product.html">플로랄</a>
+                <a href="../../story/product.html">우디</a>
+                <a href="../../story/product.html">원료</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../../story/product.html">홈 프레그런스</a>
+          <ul class="submenu">
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>캔들</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">캔들 전체보기</a>
+                <a href="../../story/product.html">타운하우스 캔들</a>
+                <a href="../../story/product.html">채리티 캔들</a>
+                <a href="../../story/product.html">캔들 케어 에센셜</a>
+              </div>
+            </li>
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>디퓨저</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">디퓨저 전체보기</a>
+                <a href="../../story/product.html">타운하우스 디퓨저</a>
+                <a href="../../story/product.html">카 디퓨저</a>
+              </div>
+            </li>
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>스프레이</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">스프레이 전체보기</a>
+                <a href="../../story/product.html">룸 스프레이</a>
+                <a href="../../story/product.html">필로우 미스트</a>
+              </div>
+            </li>
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>홈 컬렉션</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">나이트 컬렉션</a>
+                <a href="../../story/product.html">타운하우스 컬렉션</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../allProduct2.html">배스 앤 바디</a>
+          <ul class="submenu">
+            <li>
+              <a href="../allProduct2.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>배스 앤 샤워</span>
+              </a>
+              <div class="subItem">
+                <a href="../allProduct2.html">바디 앤 핸드워시</a>
+                <a href="../allProduct2.html">샤워 젤 앤 오일</a>
+                <a href="../allProduct2.html">배스 오일</a>
+                <a href="../allProduct2.html">솝</a>
+                <a href="../allProduct2.html">헤어 케어</a>
+              </div>
+            </li>
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>바디 케어</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">바디 크림</a>
+                <a href="../../story/product.html">바디 앤 핸드 로션</a>
+                <a href="../../story/product.html">바디 미스트</a>
+                <a href="../../story/product.html">핸드 크림</a>
+                <a href="../../story/product.html">헤어 미스트</a>
+                <a href="../../story/product.html">비타민 E 컬렉션</a>
+              </div>
+            </li>
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>베스트셀러</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">배스 앤 바디 베스트셀러 보기</a>
+                <a href="../../story/product.html">라임 바질 앤 만다린 바디 앤 핸드 워시</a>
+                <a href="../../story/product.html">잉글리쉬 페어 앤 프리지아 바디 앤 핸드 로션</a>
+                <a href="../../story/product.html">비타민 E 컨디셔너</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../../story/product.html">맨즈</a>
+          <ul class="submenu">
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>코롱</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">맨즈 코롱 전체보기</a>
+                <a href="../../story/product.html">히노키 앤 시더우드</a>
+                <a href="../../story/product.html">NEW 헌츠맨 컬렉션</a>
+                <a href="../../story/product.html">코롱 인텐스</a>
+                <a href="../../story/product.html">맨즈 코롱 컬렉션</a>
+                <a href="../../story/product.html">코롱 인텐스 컬렉션</a>
+              </div>
+            </li>
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>그루밍</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">그루밍 전체 보기</a>
+                <a href="../../story/product.html">바디 앤 핸드 워시</a>
+                <a href="../../story/product.html">바디 앤 핸드 로션</a>
+                <a href="../../story/product.html">익스 폴리에이팅 샤워 젤</a>
+              </div>
+            </li>
+            <li>
+              <a href="../../story/product.html">
+                <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                <span>홈 프레그런스</span>
+              </a>
+              <div class="subItem">
+                <a href="../../story/product.html">맨즈 홈 프레그런스 전체 보기</a>
+                <a href="../../story/product.html">우드 세이지 앤 씨 솔트 홈 캔들</a>
+                <a href="../../story/product.html">라임 바질 앤 만다린 디퓨저</a>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../../myInf/onlineService/onlineService.html">서비스</a>
+          <ul class="submenu">
+            <li>
+              <div>
+                <a href="../../myInf/onlineService/onlineService.html">
+                  <img src="../../imgs/25B01_Nav_New.avif" alt="">
+                </a>
+                <div class="subItem bold">
+                  <a href="../../myInf/onlineService/onlineService.html">온라인 서비스</a>
+                  <a href="../../main/scentFinder.html">센트 파인더</a>
+                  <a href="../customerSerivce/01_faq.html">고객 서비스</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+
+    <div class="wrapper">
+      <div class="topDir">
+        <ol>
+          <li>
+            <a href="../../index.html">홈</a>
+          </li>
+          <p>/</p>
+          <li>
+            <a href="./01_ourvalues.html">우리의 가치</a>
+          </li>
+        </ol>
+      </div>
+
+
+
+
+
+
+        <div id="box1"> <!-- topbox 1 -->
+          <div>
+            <p class="pHtextb">지속가능성을 위한 우리의 활동</p>
+
+            <p class="ptext">
+              우리는 환경 보호의 의무뿐만 아니라, 제품을 생산할 때에도
+              신중한 접근 방식을 취해야 할 책임이 있음을 잘 알고 있습니다.
+              이러한 노력은 현재 진행형이지만, 환경에 대한 영향을 줄이는 책임감
+              있는 행위들이 조 말론 런던이 관여하는 모든 활동의 중심이 될 수 있도록
+              최선을 다하고 있습니다. 조 말론이 하는 모든 활동의 근간에는 친절함이 있습니다.
+              재활용되었거나 재활용될 수 있는 포장재를 사용하는 것부터, 재생 가능한
+              에너지를 적극 사용하는 시설에서 우리의 제품을 생산하겠다는 약속,
+              탄소 배출을 줄이기 위한 노력들, 책임을 다해 조달한 원료와 관련된
+              투명성을 제고하는 것과, 지역사회와 환경을 존중하는 마음 말이죠.
+              우리는 지속가능성에 대한 기준이 계속해서 발전해나갈 수 있도록
+              끊임없이 검토하고 있습니다. 그뿐만 아니라, 자랑스러운 브리티시
+              헤리티지를 간직한 기업으로서, 우리는 제품 생산 및 성분 선택에
+              있어서 Made in Britain에 대한 약속을 앞으로도 더욱 굳건하게 지켜나갈 것입니다.
+            </p>
+
+          </div>
+
+          <img src="../imgs/london/화면 캡처 2024-10-02 172501.png" alt="" class="goimg">
+
+        </div>
+
+
+        <div id="box2">
+
+          <div class="pHtextb">환경과 사회에 대한 우리의 약속</div>
+
+          <div>
+            <p class="ptext">자연은 영원한 조 말론 런던의 뮤즈로서, 환경 보호에
+              있어서도 적극적인 역할을 하고자 합니다. 조 말론 런던은
+              우리가 활동하는 방식이 사회와 환경에 영향을 줄 수 있다는
+              점을 인지하며, 우리의 제조 시설인 Whitman Laboratories에서도
+              태양 에너지를 사용하며 이산화탄소 배출을 줄이도록 하고 있습니다.
+              우리가 주변에 미치는 영향을 보다 잘 관리하고, 모범을 보이고자
+              하는 것입니다. 조 말론 런던은 모기업의 지원으로 Renewable
+              Energy 100에 서명함으로써, 2020년 말까지 우리가 사용하는
+              전기의 100%를 재생 가능한 전력으로 사용하기로 약속했습니다.
+              2019년에는 전 세계 위치한 조 말론의 전체 제조 시설에서
+              나온 모든 산업폐기물은 매립지 이외의 방식으로 처리되었으며,
+              전 세계 유통시설 중 85%가 생산된 폐기물 전체를 매립지
+              외의 방식으로 처리하였습니다.</p>
+            <br><br>
+            <p class="ptext">외부 공급업체 역시 조 말론 런던의 행동 강령을 준수하도록
+              하는 등, 우리가 납득할 정도의 조건을 충족하는 상황에서
+              조 말론 런던의 제품들이 생산된다는 점을 고객들 역시 자부심으로
+              느끼게 되길 바랍니다. 우리는 투명하고 안전하며, 공정한 업체들과
+              협업하고자 합니다. 제품에 사용되는 원료를 조달할 때 지속가능성을
+              염두에 둔 업체인지를 최선을 다해 확인하고 있습니다.
+              우리의 노력은 여기에서 그치지 않고, 지속 가능한 재료를
+              사용함으로써 지역사회와 그들의 전통적인 방식을 존중할 수
+              있도록, 윤리적이고 책임 있는 조달 체계를 개발하고자
+              노력하고 있습니다.</p>
+          </div>
+          <div>
+            <p class="ptext">더욱 발전해 나가는 우리의 여정을 되돌아 보고 또 앞으로 나아가기 위해서,
+              우리는 교육을 적극 활용할 뿐만 아니라, 기존 인식 및 행위의 변화를 위해
+              노력해야 한다는 점을 잘 알고 있습니다. 따라서 우리는 지속적으로 발전하고
+              개선할 수 있도록, 배운 것들을 이행하고 새로운 프로세스나 관행을 공유할
+              수 있는 다양한 단체와 기관에 가입되어 있습니다.
+              <br><br>
+              조 말론의 모회사를 통해 우리는 다음의 단체의 회원으로 활약하고 있습니다.
+              <br><br>
+              AIM-Progress: 공급망 관행 개선을 위한 다양한 소비재 제조의 글로벌 소싱 포럼.
+              <br><br>
+              NRSC(Natural Resources Stewardship Circle): UN 생명 다양성 협약에
+              기초하여 뷰티 산업 내에서의 올바른 관행과 책임감 있는 조달을 지지하는 비영리 단체.
+            </p>
+
+          </div>
+        </div>
+
+
+
+
+        <div class="imgWrapper">
+
+          <img src="../imgs/london/gosari2.jpg" alt="">
+
+          <img src="../imgs/london/gosari3.avif" alt="">
+        </div>
+
+
+
+
+
+        <div> <!-- box4 + img -->
+
+
+          <div id="box4"> <!-- box4 -->
+
+
+
+
+            <div class="pHtext">포장재에 대한 우리의 약속</div>
+
+            <div>
+
+              <p class="ptext">인재를 육성하고 팀의 안녕을 제고하는 것은 매우 중요한 일입니다. 포용성이 인정되며 누구나 환영받을 수 있는 일터를 만들기 위해 최선을 다하고
+                있습니다..<br>
+
+                조 말론 런던의 제품 패키지는 환경을 보호해야 하는 우리의 의무와 지구에 대한 친절함을 담을 수 있도록 하였으며, 더 나은 방법에 대해서도 항상 생각하고 있습니다. 현재 제품 포장재의
+                75%는 재활용이 가능하며, 앞으로도 지속적으로 높여 나갈 수 있도록 노력하고 있습니다. 아직도 발전의 여지는 있지만, 2025년까지 포장재의 75-100%를 재활용 가능하고, 리필
+                가능하며
+                재사용 가능하거나, 회수가 가능한 재질로 만드는 것입니다. 이러한 작은 변화들이 모여 큰 변화를 이룰 수 있을 것이라고 믿습니다.
+
+                <br> 현재까지의 성과: <br>
+
+                조 말론 런던의 솔리드 센트 듀오 팔레트는 최초의 리필 가능한 제품입니다. <br>
+
+                조 말론 런던의 시그니처인 크림 및 블랙 박스는 재활용 가능합니다. <br>
+
+                조 말론 런던의 제품을 무게 기준으로 했을 때 플라스틱의 비중은 9% 미만입니다. <br>
+
+                레진 함유 병의 경우 널리 재활용 가능한 소재인 PET병을 사용합니다. <br>
+              </p>
+
+              <p class="ptext">2020년에는 모기업의 원칙에 따라, 모든 글로벌 제조, 유통 및 혁신 시설에서 모든 산업 폐기물을 매립 이외의 방법으로 처리했습니다. <br>
+
+                모회사를 통해 우리는 지속 가능한 패키징 연합(SPC)의 설립 멤버가 된 것을 기쁘게 생각합니다.
+                이를 통해 기업, 교육 기관 및 정부 당국과 협업하며, 보다 지속 가능한 포장재를
+                사용하는 것이 기업 운영에도 유익한 일임을 알릴 수 있도록 함께 노력하고 있습니다.<br>
+
+                우리의 목표:
+                <br>
+                2025년까지 조 말론 런던의 제품 포장재의 75%는 재활용 가능, 리필 가능, 재사용, 재활용 또는 회수 가능한 소재로 제작.
+                <br>
+
+                2025년까지 사용된 삼림 기반 섬유의 100%가 FSC 인증을 획득함으로써, 책임감 있게 관리되고 있는 삼림에서 소재를 조달.
+                <br>
+              </p>
+            </div>
+
+          </div>
+
+          <img id="img1" src="../imgs/london/giftbox.avif" alt="">
+
+        </div>
+
+
+        <div>
+
+
+          <div id="box5">
+
+            <div class="pHtext">영국의 뿌리</div>
+
+            <div>
+              <p class="ptext">조 말론 런던은 영국의 뿌리에 기반을 둔 브랜드 입니다. 풍경을 향한 애정과
+                독특함을 즐기는 것은 우리가 하는 모든 일의 초석이 됩니다. 우리에게 집 보다
+                더 편한 곳은 없기 때문에, 조 말론 런던 제품의 97%는 모두 본국인 영국에서
+                만들어집니다. 조 말론 런던의 캔들은 사우스 다운스에 위치한 옛 낙농장에서
+                손수 제작됩니다. 각각의 캔들은 솜씨 좋은 장인 16명의 손을 거치며, 이러한
+                과정 자체가 예술과 인내심에 대한 교훈을 일깨워줍니다.</p>
+            
+              <p class="ptext">조 말론 런던 제품의 90%는 주요 생산 시설이 위치한 햄프셔에서 만들어집니다.
+                특수한 목적을 가지고 세워진 휘트먼 연구소(Whitman Laboratories)는
+                메가와트 태양광 발전 시스템을 갖추었으며, 부지 내 연간 전기 수요의
+                12-14%를 충당합니다 (여름에는 최대 95% 비중을 차지). 그뿐만 아니라
+                탄소 발자국을 넷 제로(net zero)로 유지하겠다는 조 말론 런던의
+                모회사의 사명을 실천하는 데에도 기여하고 있습니다. 2020년도
+                이 시설에서 생산된 태양에너지는 약 830 MWh로, 이는 연간
+                490m3의 CO2를 줄인 효과와 동일하며, 이는 영국 내 268개
+                가정에 일 년간 전기를 공급할 수 있는 양과 같습니다. 2017년 10월에
+                이 시스템을 처음 설치한 이후, 2,000 MWh가 넘는 깨끗한 전기를
+                생산해왔습니다. 조 말론 런던의 고향인 영국에서 앞으로도 최대한
+                많은 것을 조달할 수 있도록 하면서, 우리는 최선을 다해 환경
+                보호에 나서고 있습니다.</p>
+            </div>
+
+          </div>
+
+          <img src="../imgs/london/maxresdefault.jpg" alt="" id="img2">
+
+        </div>
+
+
+        <div class="aaa">더 알아보기</div>
+        <div class="more">
+          <a href="./charityMission.html">
+            <img src="../imgs/london/charitylink.avif">
+            <p class="moreHead">우리의 자선활동 미션</p></br>
+            <p>우리는 편견과 낙인에 맞서는 정신 건강 관련 프로젝트
+              그리고 영감을 주는 자선단체들을 지원하기 위해 최선을 다하고 있습니다.
+            </p></br>
+            <p>더 보기</p>
+          </a>
+
+          <a href="./sustainable.html">
+            <img src="../imgs/london/go.avif">
+            <p class="moreHead">지속가능성을 위한 우리의 활동</p></br>
+            <p>자연은 영원히 조 말론 런던의 뮤즈로서, 보다 지속가능한 미래를 향해
+              나아가면서 환경 보호에 있어 의미있는 역할을 하고자 합니다.
+            </p></br>
+            <p>더 보기</p>
+          </a>
+        </div>
+
+      
+
+    </div>
+
+  </div>
+
+  <footer> <!-- 푸터 -->
+    <div class="footerSite">
+      <div>
+        <div class="tt">
+          <span>고객 서비스</span>
+          <div class="footerIcons">
+            <img class="down" src="../../imgs/downIcon.svg" alt="">
+            <img class="up" src="../../imgs/upIcon.svg" alt="">
+          </div>
+        </div>
+        <a href="../customerSerivce/01_faq.html">자주 묻는 질문</a>
+        <a href="../customerSerivce/02_csTeam.html">고객관리지원팀</a>
+        <a href="../customerSerivce/03_MyProfile.html">나의 프로필</a>
+        <a href="../customerSerivce/04_myOrder.html">나의 오더</a>
+        <a href="../customerSerivce/05_delivery.html">배송관련</a>
+        <a href="../customerSerivce/06_return_exchange.html">교환 및 환불 규정</a>
+        <a href="../customerSerivce/07_onlineShopping.html">온라인 부티크 쇼핑</a>
+      </div>
+      <div>
+        <div>
+          <div class="tt">
+            <span>살펴보기</span>
+            <div class="footerIcons">
+              <img class="down" src="../../imgs/downIcon.svg" alt="">
+              <img class="up" src="../../imgs/upIcon.svg" alt="">
+            </div>
+          </div>
+          <a href="../londonHouse/01_ourvalues.html">브랜드 소개</a>
+          <a href="../allProduct2.html">제품 전체</a>
+          <a href="../product.html">신제품</a>
+          <a href="../../main/map.html">매장 안내</a>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <div class="tt">
+            <span>소셜 네트워크</span>
+            <div class="footerIcons">
+              <img class="down" src="../../imgs/downIcon.svg" alt="">
+              <img class="up" src="../../imgs/upIcon.svg" alt="">
+            </div>
+          </div>
+          <a href="https://www.instagram.com/jomalonelondon">인스타그램</a>
+          <a href="https://www.facebook.com/JoMaloneLondon">페이스북</a>
+          <a href="https://www.youtube.com/channel/UCWMSJ5L5Zvkr9JfflU4JMUA">유튜브</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <p>© Jo Malone London 2021</p>
+        <img src="../../imgs/main_trustmark.webp" alt="">
+        <div>
+          <a href="../story/customerSerivce/08_termsConditons.html">이용약관</a>
+          <a href="../story/customerSerivce/08_termsConditons.html">개인정보 처리방침</a>
+
+        </div>
+      </div>
+      <div>
+        <p>
+          이엘씨에이한국(유) 대표: Teng, Hsiao-Hua (Catherine), 서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232<br>
+          사업자등록번호: 211-81-71889<br>
+          통신판매업신고번호: 강남-15737호<br>
+          고객관리지원팀: <a href="tel:1644-3753">1644-3753</a><br>
+          호스팅서비스 사업자: (주)엘지유플러스
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  </div>
+</body>
+
+</html>
